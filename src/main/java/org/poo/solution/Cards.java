@@ -2,25 +2,30 @@ package org.poo.solution;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Data
 @NoArgsConstructor
-public class BankCard {
+public class Cards {
     private String cardNumber;
+    @JsonIgnore
     private String cardHolder;
+    @JsonIgnore
     private String expirationDate;
+    @JsonIgnore
     private int cvv;
+    @JsonIgnore
     private double balance;
-    private boolean isActive;
+    private String status;
 
     // Method to activate the card
     public void activate() {
-        this.isActive = true;
+        this.status = "active";
     }
 
     // Method to deactivate the card
     public void deactivate() {
-        this.isActive = false;
+        this.status = "inactive";
     }
 
     // Validation methods

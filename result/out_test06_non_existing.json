@@ -1,1 +1,150 @@
-[ ]
+[ {
+  "command" : "createOneTimeCard",
+  "timestamp" : 3
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 4
+}, {
+  "command" : "deleteCard",
+  "timestamp" : 5
+}, {
+  "command" : "deleteCard",
+  "timestamp" : 6
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Severin",
+    "lastName" : "Stanescu",
+    "email" : "Severin_Stanescu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO00POOB5687892910835215"
+    } ]
+  }, {
+    "firstName" : "Plesu",
+    "lastName" : "Aane",
+    "email" : "Plesu_Aane@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  } ],
+  "timestamp" : 7
+}, {
+  "command" : "payOnline",
+  "timestamp" : 9
+}, {
+  "command" : "payOnline",
+  "timestamp" : 11
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Severin",
+    "lastName" : "Stanescu",
+    "email" : "Severin_Stanescu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO33POOB4049920806186500"
+    } ]
+  }, {
+    "firstName" : "Plesu",
+    "lastName" : "Aane",
+    "email" : "Plesu_Aane@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  } ],
+  "timestamp" : 12
+}, {
+  "command" : "deleteCard",
+  "timestamp" : 13
+}, {
+  "command" : "payOnline",
+  "timestamp" : 14
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Severin",
+    "lastName" : "Stanescu",
+    "email" : "Severin_Stanescu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO33POOB4049920806186500"
+    } ]
+  }, {
+    "firstName" : "Plesu",
+    "lastName" : "Aane",
+    "email" : "Plesu_Aane@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  } ],
+  "timestamp" : 15
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Severin",
+    "lastName" : "Stanescu",
+    "email" : "Severin_Stanescu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO33POOB4049920806186500"
+    } ]
+  }, {
+    "firstName" : "Plesu",
+    "lastName" : "Aane",
+    "email" : "Plesu_Aane@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  } ],
+  "timestamp" : 19
+}, {
+  "command" : "payOnline",
+  "timestamp" : 20
+} ]

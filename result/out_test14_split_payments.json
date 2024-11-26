@@ -1,1 +1,112 @@
-[ ]
+[ {
+  "command" : "splitPayment",
+  "timestamp" : 9
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Flavia",
+    "lastName" : "Stanescu",
+    "email" : "Flavia_Stanescu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO99POOB2372376139192191"
+    } ]
+  }, {
+    "firstName" : "Taylor",
+    "lastName" : "York",
+    "email" : "Taylor_York@yahoo.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO73POOB7862625166958832"
+    } ]
+  }, {
+    "firstName" : "Lucie",
+    "lastName" : "Leconte-Munoz",
+    "email" : "Lucie_Leconte-Munoz@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO23POOB1246928924047531"
+    } ]
+  }, {
+    "firstName" : "Linda",
+    "lastName" : "Richards",
+    "email" : "Linda_Richards@outlook.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO81POOB3593384772537254"
+    } ]
+  } ],
+  "timestamp" : 10
+}, {
+  "command" : "payOnline",
+  "timestamp" : 11
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Flavia",
+    "lastName" : "Stanescu",
+    "email" : "Flavia_Stanescu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO99POOB2372376139192191"
+    } ]
+  }, {
+    "firstName" : "Taylor",
+    "lastName" : "York",
+    "email" : "Taylor_York@yahoo.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO73POOB7862625166958832"
+    } ]
+  }, {
+    "firstName" : "Lucie",
+    "lastName" : "Leconte-Munoz",
+    "email" : "Lucie_Leconte-Munoz@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO23POOB1246928924047531"
+    } ]
+  }, {
+    "firstName" : "Linda",
+    "lastName" : "Richards",
+    "email" : "Linda_Richards@outlook.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO81POOB3593384772537254"
+    } ]
+  } ],
+  "timestamp" : 16
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 17
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 18
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 19
+} ]

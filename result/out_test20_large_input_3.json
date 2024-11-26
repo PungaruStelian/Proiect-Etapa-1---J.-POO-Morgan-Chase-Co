@@ -1,1 +1,2071 @@
-[ ]
+[ {
+  "command" : "setAlias",
+  "timestamp" : 201
+}, {
+  "command" : "setAlias",
+  "timestamp" : 202
+}, {
+  "command" : "setAlias",
+  "timestamp" : 203
+}, {
+  "command" : "setAlias",
+  "timestamp" : 204
+}, {
+  "command" : "setAlias",
+  "timestamp" : 205
+}, {
+  "command" : "setAlias",
+  "timestamp" : 206
+}, {
+  "command" : "setAlias",
+  "timestamp" : 207
+}, {
+  "command" : "setAlias",
+  "timestamp" : 208
+}, {
+  "command" : "setAlias",
+  "timestamp" : 209
+}, {
+  "command" : "setAlias",
+  "timestamp" : 210
+}, {
+  "command" : "setAlias",
+  "timestamp" : 211
+}, {
+  "command" : "setAlias",
+  "timestamp" : 212
+}, {
+  "command" : "setAlias",
+  "timestamp" : 213
+}, {
+  "command" : "setAlias",
+  "timestamp" : 214
+}, {
+  "command" : "setAlias",
+  "timestamp" : 215
+}, {
+  "command" : "setAlias",
+  "timestamp" : 216
+}, {
+  "command" : "setAlias",
+  "timestamp" : 217
+}, {
+  "command" : "setAlias",
+  "timestamp" : 218
+}, {
+  "command" : "setAlias",
+  "timestamp" : 219
+}, {
+  "command" : "setAlias",
+  "timestamp" : 220
+}, {
+  "command" : "setAlias",
+  "timestamp" : 221
+}, {
+  "command" : "setAlias",
+  "timestamp" : 222
+}, {
+  "command" : "setAlias",
+  "timestamp" : 223
+}, {
+  "command" : "setAlias",
+  "timestamp" : 224
+}, {
+  "command" : "setAlias",
+  "timestamp" : 225
+}, {
+  "command" : "setAlias",
+  "timestamp" : 226
+}, {
+  "command" : "setAlias",
+  "timestamp" : 227
+}, {
+  "command" : "setAlias",
+  "timestamp" : 228
+}, {
+  "command" : "setAlias",
+  "timestamp" : 229
+}, {
+  "command" : "setAlias",
+  "timestamp" : 230
+}, {
+  "command" : "setAlias",
+  "timestamp" : 231
+}, {
+  "command" : "setAlias",
+  "timestamp" : 232
+}, {
+  "command" : "setAlias",
+  "timestamp" : 233
+}, {
+  "command" : "setAlias",
+  "timestamp" : 234
+}, {
+  "command" : "setAlias",
+  "timestamp" : 235
+}, {
+  "command" : "setAlias",
+  "timestamp" : 236
+}, {
+  "command" : "setAlias",
+  "timestamp" : 237
+}, {
+  "command" : "setAlias",
+  "timestamp" : 238
+}, {
+  "command" : "setAlias",
+  "timestamp" : 239
+}, {
+  "command" : "setAlias",
+  "timestamp" : 240
+}, {
+  "command" : "setAlias",
+  "timestamp" : 241
+}, {
+  "command" : "setAlias",
+  "timestamp" : 242
+}, {
+  "command" : "setAlias",
+  "timestamp" : 243
+}, {
+  "command" : "setAlias",
+  "timestamp" : 244
+}, {
+  "command" : "setAlias",
+  "timestamp" : 245
+}, {
+  "command" : "setAlias",
+  "timestamp" : 246
+}, {
+  "command" : "setAlias",
+  "timestamp" : 247
+}, {
+  "command" : "setAlias",
+  "timestamp" : 248
+}, {
+  "command" : "setAlias",
+  "timestamp" : 249
+}, {
+  "command" : "setAlias",
+  "timestamp" : 250
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 251
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 252
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 253
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 254
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 255
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 256
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 257
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 258
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 259
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 260
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 261
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 262
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 263
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 264
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 265
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Alex",
+    "lastName" : "Eftimie",
+    "email" : "Alex_Eftimie@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO71POOB4121458808173983"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO54POOB0199143889630820"
+    } ]
+  }, {
+    "firstName" : "Chanchal",
+    "lastName" : "Sarin",
+    "email" : "Chanchal_Sarin@hotmail.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO27POOB4189402316343039"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO83POOB5049682313286590"
+    } ]
+  }, {
+    "firstName" : "Gunbir",
+    "lastName" : "Chacko",
+    "email" : "Gunbir_Chacko@zoho.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO68POOB4900574308988744"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO01POOB2416529498852832"
+    } ]
+  }, {
+    "firstName" : "Margarita",
+    "lastName" : "Mayorga Barraza",
+    "email" : "Margarita_Mayorga_Barraza@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO42POOB2430630275896035"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO65POOB3209159171944324"
+    } ]
+  }, {
+    "firstName" : "Erika",
+    "lastName" : "Durham",
+    "email" : "Erika_Durham@icloud.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO57POOB1987581622287471"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO30POOB3267811784062638"
+    } ]
+  }, {
+    "firstName" : "Berenice",
+    "lastName" : "Montanariello-Proiett",
+    "email" : "Berenice_Montanariello-Proiett@icloud.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO73POOB4994563753821730"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB3599165168473479"
+    } ]
+  }, {
+    "firstName" : "Helene-Margot",
+    "lastName" : "Renaud",
+    "email" : "Helene-Margot_Renaud@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB1911665493026170"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB1784436470684161"
+    } ]
+  }, {
+    "firstName" : "Dominic",
+    "lastName" : "Hayward",
+    "email" : "Dominic_Hayward@protonmail.gb",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO71POOB2705305188303229"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO94POOB0037080580995410"
+    } ]
+  }, {
+    "firstName" : "Roland",
+    "lastName" : "Morin",
+    "email" : "Roland_Morin@outlook.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO51POOB1155187146511414"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO91POOB3074343218605102"
+    } ]
+  }, {
+    "firstName" : "Isabelle",
+    "lastName" : "de Arnaud",
+    "email" : "Isabelle_de_Arnaud@aol.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO07POOB9853520094347957"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9066664257612804"
+    } ]
+  }, {
+    "firstName" : "Sjoerd",
+    "lastName" : "van Mil-van der Mast",
+    "email" : "Sjoerd_van_Mil-van_der_Mast@aol.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9338301544751569"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6943074540710803"
+    } ]
+  }, {
+    "firstName" : "Giorgia",
+    "lastName" : "Murator",
+    "email" : "Giorgia_Murator@mail.com.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO19POOB5602289906849800"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO25POOB1141426379738369"
+    } ]
+  }, {
+    "firstName" : "Maria-Luise",
+    "lastName" : "Radel B.A.",
+    "email" : "Maria-Luise_Radel_B.A.@aol.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO82POOB0399661577844586"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB1357017967748620"
+    } ]
+  }, {
+    "firstName" : "Edwin",
+    "lastName" : "Yoder",
+    "email" : "Edwin_Yoder@aol.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO35POOB6150762599149395"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO52POOB8994126287765171"
+    } ]
+  }, {
+    "firstName" : "Vito",
+    "lastName" : "Oscuro",
+    "email" : "Vito_Oscuro@aol.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB6196958333965973"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO09POOB5090981643370603"
+    } ]
+  }, {
+    "firstName" : "Tomasz",
+    "lastName" : "Winkler",
+    "email" : "Tomasz_Winkler@yandex.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO99POOB4187279713757179"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO96POOB1300274385650317"
+    } ]
+  }, {
+    "firstName" : "Emilia",
+    "lastName" : "Ramon",
+    "email" : "Emilia_Ramon@aol.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO22POOB1904484742814769"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO69POOB0319990780776080"
+    } ]
+  }, {
+    "firstName" : "Raffaele",
+    "lastName" : "Mazzant",
+    "email" : "Raffaele_Mazzant@hushmail.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO62POOB3219136574984813"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO39POOB3316255053708918"
+    } ]
+  }, {
+    "firstName" : "Istvan",
+    "lastName" : "Hande B.A.",
+    "email" : "Istvan_Hande_B.A.@gmx.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO41POOB9157195757198342"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB7117161672685728"
+    } ]
+  }, {
+    "firstName" : "Maria",
+    "lastName" : "Eugenia Casares Sanchez",
+    "email" : "Maria_Eugenia_Casares_Sanchez@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO39POOB0864937759221677"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO82POOB8911905998370787"
+    } ]
+  }, {
+    "firstName" : "Sam",
+    "lastName" : "Michiels",
+    "email" : "Sam_Michiels@zoho.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB3209845215100624"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB8698489307727520"
+    } ]
+  }, {
+    "firstName" : "Claire",
+    "lastName" : "Anderson",
+    "email" : "Claire_Anderson@aol.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO25POOB3422154207020509"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO74POOB1635716453656063"
+    } ]
+  }, {
+    "firstName" : "Constance-Genevieve",
+    "lastName" : "Vincent",
+    "email" : "Constance-Genevieve_Vincent@icloud.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO18POOB6396966359858647"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO43POOB1092909145081705"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Brown",
+    "email" : "Sandra_Brown@mail.com.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO68POOB7050792191623141"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO37POOB6554613526008628"
+    } ]
+  }, {
+    "firstName" : "Josefina",
+    "lastName" : "Ordonez",
+    "email" : "Josefina_Ordonez@hushmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO93POOB8757692627312536"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO07POOB0812536143327848"
+    } ]
+  } ],
+  "timestamp" : 269
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 370
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 371
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 372
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 373
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 374
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 375
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 376
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 377
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 378
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 379
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 380
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 381
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 382
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 383
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 384
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 385
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 386
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 387
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 388
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 389
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 390
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 391
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 392
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 393
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 394
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 395
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 396
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 397
+}, {
+  "command" : "createOneTimeCard",
+  "timestamp" : 398
+}, {
+  "command" : "payOnline",
+  "timestamp" : 424
+}, {
+  "command" : "payOnline",
+  "timestamp" : 425
+}, {
+  "command" : "payOnline",
+  "timestamp" : 426
+}, {
+  "command" : "payOnline",
+  "timestamp" : 427
+}, {
+  "command" : "payOnline",
+  "timestamp" : 428
+}, {
+  "command" : "payOnline",
+  "timestamp" : 429
+}, {
+  "command" : "payOnline",
+  "timestamp" : 430
+}, {
+  "command" : "payOnline",
+  "timestamp" : 431
+}, {
+  "command" : "payOnline",
+  "timestamp" : 432
+}, {
+  "command" : "payOnline",
+  "timestamp" : 433
+}, {
+  "command" : "payOnline",
+  "timestamp" : 434
+}, {
+  "command" : "payOnline",
+  "timestamp" : 435
+}, {
+  "command" : "payOnline",
+  "timestamp" : 436
+}, {
+  "command" : "payOnline",
+  "timestamp" : 437
+}, {
+  "command" : "payOnline",
+  "timestamp" : 438
+}, {
+  "command" : "payOnline",
+  "timestamp" : 439
+}, {
+  "command" : "payOnline",
+  "timestamp" : 440
+}, {
+  "command" : "payOnline",
+  "timestamp" : 441
+}, {
+  "command" : "payOnline",
+  "timestamp" : 442
+}, {
+  "command" : "payOnline",
+  "timestamp" : 443
+}, {
+  "command" : "payOnline",
+  "timestamp" : 444
+}, {
+  "command" : "payOnline",
+  "timestamp" : 445
+}, {
+  "command" : "payOnline",
+  "timestamp" : 446
+}, {
+  "command" : "payOnline",
+  "timestamp" : 447
+}, {
+  "command" : "payOnline",
+  "timestamp" : 448
+}, {
+  "command" : "payOnline",
+  "timestamp" : 449
+}, {
+  "command" : "payOnline",
+  "timestamp" : 450
+}, {
+  "command" : "payOnline",
+  "timestamp" : 451
+}, {
+  "command" : "payOnline",
+  "timestamp" : 452
+}, {
+  "command" : "payOnline",
+  "timestamp" : 453
+}, {
+  "command" : "payOnline",
+  "timestamp" : 454
+}, {
+  "command" : "payOnline",
+  "timestamp" : 455
+}, {
+  "command" : "payOnline",
+  "timestamp" : 456
+}, {
+  "command" : "payOnline",
+  "timestamp" : 457
+}, {
+  "command" : "payOnline",
+  "timestamp" : 458
+}, {
+  "command" : "payOnline",
+  "timestamp" : 459
+}, {
+  "command" : "payOnline",
+  "timestamp" : 460
+}, {
+  "command" : "payOnline",
+  "timestamp" : 461
+}, {
+  "command" : "payOnline",
+  "timestamp" : 462
+}, {
+  "command" : "payOnline",
+  "timestamp" : 463
+}, {
+  "command" : "payOnline",
+  "timestamp" : 464
+}, {
+  "command" : "payOnline",
+  "timestamp" : 465
+}, {
+  "command" : "payOnline",
+  "timestamp" : 466
+}, {
+  "command" : "payOnline",
+  "timestamp" : 467
+}, {
+  "command" : "payOnline",
+  "timestamp" : 468
+}, {
+  "command" : "payOnline",
+  "timestamp" : 469
+}, {
+  "command" : "payOnline",
+  "timestamp" : 470
+}, {
+  "command" : "payOnline",
+  "timestamp" : 471
+}, {
+  "command" : "payOnline",
+  "timestamp" : 472
+}, {
+  "command" : "payOnline",
+  "timestamp" : 473
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Alex",
+    "lastName" : "Eftimie",
+    "email" : "Alex_Eftimie@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO71POOB4121458808173983"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO54POOB0199143889630820"
+    } ]
+  }, {
+    "firstName" : "Chanchal",
+    "lastName" : "Sarin",
+    "email" : "Chanchal_Sarin@hotmail.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO27POOB4189402316343039"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO83POOB5049682313286590"
+    } ]
+  }, {
+    "firstName" : "Gunbir",
+    "lastName" : "Chacko",
+    "email" : "Gunbir_Chacko@zoho.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO68POOB4900574308988744"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO01POOB2416529498852832"
+    } ]
+  }, {
+    "firstName" : "Margarita",
+    "lastName" : "Mayorga Barraza",
+    "email" : "Margarita_Mayorga_Barraza@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO42POOB2430630275896035"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO65POOB3209159171944324"
+    } ]
+  }, {
+    "firstName" : "Erika",
+    "lastName" : "Durham",
+    "email" : "Erika_Durham@icloud.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO57POOB1987581622287471"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO30POOB3267811784062638"
+    } ]
+  }, {
+    "firstName" : "Berenice",
+    "lastName" : "Montanariello-Proiett",
+    "email" : "Berenice_Montanariello-Proiett@icloud.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO73POOB4994563753821730"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB3599165168473479"
+    } ]
+  }, {
+    "firstName" : "Helene-Margot",
+    "lastName" : "Renaud",
+    "email" : "Helene-Margot_Renaud@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB1911665493026170"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB1784436470684161"
+    } ]
+  }, {
+    "firstName" : "Dominic",
+    "lastName" : "Hayward",
+    "email" : "Dominic_Hayward@protonmail.gb",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO71POOB2705305188303229"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO94POOB0037080580995410"
+    } ]
+  }, {
+    "firstName" : "Roland",
+    "lastName" : "Morin",
+    "email" : "Roland_Morin@outlook.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO51POOB1155187146511414"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO91POOB3074343218605102"
+    } ]
+  }, {
+    "firstName" : "Isabelle",
+    "lastName" : "de Arnaud",
+    "email" : "Isabelle_de_Arnaud@aol.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO07POOB9853520094347957"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9066664257612804"
+    } ]
+  }, {
+    "firstName" : "Sjoerd",
+    "lastName" : "van Mil-van der Mast",
+    "email" : "Sjoerd_van_Mil-van_der_Mast@aol.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9338301544751569"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6943074540710803"
+    } ]
+  }, {
+    "firstName" : "Giorgia",
+    "lastName" : "Murator",
+    "email" : "Giorgia_Murator@mail.com.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO19POOB5602289906849800"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO25POOB1141426379738369"
+    } ]
+  }, {
+    "firstName" : "Maria-Luise",
+    "lastName" : "Radel B.A.",
+    "email" : "Maria-Luise_Radel_B.A.@aol.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO82POOB0399661577844586"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB1357017967748620"
+    } ]
+  }, {
+    "firstName" : "Edwin",
+    "lastName" : "Yoder",
+    "email" : "Edwin_Yoder@aol.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO35POOB6150762599149395"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO52POOB8994126287765171"
+    } ]
+  }, {
+    "firstName" : "Vito",
+    "lastName" : "Oscuro",
+    "email" : "Vito_Oscuro@aol.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB6196958333965973"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO09POOB5090981643370603"
+    } ]
+  }, {
+    "firstName" : "Tomasz",
+    "lastName" : "Winkler",
+    "email" : "Tomasz_Winkler@yandex.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO99POOB4187279713757179"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO96POOB1300274385650317"
+    } ]
+  }, {
+    "firstName" : "Emilia",
+    "lastName" : "Ramon",
+    "email" : "Emilia_Ramon@aol.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO22POOB1904484742814769"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO69POOB0319990780776080"
+    } ]
+  }, {
+    "firstName" : "Raffaele",
+    "lastName" : "Mazzant",
+    "email" : "Raffaele_Mazzant@hushmail.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO62POOB3219136574984813"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO39POOB3316255053708918"
+    } ]
+  }, {
+    "firstName" : "Istvan",
+    "lastName" : "Hande B.A.",
+    "email" : "Istvan_Hande_B.A.@gmx.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO41POOB9157195757198342"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB7117161672685728"
+    } ]
+  }, {
+    "firstName" : "Maria",
+    "lastName" : "Eugenia Casares Sanchez",
+    "email" : "Maria_Eugenia_Casares_Sanchez@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO39POOB0864937759221677"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO82POOB8911905998370787"
+    } ]
+  }, {
+    "firstName" : "Sam",
+    "lastName" : "Michiels",
+    "email" : "Sam_Michiels@zoho.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB3209845215100624"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB8698489307727520"
+    } ]
+  }, {
+    "firstName" : "Claire",
+    "lastName" : "Anderson",
+    "email" : "Claire_Anderson@aol.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO25POOB3422154207020509"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO74POOB1635716453656063"
+    } ]
+  }, {
+    "firstName" : "Constance-Genevieve",
+    "lastName" : "Vincent",
+    "email" : "Constance-Genevieve_Vincent@icloud.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO18POOB6396966359858647"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO43POOB1092909145081705"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Brown",
+    "email" : "Sandra_Brown@mail.com.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO68POOB7050792191623141"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO37POOB6554613526008628"
+    } ]
+  }, {
+    "firstName" : "Josefina",
+    "lastName" : "Ordonez",
+    "email" : "Josefina_Ordonez@hushmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO93POOB8757692627312536"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO07POOB0812536143327848"
+    } ]
+  } ],
+  "timestamp" : 474
+}, {
+  "command" : "report",
+  "timestamp" : 475
+}, {
+  "command" : "report",
+  "timestamp" : 476
+}, {
+  "command" : "report",
+  "timestamp" : 477
+}, {
+  "command" : "report",
+  "timestamp" : 478
+}, {
+  "command" : "report",
+  "timestamp" : 479
+}, {
+  "command" : "checkCardStatus",
+  "timestamp" : 480
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 481
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 482
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 483
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 484
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 585
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 586
+}, {
+  "command" : "setAlias",
+  "timestamp" : 587
+}, {
+  "command" : "setAlias",
+  "timestamp" : 588
+}, {
+  "command" : "setAlias",
+  "timestamp" : 589
+}, {
+  "command" : "setAlias",
+  "timestamp" : 590
+}, {
+  "command" : "setAlias",
+  "timestamp" : 591
+}, {
+  "command" : "setAlias",
+  "timestamp" : 592
+}, {
+  "command" : "setAlias",
+  "timestamp" : 593
+}, {
+  "command" : "setAlias",
+  "timestamp" : 594
+}, {
+  "command" : "setAlias",
+  "timestamp" : 595
+}, {
+  "command" : "setAlias",
+  "timestamp" : 596
+}, {
+  "command" : "setAlias",
+  "timestamp" : 597
+}, {
+  "command" : "setAlias",
+  "timestamp" : 598
+}, {
+  "command" : "setAlias",
+  "timestamp" : 599
+}, {
+  "command" : "setAlias",
+  "timestamp" : 600
+}, {
+  "command" : "setAlias",
+  "timestamp" : 601
+}, {
+  "command" : "setAlias",
+  "timestamp" : 602
+}, {
+  "command" : "setAlias",
+  "timestamp" : 603
+}, {
+  "command" : "setAlias",
+  "timestamp" : 604
+}, {
+  "command" : "setAlias",
+  "timestamp" : 605
+}, {
+  "command" : "setAlias",
+  "timestamp" : 606
+}, {
+  "command" : "setAlias",
+  "timestamp" : 607
+}, {
+  "command" : "setAlias",
+  "timestamp" : 608
+}, {
+  "command" : "setAlias",
+  "timestamp" : 609
+}, {
+  "command" : "setAlias",
+  "timestamp" : 610
+}, {
+  "command" : "setAlias",
+  "timestamp" : 611
+}, {
+  "command" : "setAlias",
+  "timestamp" : 612
+}, {
+  "command" : "setAlias",
+  "timestamp" : 613
+}, {
+  "command" : "setAlias",
+  "timestamp" : 614
+}, {
+  "command" : "setAlias",
+  "timestamp" : 615
+}, {
+  "command" : "setAlias",
+  "timestamp" : 616
+}, {
+  "command" : "setAlias",
+  "timestamp" : 617
+}, {
+  "command" : "setAlias",
+  "timestamp" : 618
+}, {
+  "command" : "setAlias",
+  "timestamp" : 619
+}, {
+  "command" : "setAlias",
+  "timestamp" : 620
+}, {
+  "command" : "setAlias",
+  "timestamp" : 621
+}, {
+  "command" : "setAlias",
+  "timestamp" : 622
+}, {
+  "command" : "setAlias",
+  "timestamp" : 623
+}, {
+  "command" : "setAlias",
+  "timestamp" : 624
+}, {
+  "command" : "setAlias",
+  "timestamp" : 625
+}, {
+  "command" : "setAlias",
+  "timestamp" : 626
+}, {
+  "command" : "setAlias",
+  "timestamp" : 627
+}, {
+  "command" : "setAlias",
+  "timestamp" : 628
+}, {
+  "command" : "setAlias",
+  "timestamp" : 629
+}, {
+  "command" : "setAlias",
+  "timestamp" : 630
+}, {
+  "command" : "setAlias",
+  "timestamp" : 631
+}, {
+  "command" : "setAlias",
+  "timestamp" : 632
+}, {
+  "command" : "setAlias",
+  "timestamp" : 633
+}, {
+  "command" : "setAlias",
+  "timestamp" : 634
+}, {
+  "command" : "setAlias",
+  "timestamp" : 635
+}, {
+  "command" : "setAlias",
+  "timestamp" : 636
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 637
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 638
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 639
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 640
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 641
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Alex",
+    "lastName" : "Eftimie",
+    "email" : "Alex_Eftimie@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO71POOB4121458808173983"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO54POOB0199143889630820"
+    } ]
+  }, {
+    "firstName" : "Chanchal",
+    "lastName" : "Sarin",
+    "email" : "Chanchal_Sarin@hotmail.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO27POOB4189402316343039"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO83POOB5049682313286590"
+    } ]
+  }, {
+    "firstName" : "Gunbir",
+    "lastName" : "Chacko",
+    "email" : "Gunbir_Chacko@zoho.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO68POOB4900574308988744"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "INR",
+      "IBAN" : "RO01POOB2416529498852832"
+    } ]
+  }, {
+    "firstName" : "Margarita",
+    "lastName" : "Mayorga Barraza",
+    "email" : "Margarita_Mayorga_Barraza@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO42POOB2430630275896035"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO65POOB3209159171944324"
+    } ]
+  }, {
+    "firstName" : "Erika",
+    "lastName" : "Durham",
+    "email" : "Erika_Durham@icloud.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO57POOB1987581622287471"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "AUD",
+      "IBAN" : "RO30POOB3267811784062638"
+    } ]
+  }, {
+    "firstName" : "Berenice",
+    "lastName" : "Montanariello-Proiett",
+    "email" : "Berenice_Montanariello-Proiett@icloud.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO73POOB4994563753821730"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB3599165168473479"
+    } ]
+  }, {
+    "firstName" : "Helene-Margot",
+    "lastName" : "Renaud",
+    "email" : "Helene-Margot_Renaud@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB1911665493026170"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB1784436470684161"
+    } ]
+  }, {
+    "firstName" : "Dominic",
+    "lastName" : "Hayward",
+    "email" : "Dominic_Hayward@protonmail.gb",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO71POOB2705305188303229"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "GBP",
+      "IBAN" : "RO94POOB0037080580995410"
+    } ]
+  }, {
+    "firstName" : "Roland",
+    "lastName" : "Morin",
+    "email" : "Roland_Morin@outlook.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO51POOB1155187146511414"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO91POOB3074343218605102"
+    } ]
+  }, {
+    "firstName" : "Isabelle",
+    "lastName" : "de Arnaud",
+    "email" : "Isabelle_de_Arnaud@aol.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO07POOB9853520094347957"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9066664257612804"
+    } ]
+  }, {
+    "firstName" : "Sjoerd",
+    "lastName" : "van Mil-van der Mast",
+    "email" : "Sjoerd_van_Mil-van_der_Mast@aol.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO99POOB9338301544751569"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6943074540710803"
+    } ]
+  }, {
+    "firstName" : "Giorgia",
+    "lastName" : "Murator",
+    "email" : "Giorgia_Murator@mail.com.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO19POOB5602289906849800"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO25POOB1141426379738369"
+    } ]
+  }, {
+    "firstName" : "Maria-Luise",
+    "lastName" : "Radel B.A.",
+    "email" : "Maria-Luise_Radel_B.A.@aol.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO82POOB0399661577844586"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB1357017967748620"
+    } ]
+  }, {
+    "firstName" : "Edwin",
+    "lastName" : "Yoder",
+    "email" : "Edwin_Yoder@aol.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO35POOB6150762599149395"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO52POOB8994126287765171"
+    } ]
+  }, {
+    "firstName" : "Vito",
+    "lastName" : "Oscuro",
+    "email" : "Vito_Oscuro@aol.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB6196958333965973"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO09POOB5090981643370603"
+    } ]
+  }, {
+    "firstName" : "Tomasz",
+    "lastName" : "Winkler",
+    "email" : "Tomasz_Winkler@yandex.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO99POOB4187279713757179"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CHF",
+      "IBAN" : "RO96POOB1300274385650317"
+    } ]
+  }, {
+    "firstName" : "Emilia",
+    "lastName" : "Ramon",
+    "email" : "Emilia_Ramon@aol.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO22POOB1904484742814769"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO69POOB0319990780776080"
+    } ]
+  }, {
+    "firstName" : "Raffaele",
+    "lastName" : "Mazzant",
+    "email" : "Raffaele_Mazzant@hushmail.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO62POOB3219136574984813"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO39POOB3316255053708918"
+    } ]
+  }, {
+    "firstName" : "Istvan",
+    "lastName" : "Hande B.A.",
+    "email" : "Istvan_Hande_B.A.@gmx.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO41POOB9157195757198342"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO38POOB7117161672685728"
+    } ]
+  }, {
+    "firstName" : "Maria",
+    "lastName" : "Eugenia Casares Sanchez",
+    "email" : "Maria_Eugenia_Casares_Sanchez@outlook.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO39POOB0864937759221677"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO82POOB8911905998370787"
+    } ]
+  }, {
+    "firstName" : "Sam",
+    "lastName" : "Michiels",
+    "email" : "Sam_Michiels@zoho.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO98POOB3209845215100624"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO29POOB8698489307727520"
+    } ]
+  }, {
+    "firstName" : "Claire",
+    "lastName" : "Anderson",
+    "email" : "Claire_Anderson@aol.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO25POOB3422154207020509"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "NZD",
+      "IBAN" : "RO74POOB1635716453656063"
+    } ]
+  }, {
+    "firstName" : "Constance-Genevieve",
+    "lastName" : "Vincent",
+    "email" : "Constance-Genevieve_Vincent@icloud.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO18POOB6396966359858647"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "CAD",
+      "IBAN" : "RO43POOB1092909145081705"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Brown",
+    "email" : "Sandra_Brown@mail.com.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO68POOB7050792191623141"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "USD",
+      "IBAN" : "RO37POOB6554613526008628"
+    } ]
+  }, {
+    "firstName" : "Josefina",
+    "lastName" : "Ordonez",
+    "email" : "Josefina_Ordonez@hushmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO93POOB8757692627312536"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "MXN",
+      "IBAN" : "RO07POOB0812536143327848"
+    } ]
+  } ],
+  "timestamp" : 642
+}, {
+  "command" : "report",
+  "timestamp" : 643
+}, {
+  "command" : "report",
+  "timestamp" : 644
+}, {
+  "command" : "report",
+  "timestamp" : 645
+}, {
+  "command" : "report",
+  "timestamp" : 646
+}, {
+  "command" : "report",
+  "timestamp" : 647
+}, {
+  "command" : "report",
+  "timestamp" : 648
+}, {
+  "command" : "report",
+  "timestamp" : 649
+}, {
+  "command" : "report",
+  "timestamp" : 650
+}, {
+  "command" : "report",
+  "timestamp" : 651
+}, {
+  "command" : "report",
+  "timestamp" : 652
+}, {
+  "command" : "report",
+  "timestamp" : 653
+}, {
+  "command" : "report",
+  "timestamp" : 654
+}, {
+  "command" : "report",
+  "timestamp" : 655
+}, {
+  "command" : "report",
+  "timestamp" : 656
+}, {
+  "command" : "report",
+  "timestamp" : 657
+}, {
+  "command" : "report",
+  "timestamp" : 658
+}, {
+  "command" : "report",
+  "timestamp" : 659
+}, {
+  "command" : "report",
+  "timestamp" : 660
+}, {
+  "command" : "report",
+  "timestamp" : 661
+}, {
+  "command" : "report",
+  "timestamp" : 662
+}, {
+  "command" : "report",
+  "timestamp" : 663
+}, {
+  "command" : "report",
+  "timestamp" : 664
+}, {
+  "command" : "report",
+  "timestamp" : 665
+}, {
+  "command" : "report",
+  "timestamp" : 666
+}, {
+  "command" : "report",
+  "timestamp" : 667
+}, {
+  "command" : "report",
+  "timestamp" : 668
+}, {
+  "command" : "report",
+  "timestamp" : 669
+}, {
+  "command" : "report",
+  "timestamp" : 670
+}, {
+  "command" : "report",
+  "timestamp" : 671
+}, {
+  "command" : "report",
+  "timestamp" : 672
+}, {
+  "command" : "report",
+  "timestamp" : 673
+}, {
+  "command" : "report",
+  "timestamp" : 674
+}, {
+  "command" : "report",
+  "timestamp" : 675
+}, {
+  "command" : "report",
+  "timestamp" : 676
+}, {
+  "command" : "report",
+  "timestamp" : 677
+}, {
+  "command" : "report",
+  "timestamp" : 678
+}, {
+  "command" : "report",
+  "timestamp" : 679
+}, {
+  "command" : "report",
+  "timestamp" : 680
+}, {
+  "command" : "report",
+  "timestamp" : 681
+}, {
+  "command" : "report",
+  "timestamp" : 682
+}, {
+  "command" : "report",
+  "timestamp" : 683
+}, {
+  "command" : "report",
+  "timestamp" : 684
+}, {
+  "command" : "report",
+  "timestamp" : 685
+}, {
+  "command" : "report",
+  "timestamp" : 686
+}, {
+  "command" : "report",
+  "timestamp" : 687
+}, {
+  "command" : "report",
+  "timestamp" : 688
+}, {
+  "command" : "report",
+  "timestamp" : 689
+}, {
+  "command" : "report",
+  "timestamp" : 690
+}, {
+  "command" : "report",
+  "timestamp" : 691
+}, {
+  "command" : "report",
+  "timestamp" : 692
+} ]

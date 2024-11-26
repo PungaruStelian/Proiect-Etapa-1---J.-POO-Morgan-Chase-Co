@@ -1,24 +1,34 @@
 package org.poo.solution;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 public class Account {
-    private List<BankCard> bankcards;
+    private List<Cards> cards = new ArrayList<>();
+    @JsonIgnore
     private int interestRate;
     private String type;
+    @JsonProperty("IBAN")
     private String IBAN;
     private double balance;
     private String currency;
+    @JsonIgnore
     private String owner;
+    @JsonIgnore
     private int id;
+    @JsonIgnore
     private String description;
+    @JsonIgnore
     private double minBalance;
+    @JsonIgnore
     private String commerciants;
 
     // Method to add funds to the account

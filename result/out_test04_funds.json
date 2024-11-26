@@ -1,1 +1,122 @@
-[ ]
+[ {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Edmond",
+    "lastName" : "Stan",
+    "email" : "Edmond_Stan@gmail.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Andrei",
+    "lastName" : "Toma",
+    "email" : "Andrei_Toma@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Gabriel",
+    "lastName" : "Bousquet",
+    "email" : "Gabriel_Bousquet@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 1
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Edmond",
+    "lastName" : "Stan",
+    "email" : "Edmond_Stan@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB2721178218599590"
+    } ]
+  }, {
+    "firstName" : "Andrei",
+    "lastName" : "Toma",
+    "email" : "Andrei_Toma@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Gabriel",
+    "lastName" : "Bousquet",
+    "email" : "Gabriel_Bousquet@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 6
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Edmond",
+    "lastName" : "Stan",
+    "email" : "Edmond_Stan@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB2721178218599590"
+    } ]
+  }, {
+    "firstName" : "Andrei",
+    "lastName" : "Toma",
+    "email" : "Andrei_Toma@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Gabriel",
+    "lastName" : "Bousquet",
+    "email" : "Gabriel_Bousquet@gmail.fr",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 9
+}, {
+  "command" : "setMinimumBalance",
+  "timestamp" : 12
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Edmond",
+    "lastName" : "Stan",
+    "email" : "Edmond_Stan@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB2721178218599590"
+    } ]
+  }, {
+    "firstName" : "Andrei",
+    "lastName" : "Toma",
+    "email" : "Andrei_Toma@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Gabriel",
+    "lastName" : "Bousquet",
+    "email" : "Gabriel_Bousquet@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO37POOB7013767509830666"
+    } ]
+  } ],
+  "timestamp" : 13
+} ]

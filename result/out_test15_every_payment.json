@@ -1,1 +1,138 @@
-[ ]
+[ {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Olivier",
+    "lastName" : "Mace",
+    "email" : "Olivier_Mace@yahoo.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO41POOB7996405405188866"
+    } ]
+  }, {
+    "firstName" : "Anghel",
+    "lastName" : "Albu",
+    "email" : "Anghel_Albu@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Henriette",
+    "lastName" : "Huet",
+    "email" : "Henriette_Huet@outlook.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB9240532170599170"
+    } ]
+  }, {
+    "firstName" : "Franck",
+    "lastName" : "Adam",
+    "email" : "Franck_Adam@outlook.fr",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Iuliana",
+    "lastName" : "Georgescu",
+    "email" : "Iuliana_Georgescu@yahoo.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO45POOB2126448892709055"
+    } ]
+  }, {
+    "firstName" : "Iris",
+    "lastName" : "Tabacu",
+    "email" : "Iris_Tabacu@gmail.ro",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 7
+}, {
+  "command" : "payOnline",
+  "timestamp" : 11
+}, {
+  "command" : "payOnline",
+  "timestamp" : 13
+}, {
+  "command" : "payOnline",
+  "timestamp" : 14
+}, {
+  "command" : "payOnline",
+  "timestamp" : 15
+}, {
+  "command" : "payOnline",
+  "timestamp" : 16
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 17
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Olivier",
+    "lastName" : "Mace",
+    "email" : "Olivier_Mace@yahoo.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO41POOB7996405405188866"
+    } ]
+  }, {
+    "firstName" : "Anghel",
+    "lastName" : "Albu",
+    "email" : "Anghel_Albu@outlook.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Henriette",
+    "lastName" : "Huet",
+    "email" : "Henriette_Huet@outlook.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB9240532170599170"
+    } ]
+  }, {
+    "firstName" : "Franck",
+    "lastName" : "Adam",
+    "email" : "Franck_Adam@outlook.fr",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Iuliana",
+    "lastName" : "Georgescu",
+    "email" : "Iuliana_Georgescu@yahoo.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO45POOB2126448892709055"
+    } ]
+  }, {
+    "firstName" : "Iris",
+    "lastName" : "Tabacu",
+    "email" : "Iris_Tabacu@gmail.ro",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 18
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 28
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 29
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 30
+}, {
+  "command" : "splitPayment",
+  "timestamp" : 33
+}, {
+  "command" : "printTransactions",
+  "timestamp" : 34
+} ]

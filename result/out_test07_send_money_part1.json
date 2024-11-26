@@ -1,1 +1,59 @@
-[ ]
+[ {
+  "command" : "sendMoney",
+  "timestamp" : 5
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Therese",
+    "lastName" : "Chauvin-Riou",
+    "email" : "Therese_Chauvin-Riou@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO71POOB3662813942959577"
+    } ]
+  }, {
+    "firstName" : "Manuela",
+    "lastName" : "Toma",
+    "email" : "Manuela_Toma@hotmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO98POOB7529867013697995"
+    } ]
+  } ],
+  "timestamp" : 6
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 7
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Therese",
+    "lastName" : "Chauvin-Riou",
+    "email" : "Therese_Chauvin-Riou@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO71POOB3662813942959577"
+    } ]
+  }, {
+    "firstName" : "Manuela",
+    "lastName" : "Toma",
+    "email" : "Manuela_Toma@hotmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO98POOB7529867013697995"
+    } ]
+  } ],
+  "timestamp" : 8
+} ]

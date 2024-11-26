@@ -1,1 +1,103 @@
-[ ]
+[ {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Olimpiu",
+    "lastName" : "Stan",
+    "email" : "Olimpiu_Stan@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO19POOB4981055641668812"
+    } ]
+  }, {
+    "firstName" : "Viviana",
+    "lastName" : "Suciu",
+    "email" : "Viviana_Suciu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO30POOB9523423715747796"
+    } ]
+  } ],
+  "timestamp" : 5
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Olimpiu",
+    "lastName" : "Stan",
+    "email" : "Olimpiu_Stan@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO19POOB4981055641668812"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO79POOB3616857825600958"
+    } ]
+  }, {
+    "firstName" : "Viviana",
+    "lastName" : "Suciu",
+    "email" : "Viviana_Suciu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO30POOB9523423715747796"
+    } ]
+  } ],
+  "timestamp" : 11
+}, {
+  "command" : "payOnline",
+  "timestamp" : 12
+}, {
+  "command" : "payOnline",
+  "timestamp" : 13
+}, {
+  "command" : "payOnline",
+  "timestamp" : 14
+}, {
+  "command" : "payOnline",
+  "timestamp" : 16
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Olimpiu",
+    "lastName" : "Stan",
+    "email" : "Olimpiu_Stan@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO19POOB4981055641668812"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO79POOB3616857825600958"
+    } ]
+  }, {
+    "firstName" : "Viviana",
+    "lastName" : "Suciu",
+    "email" : "Viviana_Suciu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO30POOB9523423715747796"
+    } ]
+  } ],
+  "timestamp" : 17
+} ]

@@ -1,1 +1,130 @@
-[ ]
+[ {
+  "command" : "payOnline",
+  "timestamp" : 13
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Fabian",
+    "lastName" : "Puscasu",
+    "email" : "Fabian_Puscasu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Norbert",
+    "lastName" : "Dochioiu",
+    "email" : "Norbert_Dochioiu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Gregoire",
+    "lastName" : "Chretien",
+    "email" : "Gregoire_Chretien@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 14
+}, {
+  "command" : "changeInterestRate",
+  "timestamp" : 15
+}, {
+  "command" : "payOnline",
+  "timestamp" : 16
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 17
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Fabian",
+    "lastName" : "Puscasu",
+    "email" : "Fabian_Puscasu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Norbert",
+    "lastName" : "Dochioiu",
+    "email" : "Norbert_Dochioiu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Gregoire",
+    "lastName" : "Chretien",
+    "email" : "Gregoire_Chretien@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 18
+}, {
+  "command" : "deleteAccount",
+  "timestamp" : 19
+}, {
+  "command" : "changeInterestRate",
+  "timestamp" : 20
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Fabian",
+    "lastName" : "Puscasu",
+    "email" : "Fabian_Puscasu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Norbert",
+    "lastName" : "Dochioiu",
+    "email" : "Norbert_Dochioiu@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Gregoire",
+    "lastName" : "Chretien",
+    "email" : "Gregoire_Chretien@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 0.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 21
+} ]
