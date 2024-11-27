@@ -1,110 +1,124 @@
 [ {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Gary",
-    "lastName" : "James",
-    "email" : "Gary_James@hotmail.us",
+    "firstName" : "Emanuel",
+    "lastName" : "Dumitrescu",
+    "email" : "Emanuel_Dumitrescu@gmail.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO18POOB2886014115832837"
+      "balance" : 838.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO70POOB2947543873849254"
+      "balance" : 216.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
-    "firstName" : "Lia",
-    "lastName" : "Tomescu",
-    "email" : "Lia_Tomescu@outlook.ro",
+    "firstName" : "Jacques",
+    "lastName" : "Loiseau",
+    "email" : "Jacques_Loiseau@gmail.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO94POOB2405280020506702"
+      "balance" : 791.0,
+      "currency" : "EUR",
+      "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO01POOB5403267897030950"
+      "balance" : 586.0,
+      "currency" : "EUR",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 9
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 11
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 12
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 13
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Gary",
-    "lastName" : "James",
-    "email" : "Gary_James@hotmail.us",
+    "firstName" : "Emanuel",
+    "lastName" : "Dumitrescu",
+    "email" : "Emanuel_Dumitrescu@gmail.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO18POOB2886014115832837"
+      "balance" : 838.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO70POOB2947543873849254"
+      "balance" : 216.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
-    "firstName" : "Lia",
-    "lastName" : "Tomescu",
-    "email" : "Lia_Tomescu@outlook.ro",
+    "firstName" : "Jacques",
+    "lastName" : "Loiseau",
+    "email" : "Jacques_Loiseau@gmail.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO94POOB2405280020506702"
+      "balance" : 791.0,
+      "currency" : "EUR",
+      "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO01POOB5403267897030950"
+      "balance" : 586.0,
+      "currency" : "EUR",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 14
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 17
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 18
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 23
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 24
 }, {
   "command" : "report",
+  "error" : "Invalid command: report",
   "timestamp" : 25
 }, {
   "command" : "report",
+  "error" : "Invalid command: report",
   "timestamp" : 26
 }, {
   "command" : "report",
+  "error" : "Invalid command: report",
   "timestamp" : 27
 }, {
   "command" : "report",
+  "error" : "Invalid command: report",
   "timestamp" : 28
 } ]

@@ -92,11 +92,15 @@ public final class Main {
         // Create the Object instance from the solution package
         Object object = new Object(inputData);
 
+        Utils.resetRandom();
+
         // Process commands
         for (Command command : object.getCommands()) {
             ObjectNode result = objectMapper.createObjectNode();
             result.put("command", command.getCommand());
+
             switch (command.getCommand()) {
+
                 case "printUsers":
                     ArrayNode usersArray = objectMapper.createArrayNode();
                     for (User user : object.getUsers()) {
@@ -105,6 +109,7 @@ public final class Main {
                     }
                     result.set("output", usersArray);
                     break;
+
                 case "addAccount":
                     for (User user : object.getUsers()) {
                         if (user.getEmail().equals(command.getEmail())) {
@@ -113,10 +118,35 @@ public final class Main {
                             newAccount.setBalance(0.0);
                             newAccount.setCurrency(command.getCurrency());
                             newAccount.setType(command.getAccountType());
+                            newAccount.activate();
                             user.getAccounts().add(newAccount);
                         }
                     }
                     break;
+
+                case "deleteAccount":
+                    boolean ok = false;
+                    for (User user : object.getUsers()) {
+                        var accountIterator = user.getAccounts().iterator();
+                        while (accountIterator.hasNext()) {
+                            Account account = accountIterator.next();
+                            if (account.getIBAN().equals(command.getAccount()) && account.getBalance() == 0) {
+                                ok = true;
+                                account.setStatus("closed");
+                                result.remove("command");
+                                result.put("success", "Account deleted");
+                                result.put("timestamp", command.getTimestamp());
+                                output.add(result);
+                            }
+                        }
+                    }
+                    if (!ok) {
+                        result.put("description", "User not found");
+                        result.put("timestamp", command.getTimestamp());
+                        output.add(result);
+                    }
+                    break;
+
                 case "createCard":
                     for (User user : object.getUsers()) {
                         if (user.getEmail().equals(command.getEmail())) {
@@ -131,6 +161,7 @@ public final class Main {
                         }
                     }
                     break;
+
                 case "addFunds":
                     for (User user : object.getUsers()) {
                         for (Account account : user.getAccounts()) {
@@ -140,11 +171,18 @@ public final class Main {
                         }
                     }
                     break;
+
+                case "breakpoint":
+                    break;
+
                 default:
-                    // Handle other commands if necessary
+                    result.put("error", "Invalid command: " + command.getCommand());
                     break;
             }
-            if(!command.getCommand().equals("addAccount") && !command.getCommand().equals("createCard") && !command.getCommand().equals("addFunds")) {
+            if(!command.getCommand().equals("addAccount")
+                    && !command.getCommand().equals("createCard")
+                    && !command.getCommand().equals("addFunds")
+                    && !command.getCommand().equals("deleteAccount")) {
                 result.put("timestamp", command.getTimestamp());
                 output.add(result);
             }

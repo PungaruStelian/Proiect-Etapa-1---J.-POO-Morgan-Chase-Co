@@ -10,9 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 public class Account {
-    private List<Cards> cards = new ArrayList<>();
+    private List<Cards> cards;
     @JsonIgnore
     private int interestRate;
     private String type;
@@ -30,6 +29,17 @@ public class Account {
     private double minBalance;
     @JsonIgnore
     private String commerciants;
+    @JsonIgnore
+    private String status;
+
+    // Constructor to initialize the cards list
+    public Account() {
+        this.cards = new ArrayList<>();
+    }
+
+    public void activate() {
+        this.status = "active";
+    }
 
     // Method to add funds to the account
     public void addFunds(double amount) {

@@ -1,110 +1,124 @@
 [ {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Meghan",
-    "lastName" : "Richardson",
-    "email" : "Meghan_Richardson@gmail.us",
+    "firstName" : "Simion",
+    "lastName" : "Mazilescu",
+    "email" : "Simion_Mazilescu@yahoo.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO48POOB8416045496846646"
+      "balance" : 2613.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO57POOB1102317382822615"
+      "balance" : 1120.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
-    "firstName" : "Matthew",
-    "lastName" : "Santiago",
-    "email" : "Matthew_Santiago@hotmail.us",
+    "firstName" : "Anthony",
+    "lastName" : "Graham",
+    "email" : "Anthony_Graham@yahoo.us",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 423.0,
       "currency" : "USD",
-      "IBAN" : "RO30POOB7357252215030073"
+      "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 334.0,
       "currency" : "USD",
-      "IBAN" : "RO10POOB8234225402734622"
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 9
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 11
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 12
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 13
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Meghan",
-    "lastName" : "Richardson",
-    "email" : "Meghan_Richardson@gmail.us",
+    "firstName" : "Simion",
+    "lastName" : "Mazilescu",
+    "email" : "Simion_Mazilescu@yahoo.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO48POOB8416045496846646"
+      "balance" : 2613.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO57POOB1102317382822615"
+      "balance" : 1120.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
-    "firstName" : "Matthew",
-    "lastName" : "Santiago",
-    "email" : "Matthew_Santiago@hotmail.us",
+    "firstName" : "Anthony",
+    "lastName" : "Graham",
+    "email" : "Anthony_Graham@yahoo.us",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 423.0,
       "currency" : "USD",
-      "IBAN" : "RO30POOB7357252215030073"
+      "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 334.0,
       "currency" : "USD",
-      "IBAN" : "RO10POOB8234225402734622"
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 14
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 17
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 18
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 23
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 24
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 25
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 26
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 27
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 28
 } ]

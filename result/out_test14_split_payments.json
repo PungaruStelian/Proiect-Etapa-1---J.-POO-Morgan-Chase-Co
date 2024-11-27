@@ -1,112 +1,117 @@
 [ {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 9
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Flavia",
-    "lastName" : "Stanescu",
-    "email" : "Flavia_Stanescu@gmail.ro",
+    "firstName" : "Margaux",
+    "lastName" : "Nicolas",
+    "email" : "Margaux_Nicolas@gmail.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO99POOB2372376139192191"
-    } ]
-  }, {
-    "firstName" : "Taylor",
-    "lastName" : "York",
-    "email" : "Taylor_York@yahoo.us",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO73POOB7862625166958832"
-    } ]
-  }, {
-    "firstName" : "Lucie",
-    "lastName" : "Leconte-Munoz",
-    "email" : "Lucie_Leconte-Munoz@gmail.fr",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 4782.0,
       "currency" : "EUR",
-      "IBAN" : "RO23POOB1246928924047531"
+      "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
-    "firstName" : "Linda",
-    "lastName" : "Richards",
-    "email" : "Linda_Richards@outlook.us",
+    "firstName" : "Lucas",
+    "lastName" : "Garnier",
+    "email" : "Lucas_Garnier@outlook.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO81POOB3593384772537254"
+      "balance" : 5845.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Georgeta",
+    "lastName" : "Nistor",
+    "email" : "Georgeta_Nistor@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 3359.0,
+      "currency" : "RON",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  }, {
+    "firstName" : "Emanoil",
+    "lastName" : "Barbu",
+    "email" : "Emanoil_Barbu@hotmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 3461.0,
+      "currency" : "RON",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 10
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 11
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Flavia",
-    "lastName" : "Stanescu",
-    "email" : "Flavia_Stanescu@gmail.ro",
+    "firstName" : "Margaux",
+    "lastName" : "Nicolas",
+    "email" : "Margaux_Nicolas@gmail.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "RON",
-      "IBAN" : "RO99POOB2372376139192191"
-    } ]
-  }, {
-    "firstName" : "Taylor",
-    "lastName" : "York",
-    "email" : "Taylor_York@yahoo.us",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO73POOB7862625166958832"
-    } ]
-  }, {
-    "firstName" : "Lucie",
-    "lastName" : "Leconte-Munoz",
-    "email" : "Lucie_Leconte-Munoz@gmail.fr",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 5707.0,
       "currency" : "EUR",
-      "IBAN" : "RO23POOB1246928924047531"
+      "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
-    "firstName" : "Linda",
-    "lastName" : "Richards",
-    "email" : "Linda_Richards@outlook.us",
+    "firstName" : "Lucas",
+    "lastName" : "Garnier",
+    "email" : "Lucas_Garnier@outlook.fr",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO81POOB3593384772537254"
+      "balance" : 6204.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Georgeta",
+    "lastName" : "Nistor",
+    "email" : "Georgeta_Nistor@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 4144.0,
+      "currency" : "RON",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  }, {
+    "firstName" : "Emanoil",
+    "lastName" : "Barbu",
+    "email" : "Emanoil_Barbu@hotmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 4198.0,
+      "currency" : "RON",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 16
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 17
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 18
 }, {
   "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
   "timestamp" : 19
 } ]

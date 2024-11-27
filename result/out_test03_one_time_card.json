@@ -1,54 +1,63 @@
 [ {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Julie",
-    "lastName" : "Pierce",
-    "email" : "Julie_Pierce@gmail.us",
+    "firstName" : "Ana",
+    "lastName" : "Stanescu",
+    "email" : "Ana_Stanescu@hotmail.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
       "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO65POOB8944016386845896"
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
   "timestamp" : 2
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 4
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Julie",
-    "lastName" : "Pierce",
-    "email" : "Julie_Pierce@gmail.us",
+    "firstName" : "Ana",
+    "lastName" : "Stanescu",
+    "email" : "Ana_Stanescu@hotmail.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO65POOB8944016386845896"
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
   "timestamp" : 5
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 6
 }, {
   "command" : "deleteCard",
+  "error" : "Invalid command: deleteCard",
   "timestamp" : 7
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Julie",
-    "lastName" : "Pierce",
-    "email" : "Julie_Pierce@gmail.us",
+    "firstName" : "Ana",
+    "lastName" : "Stanescu",
+    "email" : "Ana_Stanescu@hotmail.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 0.0,
-      "currency" : "USD",
-      "IBAN" : "RO65POOB8944016386845896"
+      "currency" : "RON",
+      "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
   "timestamp" : 8

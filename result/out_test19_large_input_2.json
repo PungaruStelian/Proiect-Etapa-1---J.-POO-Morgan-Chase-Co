@@ -1,976 +1,1100 @@
 [ {
   "command" : "changeInterestRate",
+  "error" : "Invalid command: changeInterestRate",
   "timestamp" : 2
 }, {
   "command" : "deleteAccount",
+  "description" : "User not found",
   "timestamp" : 9
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 19
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 20
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 21
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 22
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 23
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 24
 }, {
   "command" : "createOneTimeCard",
+  "error" : "Invalid command: createOneTimeCard",
   "timestamp" : 25
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 26
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 27
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 28
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 29
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 30
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 31
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 32
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 33
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 35
 }, {
   "command" : "deleteAccount",
+  "description" : "User not found",
   "timestamp" : 36
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 37
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Luce",
-    "lastName" : "Lopez-Gomez",
-    "email" : "Luce_Lopez-Gomez@yahoo.fr",
+    "firstName" : "Selma",
+    "lastName" : "Birnbaum",
+    "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 7400.0,
       "currency" : "EUR",
-      "IBAN" : "RO74POOB4720544994115867"
+      "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "EUR",
-      "IBAN" : "RO01POOB6075256128211124"
+      "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
-    "firstName" : "Genevieve",
-    "lastName" : "Perreault",
-    "email" : "Genevieve_Perreault@hotmail.ca",
+    "firstName" : "Leanne",
+    "lastName" : "Scott-Davies",
+    "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO70POOB2790234710593412"
+      "balance" : 1613.0,
+      "currency" : "NZD",
+      "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
-    "firstName" : "Isaac",
-    "lastName" : "Reid",
-    "email" : "Isaac_Reid@gmx.nz",
+    "firstName" : "Georgel",
+    "lastName" : "Nistor",
+    "email" : "Georgel_Nistor@yandex.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO30POOB7899358108179920"
-    }, {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO47POOB4908968538122285"
-    } ]
-  }, {
-    "firstName" : "Lic.",
-    "lastName" : "Caridad Prado",
-    "email" : "Lic._Caridad_Prado@zoho.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO13POOB0446386881482591"
-    } ]
-  }, {
-    "firstName" : "Rafael",
-    "lastName" : "Najera",
-    "email" : "Rafael_Najera@hotmail.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO21POOB2395444224721452"
-    } ]
-  }, {
-    "firstName" : "Gavin",
-    "lastName" : "McCallum",
-    "email" : "Gavin_McCallum@hotmail.nz",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO54POOB5386100945388842"
-    } ]
-  }, {
-    "firstName" : "Constantin",
-    "lastName" : "Mocanu",
-    "email" : "Constantin_Mocanu@outlook.ro",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
+      "balance" : 23500.0,
       "currency" : "RON",
-      "IBAN" : "RO87POOB8722849190745207"
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 5150.0,
+      "currency" : "RON",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
-    "firstName" : "Christine",
-    "lastName" : "Sansonnens",
-    "email" : "Christine_Sansonnens@protonmail.ch",
-    "accounts" : [ ]
-  }, {
-    "firstName" : "Frank",
-    "lastName" : "Smith",
-    "email" : "Frank_Smith@zoho.au",
-    "accounts" : [ ]
-  }, {
-    "firstName" : "Stephen",
-    "lastName" : "Clark",
-    "email" : "Stephen_Clark@gmail.ca",
-    "accounts" : [ ]
-  }, {
-    "firstName" : "Craig",
+    "firstName" : "Gina",
     "lastName" : "Johnson",
-    "email" : "Craig_Johnson@yahoo.ch",
+    "email" : "Gina_Johnson@mail.com.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 851.0,
+      "currency" : "CHF",
+      "IBAN" : "RO58POOB2721178218599590"
+    } ]
+  }, {
+    "firstName" : "Zachary",
+    "lastName" : "Martin",
+    "email" : "Zachary_Martin@aol.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 924.0,
+      "currency" : "CAD",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Estera",
+    "lastName" : "Nistor",
+    "email" : "Estera_Nistor@gmx.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1282.0,
+      "currency" : "RON",
+      "IBAN" : "RO37POOB7013767509830666"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Arnold",
+    "email" : "Sandra_Arnold@icloud.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 8561.0,
+      "currency" : "USD",
+      "IBAN" : "RO19POOB4981055641668812"
+    } ]
+  }, {
+    "firstName" : "Adrian",
+    "lastName" : "Jones-Fuller",
+    "email" : "Adrian_Jones-Fuller@zoho.nz",
     "accounts" : [ ]
   }, {
-    "firstName" : "Lina",
-    "lastName" : "van Ghoerle",
-    "email" : "Lina_van_Ghoerle@gmail.nl",
+    "firstName" : "Fiona",
+    "lastName" : "Jones",
+    "email" : "Fiona_Jones@icloud.gb",
     "accounts" : [ ]
   }, {
-    "firstName" : "Valerie",
-    "lastName" : "St-Onge",
-    "email" : "Valerie_St-Onge@aol.ca",
+    "firstName" : "Frederique",
+    "lastName" : "Laflamme",
+    "email" : "Frederique_Laflamme@zoho.ca",
     "accounts" : [ ]
   }, {
-    "firstName" : "Susan",
-    "lastName" : "Alexander",
-    "email" : "Susan_Alexander@outlook.ca",
+    "firstName" : "Chaaya",
+    "lastName" : "Goswam",
+    "email" : "Chaaya_Goswam@mail.com.in",
     "accounts" : [ ]
   }, {
-    "firstName" : "Barbara",
-    "lastName" : "Hobbs",
-    "email" : "Barbara_Hobbs@aol.ca",
+    "firstName" : "Eva",
+    "lastName" : "Stancu",
+    "email" : "Eva_Stancu@icloud.ro",
     "accounts" : [ ]
   }, {
-    "firstName" : "Orlando",
-    "lastName" : "Meister",
-    "email" : "Orlando_Meister@zoho.ch",
+    "firstName" : "Lorenzo",
+    "lastName" : "Mora Quiroz",
+    "email" : "Lorenzo_Mora_Quiroz@hotmail.mx",
     "accounts" : [ ]
   }, {
-    "firstName" : "Kevin",
-    "lastName" : "Paradis",
-    "email" : "Kevin_Paradis@gmx.ca",
+    "firstName" : "Arya",
+    "lastName" : "Kumer",
+    "email" : "Arya_Kumer@zoho.in",
     "accounts" : [ ]
   }, {
-    "firstName" : "Autumn",
-    "lastName" : "Thompson",
-    "email" : "Autumn_Thompson@yahoo.au",
+    "firstName" : "Tyler",
+    "lastName" : "Moore",
+    "email" : "Tyler_Moore@yandex.ca",
     "accounts" : [ ]
   }, {
-    "firstName" : "Mato",
-    "lastName" : "Bader",
-    "email" : "Mato_Bader@gmail.ch",
+    "firstName" : "Berta",
+    "lastName" : "Yuste Arellano",
+    "email" : "Berta_Yuste_Arellano@protonmail.es",
     "accounts" : [ ]
   }, {
-    "firstName" : "Janet",
-    "lastName" : "Henry",
-    "email" : "Janet_Henry@outlook.ca",
+    "firstName" : "Mercedes",
+    "lastName" : "Godoy",
+    "email" : "Mercedes_Godoy@gmx.mx",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Nicole",
+    "lastName" : "Sansonnens-Vallelian",
+    "email" : "Nicole_Sansonnens-Vallelian@gmx.ch",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Eugene",
+    "lastName" : "Harper",
+    "email" : "Eugene_Harper@gmx.ch",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Roland",
+    "lastName" : "Bovet",
+    "email" : "Roland_Bovet@zoho.ch",
     "accounts" : [ ]
   } ],
   "timestamp" : 38
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 72
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 73
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 74
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 75
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 76
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 77
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 78
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 79
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 80
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 81
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 82
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 83
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 84
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 85
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 86
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 87
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 88
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 89
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 90
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 91
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Luce",
-    "lastName" : "Lopez-Gomez",
-    "email" : "Luce_Lopez-Gomez@yahoo.fr",
+    "firstName" : "Selma",
+    "lastName" : "Birnbaum",
+    "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 7400.0,
       "currency" : "EUR",
-      "IBAN" : "RO74POOB4720544994115867"
+      "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 2032.0,
       "currency" : "EUR",
-      "IBAN" : "RO01POOB6075256128211124"
+      "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
-    "firstName" : "Genevieve",
-    "lastName" : "Perreault",
-    "email" : "Genevieve_Perreault@hotmail.ca",
+    "firstName" : "Leanne",
+    "lastName" : "Scott-Davies",
+    "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO70POOB2790234710593412"
+      "balance" : 2165.0,
+      "currency" : "NZD",
+      "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
-    "firstName" : "Isaac",
-    "lastName" : "Reid",
-    "email" : "Isaac_Reid@gmx.nz",
+    "firstName" : "Georgel",
+    "lastName" : "Nistor",
+    "email" : "Georgel_Nistor@yandex.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO30POOB7899358108179920"
-    }, {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO47POOB4908968538122285"
-    } ]
-  }, {
-    "firstName" : "Lic.",
-    "lastName" : "Caridad Prado",
-    "email" : "Lic._Caridad_Prado@zoho.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO13POOB0446386881482591"
-    } ]
-  }, {
-    "firstName" : "Rafael",
-    "lastName" : "Najera",
-    "email" : "Rafael_Najera@hotmail.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO21POOB2395444224721452"
-    } ]
-  }, {
-    "firstName" : "Gavin",
-    "lastName" : "McCallum",
-    "email" : "Gavin_McCallum@hotmail.nz",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO54POOB5386100945388842"
-    } ]
-  }, {
-    "firstName" : "Constantin",
-    "lastName" : "Mocanu",
-    "email" : "Constantin_Mocanu@outlook.ro",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
+      "balance" : 23500.0,
       "currency" : "RON",
-      "IBAN" : "RO87POOB8722849190745207"
-    } ]
-  }, {
-    "firstName" : "Christine",
-    "lastName" : "Sansonnens",
-    "email" : "Christine_Sansonnens@protonmail.ch",
-    "accounts" : [ {
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CHF",
-      "IBAN" : "RO88POOB4980292817833689"
+      "balance" : 8760.0,
+      "currency" : "RON",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
-    "firstName" : "Frank",
-    "lastName" : "Smith",
-    "email" : "Frank_Smith@zoho.au",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "AUD",
-      "IBAN" : "RO16POOB8231026695732229"
-    } ]
-  }, {
-    "firstName" : "Stephen",
-    "lastName" : "Clark",
-    "email" : "Stephen_Clark@gmail.ca",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO14POOB5031951473626672"
-    } ]
-  }, {
-    "firstName" : "Craig",
+    "firstName" : "Gina",
     "lastName" : "Johnson",
-    "email" : "Craig_Johnson@yahoo.ch",
+    "email" : "Gina_Johnson@mail.com.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 7164.0,
       "currency" : "CHF",
-      "IBAN" : "RO60POOB2764755933844780"
+      "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
-    "firstName" : "Lina",
-    "lastName" : "van Ghoerle",
-    "email" : "Lina_van_Ghoerle@gmail.nl",
+    "firstName" : "Zachary",
+    "lastName" : "Martin",
+    "email" : "Zachary_Martin@aol.ca",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 1828.0,
+      "currency" : "CAD",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Estera",
+    "lastName" : "Nistor",
+    "email" : "Estera_Nistor@gmx.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1987.0,
+      "currency" : "RON",
+      "IBAN" : "RO37POOB7013767509830666"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Arnold",
+    "email" : "Sandra_Arnold@icloud.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 8615.0,
+      "currency" : "USD",
+      "IBAN" : "RO19POOB4981055641668812"
+    } ]
+  }, {
+    "firstName" : "Adrian",
+    "lastName" : "Jones-Fuller",
+    "email" : "Adrian_Jones-Fuller@zoho.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 183.0,
+      "currency" : "NZD",
+      "IBAN" : "RO79POOB3616857825600958"
+    } ]
+  }, {
+    "firstName" : "Fiona",
+    "lastName" : "Jones",
+    "email" : "Fiona_Jones@icloud.gb",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 66.0,
+      "currency" : "GBP",
+      "IBAN" : "RO00POOB5687892910835215"
+    } ]
+  }, {
+    "firstName" : "Frederique",
+    "lastName" : "Laflamme",
+    "email" : "Frederique_Laflamme@zoho.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 641.0,
+      "currency" : "CAD",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  }, {
+    "firstName" : "Chaaya",
+    "lastName" : "Goswam",
+    "email" : "Chaaya_Goswam@mail.com.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 129.0,
+      "currency" : "INR",
+      "IBAN" : "RO33POOB4049920806186500"
+    } ]
+  }, {
+    "firstName" : "Eva",
+    "lastName" : "Stancu",
+    "email" : "Eva_Stancu@icloud.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 835.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB9846198978826791"
+    } ]
+  }, {
+    "firstName" : "Lorenzo",
+    "lastName" : "Mora Quiroz",
+    "email" : "Lorenzo_Mora_Quiroz@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 53.0,
+      "currency" : "MXN",
+      "IBAN" : "RO98POOB8412955460158769"
+    } ]
+  }, {
+    "firstName" : "Arya",
+    "lastName" : "Kumer",
+    "email" : "Arya_Kumer@zoho.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 130.0,
+      "currency" : "INR",
+      "IBAN" : "RO32POOB0130532963818359"
+    } ]
+  }, {
+    "firstName" : "Tyler",
+    "lastName" : "Moore",
+    "email" : "Tyler_Moore@yandex.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 5728.0,
+      "currency" : "CAD",
+      "IBAN" : "RO68POOB1848616931405475"
+    } ]
+  }, {
+    "firstName" : "Berta",
+    "lastName" : "Yuste Arellano",
+    "email" : "Berta_Yuste_Arellano@protonmail.es",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 552.0,
       "currency" : "EUR",
-      "IBAN" : "RO51POOB7876010183887746"
+      "IBAN" : "RO10POOB4354933866366881"
     } ]
   }, {
-    "firstName" : "Valerie",
-    "lastName" : "St-Onge",
-    "email" : "Valerie_St-Onge@aol.ca",
+    "firstName" : "Mercedes",
+    "lastName" : "Godoy",
+    "email" : "Mercedes_Godoy@gmx.mx",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO04POOB9194465503239141"
+      "balance" : 322.0,
+      "currency" : "MXN",
+      "IBAN" : "RO33POOB9999273999620457"
     } ]
   }, {
-    "firstName" : "Susan",
-    "lastName" : "Alexander",
-    "email" : "Susan_Alexander@outlook.ca",
+    "firstName" : "Nicole",
+    "lastName" : "Sansonnens-Vallelian",
+    "email" : "Nicole_Sansonnens-Vallelian@gmx.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO16POOB4755859605660410"
-    } ]
-  }, {
-    "firstName" : "Barbara",
-    "lastName" : "Hobbs",
-    "email" : "Barbara_Hobbs@aol.ca",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO86POOB1011768021785445"
-    } ]
-  }, {
-    "firstName" : "Orlando",
-    "lastName" : "Meister",
-    "email" : "Orlando_Meister@zoho.ch",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 781.0,
       "currency" : "CHF",
-      "IBAN" : "RO64POOB4383278210585498"
+      "IBAN" : "RO38POOB0964823730995794"
     } ]
   }, {
-    "firstName" : "Kevin",
-    "lastName" : "Paradis",
-    "email" : "Kevin_Paradis@gmx.ca",
+    "firstName" : "Eugene",
+    "lastName" : "Harper",
+    "email" : "Eugene_Harper@gmx.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO60POOB5813880391026761"
-    } ]
-  }, {
-    "firstName" : "Autumn",
-    "lastName" : "Thompson",
-    "email" : "Autumn_Thompson@yahoo.au",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "AUD",
-      "IBAN" : "RO39POOB9403553255148862"
-    } ]
-  }, {
-    "firstName" : "Mato",
-    "lastName" : "Bader",
-    "email" : "Mato_Bader@gmail.ch",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 813.0,
       "currency" : "CHF",
-      "IBAN" : "RO40POOB9024857272432677"
+      "IBAN" : "RO53POOB7122855990652257"
     } ]
   }, {
-    "firstName" : "Janet",
-    "lastName" : "Henry",
-    "email" : "Janet_Henry@outlook.ca",
+    "firstName" : "Roland",
+    "lastName" : "Bovet",
+    "email" : "Roland_Bovet@zoho.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO84POOB0649564656447203"
+      "balance" : 2125.0,
+      "currency" : "CHF",
+      "IBAN" : "RO71POOB1634969878734749"
     } ]
   } ],
   "timestamp" : 92
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 93
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 94
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 95
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 96
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 97
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 98
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 99
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 100
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 101
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 102
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 103
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 104
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 105
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 106
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 107
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 108
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 109
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 110
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 111
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 112
 }, {
   "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
   "timestamp" : 115
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 116
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 117
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 118
 }, {
   "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
   "timestamp" : 119
 }, {
   "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
   "timestamp" : 123
 }, {
   "command" : "report",
+  "error" : "Invalid command: report",
   "timestamp" : 124
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 145
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 146
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 147
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 148
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 149
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 150
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 151
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 152
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 153
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 154
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 155
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 156
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 157
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 158
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 159
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 160
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 161
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 162
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 163
 }, {
   "command" : "payOnline",
+  "error" : "Invalid command: payOnline",
   "timestamp" : 164
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 167
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 168
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 169
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 170
 }, {
   "command" : "sendMoney",
+  "error" : "Invalid command: sendMoney",
   "timestamp" : 171
 }, {
   "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
   "timestamp" : 172
 }, {
   "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
   "timestamp" : 173
 }, {
   "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
   "timestamp" : 174
 }, {
   "command" : "printUsers",
   "output" : [ {
-    "firstName" : "Luce",
-    "lastName" : "Lopez-Gomez",
-    "email" : "Luce_Lopez-Gomez@yahoo.fr",
+    "firstName" : "Selma",
+    "lastName" : "Birnbaum",
+    "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 7400.0,
       "currency" : "EUR",
-      "IBAN" : "RO74POOB4720544994115867"
+      "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 2565.0,
       "currency" : "EUR",
-      "IBAN" : "RO01POOB6075256128211124"
+      "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
-    "firstName" : "Genevieve",
-    "lastName" : "Perreault",
-    "email" : "Genevieve_Perreault@hotmail.ca",
+    "firstName" : "Leanne",
+    "lastName" : "Scott-Davies",
+    "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO70POOB2790234710593412"
+      "balance" : 2493.0,
+      "currency" : "NZD",
+      "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
-    "firstName" : "Isaac",
-    "lastName" : "Reid",
-    "email" : "Isaac_Reid@gmx.nz",
+    "firstName" : "Georgel",
+    "lastName" : "Nistor",
+    "email" : "Georgel_Nistor@yandex.ro",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO30POOB7899358108179920"
-    }, {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO47POOB4908968538122285"
-    } ]
-  }, {
-    "firstName" : "Lic.",
-    "lastName" : "Caridad Prado",
-    "email" : "Lic._Caridad_Prado@zoho.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO13POOB0446386881482591"
-    } ]
-  }, {
-    "firstName" : "Rafael",
-    "lastName" : "Najera",
-    "email" : "Rafael_Najera@hotmail.mx",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "MXN",
-      "IBAN" : "RO21POOB2395444224721452"
-    } ]
-  }, {
-    "firstName" : "Gavin",
-    "lastName" : "McCallum",
-    "email" : "Gavin_McCallum@hotmail.nz",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
-      "currency" : "NZD",
-      "IBAN" : "RO54POOB5386100945388842"
-    } ]
-  }, {
-    "firstName" : "Constantin",
-    "lastName" : "Mocanu",
-    "email" : "Constantin_Mocanu@outlook.ro",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "savings",
-      "balance" : 0.0,
+      "balance" : 23500.0,
       "currency" : "RON",
-      "IBAN" : "RO87POOB8722849190745207"
-    } ]
-  }, {
-    "firstName" : "Christine",
-    "lastName" : "Sansonnens",
-    "email" : "Christine_Sansonnens@protonmail.ch",
-    "accounts" : [ {
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CHF",
-      "IBAN" : "RO88POOB4980292817833689"
+      "balance" : 9560.0,
+      "currency" : "RON",
+      "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
-    "firstName" : "Frank",
-    "lastName" : "Smith",
-    "email" : "Frank_Smith@zoho.au",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "AUD",
-      "IBAN" : "RO16POOB8231026695732229"
-    } ]
-  }, {
-    "firstName" : "Stephen",
-    "lastName" : "Clark",
-    "email" : "Stephen_Clark@gmail.ca",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO14POOB5031951473626672"
-    } ]
-  }, {
-    "firstName" : "Craig",
+    "firstName" : "Gina",
     "lastName" : "Johnson",
-    "email" : "Craig_Johnson@yahoo.ch",
+    "email" : "Gina_Johnson@mail.com.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 7399.0,
       "currency" : "CHF",
-      "IBAN" : "RO60POOB2764755933844780"
+      "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
-    "firstName" : "Lina",
-    "lastName" : "van Ghoerle",
-    "email" : "Lina_van_Ghoerle@gmail.nl",
+    "firstName" : "Zachary",
+    "lastName" : "Martin",
+    "email" : "Zachary_Martin@aol.ca",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 2576.0,
+      "currency" : "CAD",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  }, {
+    "firstName" : "Estera",
+    "lastName" : "Nistor",
+    "email" : "Estera_Nistor@gmx.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 2649.0,
+      "currency" : "RON",
+      "IBAN" : "RO37POOB7013767509830666"
+    } ]
+  }, {
+    "firstName" : "Sandra",
+    "lastName" : "Arnold",
+    "email" : "Sandra_Arnold@icloud.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 11641.0,
+      "currency" : "USD",
+      "IBAN" : "RO19POOB4981055641668812"
+    } ]
+  }, {
+    "firstName" : "Adrian",
+    "lastName" : "Jones-Fuller",
+    "email" : "Adrian_Jones-Fuller@zoho.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1006.0,
+      "currency" : "NZD",
+      "IBAN" : "RO79POOB3616857825600958"
+    } ]
+  }, {
+    "firstName" : "Fiona",
+    "lastName" : "Jones",
+    "email" : "Fiona_Jones@icloud.gb",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 743.0,
+      "currency" : "GBP",
+      "IBAN" : "RO00POOB5687892910835215"
+    } ]
+  }, {
+    "firstName" : "Frederique",
+    "lastName" : "Laflamme",
+    "email" : "Frederique_Laflamme@zoho.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1107.0,
+      "currency" : "CAD",
+      "IBAN" : "RO96POOB6738272785416988"
+    } ]
+  }, {
+    "firstName" : "Chaaya",
+    "lastName" : "Goswam",
+    "email" : "Chaaya_Goswam@mail.com.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 7701.0,
+      "currency" : "INR",
+      "IBAN" : "RO33POOB4049920806186500"
+    } ]
+  }, {
+    "firstName" : "Eva",
+    "lastName" : "Stancu",
+    "email" : "Eva_Stancu@icloud.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1800.0,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB9846198978826791"
+    } ]
+  }, {
+    "firstName" : "Lorenzo",
+    "lastName" : "Mora Quiroz",
+    "email" : "Lorenzo_Mora_Quiroz@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 133.0,
+      "currency" : "MXN",
+      "IBAN" : "RO98POOB8412955460158769"
+    } ]
+  }, {
+    "firstName" : "Arya",
+    "lastName" : "Kumer",
+    "email" : "Arya_Kumer@zoho.in",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 212.0,
+      "currency" : "INR",
+      "IBAN" : "RO32POOB0130532963818359"
+    } ]
+  }, {
+    "firstName" : "Tyler",
+    "lastName" : "Moore",
+    "email" : "Tyler_Moore@yandex.ca",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 6581.0,
+      "currency" : "CAD",
+      "IBAN" : "RO68POOB1848616931405475"
+    } ]
+  }, {
+    "firstName" : "Berta",
+    "lastName" : "Yuste Arellano",
+    "email" : "Berta_Yuste_Arellano@protonmail.es",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 798.0,
       "currency" : "EUR",
-      "IBAN" : "RO51POOB7876010183887746"
+      "IBAN" : "RO10POOB4354933866366881"
     } ]
   }, {
-    "firstName" : "Valerie",
-    "lastName" : "St-Onge",
-    "email" : "Valerie_St-Onge@aol.ca",
+    "firstName" : "Mercedes",
+    "lastName" : "Godoy",
+    "email" : "Mercedes_Godoy@gmx.mx",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO04POOB9194465503239141"
+      "balance" : 454.0,
+      "currency" : "MXN",
+      "IBAN" : "RO33POOB9999273999620457"
     } ]
   }, {
-    "firstName" : "Susan",
-    "lastName" : "Alexander",
-    "email" : "Susan_Alexander@outlook.ca",
+    "firstName" : "Nicole",
+    "lastName" : "Sansonnens-Vallelian",
+    "email" : "Nicole_Sansonnens-Vallelian@gmx.ch",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO16POOB4755859605660410"
-    } ]
-  }, {
-    "firstName" : "Barbara",
-    "lastName" : "Hobbs",
-    "email" : "Barbara_Hobbs@aol.ca",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO86POOB1011768021785445"
-    } ]
-  }, {
-    "firstName" : "Orlando",
-    "lastName" : "Meister",
-    "email" : "Orlando_Meister@zoho.ch",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 11308.0,
       "currency" : "CHF",
-      "IBAN" : "RO64POOB4383278210585498"
+      "IBAN" : "RO38POOB0964823730995794"
     } ]
   }, {
-    "firstName" : "Kevin",
-    "lastName" : "Paradis",
-    "email" : "Kevin_Paradis@gmx.ca",
+    "firstName" : "Eugene",
+    "lastName" : "Harper",
+    "email" : "Eugene_Harper@gmx.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO60POOB5813880391026761"
-    } ]
-  }, {
-    "firstName" : "Autumn",
-    "lastName" : "Thompson",
-    "email" : "Autumn_Thompson@yahoo.au",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "AUD",
-      "IBAN" : "RO39POOB9403553255148862"
-    } ]
-  }, {
-    "firstName" : "Mato",
-    "lastName" : "Bader",
-    "email" : "Mato_Bader@gmail.ch",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
+      "balance" : 1297.0,
       "currency" : "CHF",
-      "IBAN" : "RO40POOB9024857272432677"
+      "IBAN" : "RO53POOB7122855990652257"
     } ]
   }, {
-    "firstName" : "Janet",
-    "lastName" : "Henry",
-    "email" : "Janet_Henry@outlook.ca",
+    "firstName" : "Roland",
+    "lastName" : "Bovet",
+    "email" : "Roland_Bovet@zoho.ch",
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "CAD",
-      "IBAN" : "RO84POOB0649564656447203"
+      "balance" : 2951.0,
+      "currency" : "CHF",
+      "IBAN" : "RO71POOB1634969878734749"
     } ]
   } ],
   "timestamp" : 175
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 176
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 177
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 178
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 179
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 180
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 181
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 182
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 183
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 184
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 185
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 186
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 187
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 188
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 189
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 190
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 191
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 192
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 193
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 194
 }, {
-  "command" : "report",
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
   "timestamp" : 195
 } ]
