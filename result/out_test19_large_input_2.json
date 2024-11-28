@@ -7,34 +7,6 @@
   "description" : "User not found",
   "timestamp" : 9
 }, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 19
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 20
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 21
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 22
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 23
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 24
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 25
-}, {
   "command" : "payOnline",
   "error" : "Invalid command: payOnline",
   "timestamp" : 26
@@ -85,7 +57,10 @@
     "lastName" : "Birnbaum",
     "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 7400.0,
       "currency" : "EUR",
@@ -102,7 +77,10 @@
     "lastName" : "Scott-Davies",
     "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 1613.0,
       "currency" : "NZD",
@@ -119,7 +97,10 @@
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 5150.0,
       "currency" : "RON",
@@ -130,7 +111,10 @@
     "lastName" : "Johnson",
     "email" : "Gina_Johnson@mail.com.ch",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 851.0,
       "currency" : "CHF",
@@ -141,7 +125,10 @@
     "lastName" : "Martin",
     "email" : "Zachary_Martin@aol.ca",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 924.0,
       "currency" : "CAD",
@@ -152,7 +139,10 @@
     "lastName" : "Nistor",
     "email" : "Estera_Nistor@gmx.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 1282.0,
       "currency" : "RON",
@@ -163,7 +153,10 @@
     "lastName" : "Arnold",
     "email" : "Sandra_Arnold@icloud.us",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "0466992784477761",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 8561.0,
       "currency" : "USD",
@@ -323,7 +316,10 @@
     "lastName" : "Birnbaum",
     "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 7400.0,
       "currency" : "EUR",
@@ -340,7 +336,10 @@
     "lastName" : "Scott-Davies",
     "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 2165.0,
       "currency" : "NZD",
@@ -357,7 +356,10 @@
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 8760.0,
       "currency" : "RON",
@@ -368,7 +370,10 @@
     "lastName" : "Johnson",
     "email" : "Gina_Johnson@mail.com.ch",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 7164.0,
       "currency" : "CHF",
@@ -379,7 +384,10 @@
     "lastName" : "Martin",
     "email" : "Zachary_Martin@aol.ca",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 1828.0,
       "currency" : "CAD",
@@ -390,7 +398,10 @@
     "lastName" : "Nistor",
     "email" : "Estera_Nistor@gmx.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 1987.0,
       "currency" : "RON",
@@ -401,7 +412,10 @@
     "lastName" : "Arnold",
     "email" : "Sandra_Arnold@icloud.us",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "0466992784477761",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 8615.0,
       "currency" : "USD",
@@ -779,7 +793,10 @@
     "lastName" : "Birnbaum",
     "email" : "Selma_Birnbaum@icloud.de",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 7400.0,
       "currency" : "EUR",
@@ -797,7 +814,10 @@
     "email" : "Leanne_Scott-Davies@yandex.nz",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "8207906978464446",
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "5088727507344799",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -816,7 +836,10 @@
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 9560.0,
       "currency" : "RON",
@@ -827,7 +850,10 @@
     "lastName" : "Johnson",
     "email" : "Gina_Johnson@mail.com.ch",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 7399.0,
       "currency" : "CHF",
@@ -838,7 +864,10 @@
     "lastName" : "Martin",
     "email" : "Zachary_Martin@aol.ca",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 2576.0,
       "currency" : "CAD",
@@ -849,7 +878,10 @@
     "lastName" : "Nistor",
     "email" : "Estera_Nistor@gmx.ro",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 2649.0,
       "currency" : "RON",
@@ -860,7 +892,10 @@
     "lastName" : "Arnold",
     "email" : "Sandra_Arnold@icloud.us",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "0466992784477761",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 11641.0,
       "currency" : "USD",
@@ -949,7 +984,7 @@
     "email" : "Tyler_Moore@yandex.ca",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7004757825892043",
+        "cardNumber" : "3951521356076921",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -985,7 +1020,7 @@
     "email" : "Nicole_Sansonnens-Vallelian@gmx.ch",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7901879264253296",
+        "cardNumber" : "7317745095154687",
         "status" : "active"
       } ],
       "type" : "classic",

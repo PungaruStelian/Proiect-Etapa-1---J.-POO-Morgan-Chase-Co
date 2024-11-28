@@ -131,10 +131,12 @@ public final class Main {
                         while (accountIterator.hasNext()) {
                             Account account = accountIterator.next();
                             if (account.getIBAN().equals(command.getAccount()) && account.getBalance() == 0) {
+                                accountIterator.remove();
                                 ok = true;
-                                account.setStatus("closed");
-                                result.remove("command");
-                                result.put("success", "Account deleted");
+                                ObjectNode outputNode = objectMapper.createObjectNode();
+                                outputNode.put("success", "Account deleted");
+                                outputNode.put("timestamp", command.getTimestamp());
+                                result.set("output", outputNode);
                                 result.put("timestamp", command.getTimestamp());
                                 output.add(result);
                             }
@@ -147,6 +149,20 @@ public final class Main {
                     }
                     break;
 
+                case "deleteCard":
+                    for (User user : object.getUsers()) {
+                        for (Account account : user.getAccounts()) {
+                            List<Cards> cards = account.getCards();
+                            for (int i = 0; i < cards.size(); i++) {
+                                if (cards.get(i).getCardNumber().equals(command.getCardNumber())) {
+                                    cards.remove(i);
+                                    i--; // Ajustezi indexul pentru a evita sărierea elementelor
+                                }
+                            }
+                        }
+                    }
+                    break;
+
                 case "createCard":
                     for (User user : object.getUsers()) {
                         if (user.getEmail().equals(command.getEmail())) {
@@ -155,6 +171,23 @@ public final class Main {
                                     Cards newCard = new Cards();
                                     newCard.setCardNumber(Utils.generateCardNumber());
                                     newCard.activate();
+                                    newCard.setPermanent(true);
+                                    account.getCards().add(newCard);
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+                case "createOneTimeCard":
+                    for (User user : object.getUsers()) {
+                        if (user.getEmail().equals(command.getEmail())) {
+                            for (Account account : user.getAccounts()) {
+                                if (account.getIBAN().equals(command.getAccount())) {
+                                    Cards newCard = new Cards();
+                                    newCard.setCardNumber(Utils.generateCardNumber());
+                                    newCard.activate();
+                                    newCard.setPermanent(false);
                                     account.getCards().add(newCard);
                                 }
                             }
@@ -172,6 +205,22 @@ public final class Main {
                     }
                     break;
 
+                case "setMinimumBalance":
+                    boolean found = false;
+                    for (User user : object.getUsers()) {
+                        for (Account account : user.getAccounts()) {
+                            if (account.getIBAN().equals(command.getAccount())) { // si utilizatorul curent are contul de facut
+                                account.setMinBalance(command.getMinBalance());
+                                found = true;
+                            }
+                        }
+                    }
+                    if (!found) {
+                        result.put("error", "Account not found");
+                        output.add(result);
+                    }
+                    break;
+
                 case "breakpoint":
                     break;
 
@@ -182,7 +231,10 @@ public final class Main {
             if(!command.getCommand().equals("addAccount")
                     && !command.getCommand().equals("createCard")
                     && !command.getCommand().equals("addFunds")
-                    && !command.getCommand().equals("deleteAccount")) {
+                    && !command.getCommand().equals("deleteAccount")
+                    && !command.getCommand().equals("createOneTimeCard")
+                    && !command.getCommand().equals("deleteCard")
+                    && !command.getCommand().equals("setMinimumBalance")) {
                 result.put("timestamp", command.getTimestamp());
                 output.add(result);
             }

@@ -171,14 +171,6 @@
   "error" : "Invalid command: printTransactions",
   "timestamp" : 36
 }, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 37
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 38
-}, {
   "command" : "checkCardStatus",
   "error" : "Invalid command: checkCardStatus",
   "timestamp" : 39
@@ -209,7 +201,10 @@
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
       "type" : "savings",
       "balance" : 0.0,
       "currency" : "RON",
@@ -220,7 +215,10 @@
     "lastName" : "Brunet de la Bigot",
     "email" : "Vincent_Brunet_de_la_Bigot@hotmail.fr",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "EUR",

@@ -113,26 +113,6 @@
   "error" : "Invalid command: setAlias",
   "timestamp" : 31
 }, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 32
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 33
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 34
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 35
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 36
-}, {
   "command" : "payOnline",
   "error" : "Invalid command: payOnline",
   "timestamp" : 40
@@ -150,6 +130,9 @@
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
+      }, {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 325.0,
@@ -163,6 +146,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "0466992784477761",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -178,6 +164,9 @@
       "cards" : [ {
         "cardNumber" : "7004757825892043",
         "status" : "active"
+      }, {
+        "cardNumber" : "5088727507344799",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 4252.0,
@@ -192,6 +181,9 @@
       "cards" : [ {
         "cardNumber" : "6796819982034243",
         "status" : "active"
+      }, {
+        "cardNumber" : "7317745095154687",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 10791.0,
@@ -205,6 +197,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "4686471658318359",
+        "status" : "active"
+      }, {
+        "cardNumber" : "3951521356076921",
         "status" : "active"
       } ],
       "type" : "savings",
@@ -271,6 +266,9 @@
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
+      }, {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 1669.0,
@@ -284,6 +282,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "0466992784477761",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -299,6 +300,9 @@
       "cards" : [ {
         "cardNumber" : "7004757825892043",
         "status" : "active"
+      }, {
+        "cardNumber" : "5088727507344799",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 13948.0,
@@ -313,6 +317,9 @@
       "cards" : [ {
         "cardNumber" : "6796819982034243",
         "status" : "active"
+      }, {
+        "cardNumber" : "7317745095154687",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 12176.0,
@@ -326,6 +333,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "4686471658318359",
+        "status" : "active"
+      }, {
+        "cardNumber" : "3951521356076921",
         "status" : "active"
       } ],
       "type" : "savings",
@@ -404,6 +414,9 @@
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
+      }, {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 1669.0,
@@ -417,6 +430,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "0466992784477761",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -432,6 +448,9 @@
       "cards" : [ {
         "cardNumber" : "7004757825892043",
         "status" : "active"
+      }, {
+        "cardNumber" : "5088727507344799",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 13948.0,
@@ -446,6 +465,9 @@
       "cards" : [ {
         "cardNumber" : "6796819982034243",
         "status" : "active"
+      }, {
+        "cardNumber" : "7317745095154687",
+        "status" : "active"
       } ],
       "type" : "classic",
       "balance" : 12176.0,
@@ -459,6 +481,9 @@
     "accounts" : [ {
       "cards" : [ {
         "cardNumber" : "4686471658318359",
+        "status" : "active"
+      }, {
+        "cardNumber" : "3951521356076921",
         "status" : "active"
       } ],
       "type" : "savings",
@@ -500,7 +525,7 @@
     "email" : "Silvana_Popa@outlook.ro",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "1322658752653937",
+        "cardNumber" : "8431794639822740",
         "status" : "active"
       } ],
       "type" : "classic",

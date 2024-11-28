@@ -92,10 +92,6 @@
   } ],
   "timestamp" : 9
 }, {
-  "command" : "setMinimumBalance",
-  "error" : "Invalid command: setMinimumBalance",
-  "timestamp" : 12
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Chantal",

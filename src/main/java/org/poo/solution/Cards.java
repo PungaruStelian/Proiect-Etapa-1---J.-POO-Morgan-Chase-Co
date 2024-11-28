@@ -17,6 +17,8 @@ public class Cards {
     @JsonIgnore
     private double balance;
     private String status;
+    @JsonIgnore
+    private boolean isPermanent;
 
     // Method to activate the card
     public void activate() {

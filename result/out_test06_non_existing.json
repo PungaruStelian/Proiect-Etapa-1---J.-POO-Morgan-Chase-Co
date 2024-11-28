@@ -1,20 +1,4 @@
 [ {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 3
-}, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 4
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 5
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 6
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Nicole",
@@ -56,7 +40,7 @@
     "email" : "Nicole_Daniels@outlook.us",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "8207906978464446",
+        "cardNumber" : "7004757825892043",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -84,10 +68,6 @@
   } ],
   "timestamp" : 12
 }, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 13
-}, {
   "command" : "payOnline",
   "error" : "Invalid command: payOnline",
   "timestamp" : 14
@@ -98,10 +78,7 @@
     "lastName" : "Daniels",
     "email" : "Nicole_Daniels@outlook.us",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "USD",
@@ -133,10 +110,7 @@
     "lastName" : "Daniels",
     "email" : "Nicole_Daniels@outlook.us",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "USD",
@@ -154,7 +128,7 @@
     "email" : "Heather_Adams@yahoo.us",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7901879264253296",
+        "cardNumber" : "6796819982034243",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -175,10 +149,7 @@
     "lastName" : "Daniels",
     "email" : "Nicole_Daniels@outlook.us",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "USD",
@@ -196,7 +167,7 @@
     "email" : "Heather_Adams@yahoo.us",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7901879264253296",
+        "cardNumber" : "6796819982034243",
         "status" : "active"
       } ],
       "type" : "classic",

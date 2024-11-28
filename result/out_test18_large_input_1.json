@@ -637,10 +637,6 @@
   } ],
   "timestamp" : 71
 }, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 73
-}, {
   "command" : "payOnline",
   "error" : "Invalid command: payOnline",
   "timestamp" : 74
@@ -690,7 +686,10 @@
       "currency" : "CHF",
       "IBAN" : "RO90POOB5450777208072365"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "CHF",
@@ -702,7 +701,7 @@
     "email" : "Victoria_Koeman@hotmail.nl",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7901879264253296",
+        "cardNumber" : "7004757825892043",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -909,7 +908,10 @@
       "currency" : "CHF",
       "IBAN" : "RO90POOB5450777208072365"
     }, {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 0.0,
       "currency" : "CHF",
@@ -921,7 +923,7 @@
     "email" : "Victoria_Koeman@hotmail.nl",
     "accounts" : [ {
       "cards" : [ {
-        "cardNumber" : "7901879264253296",
+        "cardNumber" : "7004757825892043",
         "status" : "active"
       } ],
       "type" : "classic",
@@ -1167,100 +1169,13 @@
   "error" : "Invalid command: printTransactions",
   "timestamp" : 123
 }, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 135
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 136
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 137
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 138
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 139
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 140
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 141
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 142
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 143
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 144
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 145
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 146
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 147
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 148
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 149
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 150
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 151
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 152
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 153
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 154
-}, {
-  "command" : "deleteCard",
-  "error" : "Invalid command: deleteCard",
-  "timestamp" : 155
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Sachi",
     "lastName" : "Brahmbhatt",
     "email" : "Sachi_Brahmbhatt@protonmail.in",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 36468.0,
       "currency" : "INR",
@@ -1299,10 +1214,7 @@
     "lastName" : "Koeman",
     "email" : "Victoria_Koeman@hotmail.nl",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "7901879264253296",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 14649.0,
       "currency" : "EUR",
@@ -1506,10 +1418,6 @@
   "error" : "Invalid command: report",
   "timestamp" : 167
 }, {
-  "command" : "createOneTimeCard",
-  "error" : "Invalid command: createOneTimeCard",
-  "timestamp" : 168
-}, {
   "command" : "payOnline",
   "error" : "Invalid command: payOnline",
   "timestamp" : 169
@@ -1528,10 +1436,7 @@
     "lastName" : "Brahmbhatt",
     "email" : "Sachi_Brahmbhatt@protonmail.in",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 36468.0,
       "currency" : "INR",
@@ -1570,10 +1475,7 @@
     "lastName" : "Koeman",
     "email" : "Victoria_Koeman@hotmail.nl",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "7901879264253296",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 14649.0,
       "currency" : "EUR",
@@ -1595,7 +1497,10 @@
     "lastName" : "Sire-Segerszoen",
     "email" : "Job_Sire-Segerszoen@yandex.nl",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 954.0,
       "currency" : "EUR",
@@ -1823,10 +1728,7 @@
     "lastName" : "Brahmbhatt",
     "email" : "Sachi_Brahmbhatt@protonmail.in",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "8207906978464446",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 36468.0,
       "currency" : "INR",
@@ -1865,10 +1767,7 @@
     "lastName" : "Koeman",
     "email" : "Victoria_Koeman@hotmail.nl",
     "accounts" : [ {
-      "cards" : [ {
-        "cardNumber" : "7901879264253296",
-        "status" : "active"
-      } ],
+      "cards" : [ ],
       "type" : "classic",
       "balance" : 14649.0,
       "currency" : "EUR",
@@ -1890,7 +1789,10 @@
     "lastName" : "Sire-Segerszoen",
     "email" : "Job_Sire-Segerszoen@yandex.nl",
     "accounts" : [ {
-      "cards" : [ ],
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
       "type" : "classic",
       "balance" : 954.0,
       "currency" : "EUR",

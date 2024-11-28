@@ -39,7 +39,11 @@
   } ],
   "timestamp" : 4
 }, {
-  "success" : "Account deleted",
+  "command" : "deleteAccount",
+  "output" : {
+    "success" : "Account deleted",
+    "timestamp" : 5
+  },
   "timestamp" : 5
 }, {
   "command" : "printUsers",
@@ -47,13 +51,7 @@
     "firstName" : "Antoine",
     "lastName" : "Couturier",
     "email" : "Antoine_Couturier@yahoo.fr",
-    "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
-      "balance" : 0.0,
-      "currency" : "EUR",
-      "IBAN" : "RO58POOB7344468893732422"
-    } ]
+    "accounts" : [ ]
   }, {
     "firstName" : "Dragos",
     "lastName" : "Mazilescu",
