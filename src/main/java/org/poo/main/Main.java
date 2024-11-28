@@ -8,9 +8,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import org.poo.checker.Checker;
 import org.poo.checker.CheckerConstants;
-import org.poo.fileio.CommandInput;
 import org.poo.fileio.ObjectInput;
-import org.poo.fileio.UserInput;
 import org.poo.solution.*;
 import org.poo.solution.Object;
 import org.poo.utils.Utils;
@@ -21,13 +19,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Objects;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * The entry point to this homework. It runs the checker that tests your implementation.
@@ -92,6 +87,8 @@ public final class Main {
         // Create the Object instance from the solution package
         Object object = new Object(inputData);
 
+        Handle handle = new Handle();
+
         Utils.resetRandom();
 
         // Process commands
@@ -102,123 +99,35 @@ public final class Main {
             switch (command.getCommand()) {
 
                 case "printUsers":
-                    ArrayNode usersArray = objectMapper.createArrayNode();
-                    for (User user : object.getUsers()) {
-                        ObjectNode userNode = objectMapper.valueToTree(user);
-                        usersArray.add(userNode);
-                    }
-                    result.set("output", usersArray);
+                    handle.printUsers(object, result);
                     break;
 
                 case "addAccount":
-                    for (User user : object.getUsers()) {
-                        if (user.getEmail().equals(command.getEmail())) {
-                            Account newAccount = new Account();
-                            newAccount.setIBAN(Utils.generateIBAN());
-                            newAccount.setBalance(0.0);
-                            newAccount.setCurrency(command.getCurrency());
-                            newAccount.setType(command.getAccountType());
-                            newAccount.activate();
-                            user.getAccounts().add(newAccount);
-                        }
-                    }
+                    handle.addAccount(object, command);
                     break;
 
                 case "deleteAccount":
-                    boolean ok = false;
-                    for (User user : object.getUsers()) {
-                        var accountIterator = user.getAccounts().iterator();
-                        while (accountIterator.hasNext()) {
-                            Account account = accountIterator.next();
-                            if (account.getIBAN().equals(command.getAccount()) && account.getBalance() == 0) {
-                                accountIterator.remove();
-                                ok = true;
-                                ObjectNode outputNode = objectMapper.createObjectNode();
-                                outputNode.put("success", "Account deleted");
-                                outputNode.put("timestamp", command.getTimestamp());
-                                result.set("output", outputNode);
-                                result.put("timestamp", command.getTimestamp());
-                                output.add(result);
-                            }
-                        }
-                    }
-                    if (!ok) {
-                        result.put("description", "User not found");
-                        result.put("timestamp", command.getTimestamp());
-                        output.add(result);
-                    }
+                    handle.deleteAccount(object, command, result, output);
                     break;
 
                 case "deleteCard":
-                    for (User user : object.getUsers()) {
-                        for (Account account : user.getAccounts()) {
-                            List<Cards> cards = account.getCards();
-                            for (int i = 0; i < cards.size(); i++) {
-                                if (cards.get(i).getCardNumber().equals(command.getCardNumber())) {
-                                    cards.remove(i);
-                                    i--; // Ajustezi indexul pentru a evita sărierea elementelor
-                                }
-                            }
-                        }
-                    }
+                    handle.deleteCard(object, command);
                     break;
 
                 case "createCard":
-                    for (User user : object.getUsers()) {
-                        if (user.getEmail().equals(command.getEmail())) {
-                            for (Account account : user.getAccounts()) {
-                                if (account.getIBAN().equals(command.getAccount())) {
-                                    Cards newCard = new Cards();
-                                    newCard.setCardNumber(Utils.generateCardNumber());
-                                    newCard.activate();
-                                    newCard.setPermanent(true);
-                                    account.getCards().add(newCard);
-                                }
-                            }
-                        }
-                    }
+                    handle.createCard(object, command);
                     break;
 
                 case "createOneTimeCard":
-                    for (User user : object.getUsers()) {
-                        if (user.getEmail().equals(command.getEmail())) {
-                            for (Account account : user.getAccounts()) {
-                                if (account.getIBAN().equals(command.getAccount())) {
-                                    Cards newCard = new Cards();
-                                    newCard.setCardNumber(Utils.generateCardNumber());
-                                    newCard.activate();
-                                    newCard.setPermanent(false);
-                                    account.getCards().add(newCard);
-                                }
-                            }
-                        }
-                    }
+                    handle.createOneTimeCard(object, command);
                     break;
 
                 case "addFunds":
-                    for (User user : object.getUsers()) {
-                        for (Account account : user.getAccounts()) {
-                            if (account.getIBAN().equals(command.getAccount())) {
-                                account.addFunds(command.getAmount());
-                            }
-                        }
-                    }
+                    handle.addFunds(object, command);
                     break;
 
                 case "setMinimumBalance":
-                    boolean found = false;
-                    for (User user : object.getUsers()) {
-                        for (Account account : user.getAccounts()) {
-                            if (account.getIBAN().equals(command.getAccount())) { // si utilizatorul curent are contul de facut
-                                account.setMinBalance(command.getMinBalance());
-                                found = true;
-                            }
-                        }
-                    }
-                    if (!found) {
-                        result.put("error", "Account not found");
-                        output.add(result);
-                    }
+                    handle.setMinimumBalance(object, command, result, output);
                     break;
 
                 case "breakpoint":
