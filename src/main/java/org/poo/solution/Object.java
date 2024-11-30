@@ -4,15 +4,24 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.poo.fileio.ObjectInput;
 
+// Singleton
 @Data
 @NoArgsConstructor
 public class Object {
+    private static Object instance = null;
     private User[] users;
     private Exchange[] exchangeRates;
     private Command[] commands;
     private Commerciant[] commerciants;
 
-    public Object(ObjectInput objectInput) {
+    public static Object getInstance(ObjectInput objectInput) {
+        if (instance == null) {
+            return new Object(objectInput);
+        }
+        return instance;
+    }
+
+    private Object(ObjectInput objectInput) {
         if (objectInput.getUsers() != null) {
             this.users = new User[objectInput.getUsers().length];
             for (int i = 0; i < objectInput.getUsers().length; i++) {

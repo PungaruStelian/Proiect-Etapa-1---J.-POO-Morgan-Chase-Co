@@ -84,10 +84,8 @@ public final class Main {
 
         //TODO Implement your function here
 
-        // Create the Object instance from the solution package
-        Object object = new Object(inputData);
-
-        Handle handle = new Handle();
+        Object object = Object.getInstance(inputData);
+        Handle handle = Handle.getInstance();
 
         Utils.resetRandom();
 

@@ -1,15 +1,28 @@
 package org.poo.solution;
 
+import org.poo.utils.Utils;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.utils.Utils;
 
-import java.util.Iterator;
 import java.util.List;
 
+// Singleton
 public class Handle {
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private static final Handle instance = null;
+    private final ObjectMapper objectMapper;
+
+    private Handle() {
+        objectMapper = new ObjectMapper();
+    }
+
+    public static Handle getInstance() {
+        if (instance == null) {
+            return new Handle();
+        }
+        return instance;
+    }
 
     public void printUsers(Object object, ObjectNode result) {
         ArrayNode usersArray = objectMapper.createArrayNode();
@@ -38,10 +51,11 @@ public class Handle {
         boolean ok = false;
         for (User user : object.getUsers()) {
             List<Account> accounts = user.getAccounts();
-            for (Iterator<Account> iterator = accounts.iterator(); iterator.hasNext(); ) {
-                Account account = iterator.next();
+            // Iterăm prin indici pentru a permite eliminarea elementelor din listă
+            for (int i = 0; i < accounts.size(); i++) {
+                Account account = accounts.get(i);
                 if (account.getIBAN().equals(command.getAccount()) && account.getBalance() == 0) {
-                    iterator.remove();
+                    accounts.remove(i);
                     ok = true;
 
                     ObjectNode outputNode = objectMapper.createObjectNode();
@@ -51,7 +65,7 @@ public class Handle {
                     result.put("timestamp", command.getTimestamp());
                     output.add(result);
 
-                    break;
+                    break; // Ieșim din bucla interioară după ștergere
                 }
             }
         }
@@ -92,11 +106,12 @@ public class Handle {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
                 List<Cards> cards = account.getCards();
-                for (Iterator<Cards> iterator = cards.iterator(); iterator.hasNext(); ) {
-                    Cards card = iterator.next();
+                // Iterăm prin indici pentru a permite eliminarea elementelor din listă
+                for (int i = 0; i < cards.size(); i++) {
+                    Cards card = cards.get(i);
                     if (card.getCardNumber().equals(command.getCardNumber())) {
-                        iterator.remove();
-                        break;
+                        cards.remove(i);
+                        break; // Ieșim din bucla interioară după ștergere
                     }
                 }
             }
