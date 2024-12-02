@@ -128,6 +128,10 @@ public final class Main {
                     handle.setMinimumBalance(object, command, result, output);
                     break;
 
+                case "payOnline":
+                    handle.payOnline(object, command, result, output);
+                    break;
+
                 case "breakpoint":
                     break;
 
@@ -141,7 +145,8 @@ public final class Main {
                     && !command.getCommand().equals("deleteAccount")
                     && !command.getCommand().equals("createOneTimeCard")
                     && !command.getCommand().equals("deleteCard")
-                    && !command.getCommand().equals("setMinimumBalance")) {
+                    && !command.getCommand().equals("setMinimumBalance")
+                    && !command.getCommand().equals("payOnline")) {
                 result.put("timestamp", command.getTimestamp());
                 output.add(result);
             }

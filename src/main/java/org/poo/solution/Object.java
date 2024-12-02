@@ -50,4 +50,21 @@ public class Object {
             }
         }
     }
+    public double getExchangeRate(String from, String to) {
+        for (Exchange exchange : exchangeRates) {
+            if (exchange.getFrom().equals(from) && exchange.getTo().equals(to)) {
+                return exchange.getRate();
+            }
+            if(exchange.getFrom().equals(to) && exchange.getTo().equals(from)) {
+                return 1 / exchange.getRate();
+            }
+        }
+        if(exchangeRates[0].getFrom().equals(from) && exchangeRates[1].getTo().equals(to)) {
+            return exchangeRates[0].getRate() * exchangeRates[1].getRate();
+        }
+        if(exchangeRates[0].getFrom().equals(to) && exchangeRates[1].getTo().equals(from)) {
+            return 1 / (exchangeRates[0].getRate() * exchangeRates[1].getRate());
+        }
+        return 0;
+    }
 }

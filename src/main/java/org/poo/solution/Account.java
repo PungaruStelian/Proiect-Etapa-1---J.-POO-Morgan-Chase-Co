@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.poo.fileio.ObjectInput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -139,6 +140,10 @@ public class Account {
         if (amount > 0) {
             this.balance += amount;
         }
+    }
+    public double getExchange(Object object, String from, String to, double amount) {
+        double rate = object.getExchangeRate(from, to);
+        return amount * rate;
     }
 
     // Method to withdraw funds from the account

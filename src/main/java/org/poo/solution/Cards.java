@@ -20,6 +20,8 @@ public class Cards {
     private String status;
     @JsonIgnore
     private boolean isPermanent;
+    @JsonIgnore
+    private boolean isUsed;
 
     // Builder class for Cards
     public static class CardsBuilder {
@@ -30,6 +32,12 @@ public class Cards {
         private double balance;
         private String status;
         private boolean isPermanent;
+        private boolean isUsed;
+
+        public CardsBuilder setUsed(boolean isUsed) {
+            this.isUsed = isUsed;
+            return this;
+        }
 
         public CardsBuilder setCardNumber(String cardNumber) {
             this.cardNumber = cardNumber;
@@ -75,6 +83,7 @@ public class Cards {
             card.balance = this.balance;
             card.status = this.status;
             card.isPermanent = this.isPermanent;
+            card.isUsed = this.isUsed;
             return card;
         }
     }

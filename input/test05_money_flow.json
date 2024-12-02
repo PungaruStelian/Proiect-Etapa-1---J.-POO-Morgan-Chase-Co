@@ -90,6 +90,9 @@
             "timestamp": 11
         },
         {
+            "command": "breakpoint"
+        },
+        {
             "command": "payOnline",
             "cardNumber": "8207906978464446",
             "amount": 353,
@@ -98,6 +101,9 @@
             "description": "Online payment",
             "commerciant": "McDonalds",
             "email": "Decebal_Popa@gmail.ro"
+        },
+        {
+            "command": "breakpoint"
         },
         {
             "command": "payOnline",
@@ -110,6 +116,9 @@
             "email": "Emmanuel_Munoz_de_Gautier@gmail.fr"
         },
         {
+            "command": "breakpoint"
+        },
+        {
             "command": "payOnline",
             "cardNumber": "7004757825892043",
             "amount": 356,
@@ -120,10 +129,16 @@
             "email": "Decebal_Popa@gmail.ro"
         },
         {
+            "command": "breakpoint"
+        },
+        {
             "command": "addFunds",
             "account": "RO58POOB7344468893732422",
             "amount": 136,
             "timestamp": 15
+        },
+        {
+            "command": "breakpoint"
         },
         {
             "command": "payOnline",
