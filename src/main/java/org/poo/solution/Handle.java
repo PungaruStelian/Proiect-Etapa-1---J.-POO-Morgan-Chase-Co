@@ -36,12 +36,13 @@ public class Handle {
     public void addAccount(Object object, Command command) {
         for (User user : object.getUsers()) {
             if (user.getEmail().equals(command.getEmail())) {
-                Account newAccount = new Account();
-                newAccount.setIBAN(Utils.generateIBAN());
-                newAccount.setBalance(0.0);
-                newAccount.setCurrency(command.getCurrency());
-                newAccount.setType(command.getAccountType());
-                newAccount.activate();
+                Account newAccount = new Account.AccountBuilder()
+                        .setIBAN(Utils.generateIBAN())
+                        .setBalance(0.0)
+                        .setCurrency(command.getCurrency())
+                        .setType(command.getAccountType())
+                        .setStatus("active")
+                        .build();
                 user.getAccounts().add(newAccount);
             }
         }
@@ -81,10 +82,11 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
-                        Cards newCard = new Cards();
-                        newCard.setCardNumber(Utils.generateCardNumber());
-                        newCard.activate();
-                        newCard.setPermanent(true);
+                        Cards newCard = new Cards.CardsBuilder()
+                                .setCardNumber(Utils.generateCardNumber())
+                                .setStatus("active")
+                                .setPermanent(true)
+                                .build();
                         account.getCards().add(newCard);
                     }
                 }
@@ -123,10 +125,11 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
-                        Cards newCard = new Cards();
-                        newCard.setCardNumber(Utils.generateCardNumber());
-                        newCard.activate();
-                        newCard.setPermanent(false);
+                        Cards newCard = new Cards.CardsBuilder()
+                                .setCardNumber(Utils.generateCardNumber())
+                                .setStatus("active")
+                                .setPermanent(false)
+                                .build();
                         account.getCards().add(newCard);
                     }
                 }

@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+// Builder
 @Data
 @NoArgsConstructor
 public class Cards {
@@ -19,6 +20,64 @@ public class Cards {
     private String status;
     @JsonIgnore
     private boolean isPermanent;
+
+    // Builder class for Cards
+    public static class CardsBuilder {
+        private String cardNumber;
+        private String cardHolder;
+        private String expirationDate;
+        private int cvv;
+        private double balance;
+        private String status;
+        private boolean isPermanent;
+
+        public CardsBuilder setCardNumber(String cardNumber) {
+            this.cardNumber = cardNumber;
+            return this;
+        }
+
+        public CardsBuilder setCardHolder(String cardHolder) {
+            this.cardHolder = cardHolder;
+            return this;
+        }
+
+        public CardsBuilder setExpirationDate(String expirationDate) {
+            this.expirationDate = expirationDate;
+            return this;
+        }
+
+        public CardsBuilder setCvv(int cvv) {
+            this.cvv = cvv;
+            return this;
+        }
+
+        public CardsBuilder setBalance(double balance) {
+            this.balance = balance;
+            return this;
+        }
+
+        public CardsBuilder setStatus(String status) {
+            this.status = status;
+            return this;
+        }
+
+        public CardsBuilder setPermanent(boolean isPermanent) {
+            this.isPermanent = isPermanent;
+            return this;
+        }
+
+        public Cards build() {
+            Cards card = new Cards();
+            card.cardNumber = this.cardNumber;
+            card.cardHolder = this.cardHolder;
+            card.expirationDate = this.expirationDate;
+            card.cvv = this.cvv;
+            card.balance = this.balance;
+            card.status = this.status;
+            card.isPermanent = this.isPermanent;
+            return card;
+        }
+    }
 
     // Method to activate the card
     public void activate() {
