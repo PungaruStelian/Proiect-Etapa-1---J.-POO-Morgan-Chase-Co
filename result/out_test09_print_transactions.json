@@ -1,0 +1,97 @@
+[ {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 7
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 8
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 9
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Laurie",
+    "lastName" : "Johnson",
+    "email" : "Laurie_Johnson@gmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 3500.0,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Alicia",
+    "lastName" : "Stafford",
+    "email" : "Alicia_Stafford@gmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 813.0,
+      "currency" : "USD",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Denis",
+    "lastName" : "Cousin",
+    "email" : "Denis_Cousin@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 29.0,
+      "currency" : "EUR",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  } ],
+  "timestamp" : 10
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 14
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Laurie",
+    "lastName" : "Johnson",
+    "email" : "Laurie_Johnson@gmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 3256.0,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Alicia",
+    "lastName" : "Stafford",
+    "email" : "Alicia_Stafford@gmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 922.0,
+      "currency" : "USD",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Denis",
+    "lastName" : "Cousin",
+    "email" : "Denis_Cousin@hotmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 29.0,
+      "currency" : "EUR",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 332.0,
+      "currency" : "EUR",
+      "IBAN" : "RO65POOB8944016386845896"
+    } ]
+  } ],
+  "timestamp" : 19
+} ]

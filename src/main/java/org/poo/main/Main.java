@@ -22,7 +22,6 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Objects;
-import java.util.List;
 
 /**
  * The entry point to this homework. It runs the checker that tests your implementation.
@@ -125,11 +124,15 @@ public final class Main {
                     break;
 
                 case "setMinimumBalance":
-                    handle.setMinimumBalance(object, command, result, output);
+                    handle.setMinimumBalance(object, command);
                     break;
 
                 case "payOnline":
                     handle.payOnline(object, command, result, output);
+                    break;
+
+                case "sendMoney":
+                    handle.sendMoney(object, command, result, output);
                     break;
 
                 case "breakpoint":
@@ -146,7 +149,9 @@ public final class Main {
                     && !command.getCommand().equals("createOneTimeCard")
                     && !command.getCommand().equals("deleteCard")
                     && !command.getCommand().equals("setMinimumBalance")
-                    && !command.getCommand().equals("payOnline")) {
+                    && !command.getCommand().equals("payOnline")
+                    && !command.getCommand().equals("sendMoney")
+                    && !command.getCommand().equals("breakpoint")) {
                 result.put("timestamp", command.getTimestamp());
                 output.add(result);
             }

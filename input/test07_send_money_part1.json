@@ -51,6 +51,9 @@
             "timestamp": 4
         },
         {
+            "command": "breakpoint"
+        },
+        {
             "command": "sendMoney",
             "account": "RO58POOB7344468893732422",
             "receiver": "RO69POOB6209498372540635",
@@ -58,6 +61,9 @@
             "timestamp": 5,
             "email": "Madalin_Diaconu@hotmail.ro",
             "description": "Miscellaneous cash expenses"
+        },
+        {
+            "command": "breakpoint"
         },
         {
             "command": "printUsers",

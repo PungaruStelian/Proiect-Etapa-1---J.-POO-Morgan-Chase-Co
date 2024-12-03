@@ -1,0 +1,263 @@
+[ {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Brian",
+    "lastName" : "Price",
+    "email" : "Brian_Price@hotmail.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1180.0,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Guillaume",
+    "lastName" : "Duval",
+    "email" : "Guillaume_Duval@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 164.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Domnica",
+    "lastName" : "Dinu",
+    "email" : "Domnica_Dinu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  }, {
+    "firstName" : "James",
+    "lastName" : "Pace",
+    "email" : "James_Pace@gmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Ivona",
+    "lastName" : "Aane",
+    "email" : "Ivona_Aane@yahoo.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Yesenia",
+    "lastName" : "Whitney",
+    "email" : "Yesenia_Whitney@hotmail.us",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 9
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 10
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 11
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 14
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 15
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Brian",
+    "lastName" : "Price",
+    "email" : "Brian_Price@hotmail.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      }, {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1141.3,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Guillaume",
+    "lastName" : "Duval",
+    "email" : "Guillaume_Duval@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 161.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Domnica",
+    "lastName" : "Dinu",
+    "email" : "Domnica_Dinu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  }, {
+    "firstName" : "James",
+    "lastName" : "Pace",
+    "email" : "James_Pace@gmail.us",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Ivona",
+    "lastName" : "Aane",
+    "email" : "Ivona_Aane@yahoo.ro",
+    "accounts" : [ ]
+  }, {
+    "firstName" : "Yesenia",
+    "lastName" : "Whitney",
+    "email" : "Yesenia_Whitney@hotmail.us",
+    "accounts" : [ ]
+  } ],
+  "timestamp" : 24
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 28
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 30
+  },
+  "timestamp" : 30
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 34
+}, {
+  "command" : "deleteAccount",
+  "description" : "User not found",
+  "timestamp" : 37
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 42
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 43
+}, {
+  "command" : "deleteAccount",
+  "description" : "User not found",
+  "timestamp" : 45
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Brian",
+    "lastName" : "Price",
+    "email" : "Brian_Price@hotmail.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      }, {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 5919.3,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Guillaume",
+    "lastName" : "Duval",
+    "email" : "Guillaume_Duval@gmail.fr",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 161.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Domnica",
+    "lastName" : "Dinu",
+    "email" : "Domnica_Dinu@gmail.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      }, {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  }, {
+    "firstName" : "James",
+    "lastName" : "Pace",
+    "email" : "James_Pace@gmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 242.0,
+      "currency" : "USD",
+      "IBAN" : "RO65POOB8944016386845896"
+    } ]
+  }, {
+    "firstName" : "Ivona",
+    "lastName" : "Aane",
+    "email" : "Ivona_Aane@yahoo.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 0.0,
+      "currency" : "RON",
+      "IBAN" : "RO58POOB2721178218599590"
+    } ]
+  }, {
+    "firstName" : "Yesenia",
+    "lastName" : "Whitney",
+    "email" : "Yesenia_Whitney@hotmail.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 597.0,
+      "currency" : "USD",
+      "IBAN" : "RO76POOB4035116042454483"
+    } ]
+  } ],
+  "timestamp" : 46
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 49
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 52
+} ]

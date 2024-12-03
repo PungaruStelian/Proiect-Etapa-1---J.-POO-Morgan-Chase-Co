@@ -1,0 +1,2244 @@
+[ {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 201
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 202
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 203
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 204
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 205
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 206
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 207
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 208
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 209
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 210
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 211
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 212
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 213
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 214
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 215
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 216
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 217
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 218
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 219
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 220
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 221
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 222
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 223
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 224
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 225
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 226
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 227
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 228
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 229
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 230
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 231
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 232
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 233
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 234
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 235
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 236
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 237
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 238
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 239
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 240
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 241
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 242
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 243
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 244
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 245
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 246
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 247
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 248
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 249
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 250
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Gabor",
+    "lastName" : "Hasler",
+    "email" : "Gabor_Hasler@hotmail.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 93245.0,
+      "currency" : "CHF",
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 2030.0,
+      "currency" : "CHF",
+      "IBAN" : "RO36POOB6500477412147025"
+    } ]
+  }, {
+    "firstName" : "John",
+    "lastName" : "Schmidt",
+    "email" : "John_Schmidt@gmx.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 7125.5,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB6209498372540635"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 87133.0,
+      "currency" : "CHF",
+      "IBAN" : "RO46POOB9051076190383154"
+    } ]
+  }, {
+    "firstName" : "Victoria",
+    "lastName" : "Rice",
+    "email" : "Victoria_Rice@icloud.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1031.0,
+      "currency" : "CHF",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1234.0,
+      "currency" : "CHF",
+      "IBAN" : "RO45POOB0388148432759748"
+    } ]
+  }, {
+    "firstName" : "Luke",
+    "lastName" : "Jones",
+    "email" : "Luke_Jones@outlook.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 139776.0,
+      "currency" : "AUD",
+      "IBAN" : "RO65POOB8944016386845896"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 52962.0,
+      "currency" : "AUD",
+      "IBAN" : "RO52POOB6271107854467609"
+    } ]
+  }, {
+    "firstName" : "Ryan",
+    "lastName" : "Waters",
+    "email" : "Ryan_Waters@gmx.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 35608.0,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB2721178218599590"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 2082.5,
+      "currency" : "USD",
+      "IBAN" : "RO98POOB7190609943699593"
+    } ]
+  }, {
+    "firstName" : "David",
+    "lastName" : "Gill",
+    "email" : "David_Gill@protonmail.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 55471.0,
+      "currency" : "NZD",
+      "IBAN" : "RO76POOB4035116042454483"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1388.0,
+      "currency" : "NZD",
+      "IBAN" : "RO50POOB3359236199018963"
+    } ]
+  }, {
+    "firstName" : "Arne",
+    "lastName" : "Kobelt B.A.",
+    "email" : "Arne_Kobelt_B.A.@icloud.de",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 582.0,
+      "currency" : "EUR",
+      "IBAN" : "RO37POOB7013767509830666"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1227.0,
+      "currency" : "EUR",
+      "IBAN" : "RO75POOB8279679254660818"
+    } ]
+  }, {
+    "firstName" : "Liam",
+    "lastName" : "Guthrie",
+    "email" : "Liam_Guthrie@hushmail.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 48370.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB4981055641668812"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 13536.0,
+      "currency" : "NZD",
+      "IBAN" : "RO37POOB8653914479106806"
+    } ]
+  }, {
+    "firstName" : "Nicolas",
+    "lastName" : "Robert-Grojean",
+    "email" : "Nicolas_Robert-Grojean@zoho.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1268.0,
+      "currency" : "CHF",
+      "IBAN" : "RO30POOB9523423715747796"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 9454.0,
+      "currency" : "CHF",
+      "IBAN" : "RO73POOB0363118755441573"
+    } ]
+  }, {
+    "firstName" : "Roberta",
+    "lastName" : "Mocanu",
+    "email" : "Roberta_Mocanu@aol.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 2752.0,
+      "currency" : "RON",
+      "IBAN" : "RO79POOB3616857825600958"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 2166.0,
+      "currency" : "RON",
+      "IBAN" : "RO40POOB2135483650246268"
+    } ]
+  }, {
+    "firstName" : "Jennifer",
+    "lastName" : "Watson",
+    "email" : "Jennifer_Watson@zoho.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 49604.0,
+      "currency" : "AUD",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1912.0,
+      "currency" : "AUD",
+      "IBAN" : "RO75POOB1098983729823992"
+    } ]
+  }, {
+    "firstName" : "Rocio",
+    "lastName" : "Saldana Concepcion",
+    "email" : "Rocio_Saldana_Concepcion@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 643.0,
+      "currency" : "MXN",
+      "IBAN" : "RO96POOB6738272785416988"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1311.0,
+      "currency" : "MXN",
+      "IBAN" : "RO15POOB0048706387164463"
+    } ]
+  }, {
+    "firstName" : "Claude",
+    "lastName" : "Tremblay",
+    "email" : "Claude_Tremblay@hotmail.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 90324.0,
+      "currency" : "CAD",
+      "IBAN" : "RO33POOB4049920806186500"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 19910.0,
+      "currency" : "CAD",
+      "IBAN" : "RO97POOB5006417983475785"
+    } ]
+  }, {
+    "firstName" : "Anouk",
+    "lastName" : "'s Gravensande",
+    "email" : "Anouk_'s_Gravensande@hushmail.nl",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1419.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB9846198978826791"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 8949.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB6760303931698665"
+    } ]
+  }, {
+    "firstName" : "Christophe",
+    "lastName" : "Chopard",
+    "email" : "Christophe_Chopard@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 6730.0,
+      "currency" : "CHF",
+      "IBAN" : "RO98POOB8412955460158769"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 21514.0,
+      "currency" : "CHF",
+      "IBAN" : "RO47POOB5866490978033060"
+    } ]
+  }, {
+    "firstName" : "Renee",
+    "lastName" : "Carre",
+    "email" : "Renee_Carre@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 9754.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB0130532963818359"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1792.0,
+      "currency" : "EUR",
+      "IBAN" : "RO45POOB6505529013808948"
+    } ]
+  }, {
+    "firstName" : "Amadeo",
+    "lastName" : "Bacos",
+    "email" : "Amadeo_Bacos@zoho.it",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 3779.0,
+      "currency" : "EUR",
+      "IBAN" : "RO68POOB1848616931405475"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 756.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB3925326637526572"
+    } ]
+  }, {
+    "firstName" : "Mtro.",
+    "lastName" : "Oswaldo Rael",
+    "email" : "Mtro._Oswaldo_Rael@zoho.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1680.0,
+      "currency" : "MXN",
+      "IBAN" : "RO10POOB4354933866366881"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1472.0,
+      "currency" : "MXN",
+      "IBAN" : "RO04POOB3492426980939341"
+    } ]
+  }, {
+    "firstName" : "Ernesto",
+    "lastName" : "Marcos Mojica Viera",
+    "email" : "Ernesto_Marcos_Mojica_Viera@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 130037.0,
+      "currency" : "MXN",
+      "IBAN" : "RO33POOB9999273999620457"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 19402.0,
+      "currency" : "MXN",
+      "IBAN" : "RO66POOB1088683052483887"
+    } ]
+  }, {
+    "firstName" : "Justin",
+    "lastName" : "Laing",
+    "email" : "Justin_Laing@hotmail.nz",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1884.0,
+      "currency" : "NZD",
+      "IBAN" : "RO38POOB0964823730995794"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1111.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB5993192794373940"
+    } ]
+  }, {
+    "firstName" : "Emanuil",
+    "lastName" : "Dima",
+    "email" : "Emanuil_Dima@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 39273.0,
+      "currency" : "RON",
+      "IBAN" : "RO53POOB7122855990652257"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1446.0,
+      "currency" : "RON",
+      "IBAN" : "RO49POOB4985907300499418"
+    } ]
+  }, {
+    "firstName" : "Loic",
+    "lastName" : "Rey",
+    "email" : "Loic_Rey@protonmail.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 969.0,
+      "currency" : "CHF",
+      "IBAN" : "RO71POOB1634969878734749"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1643.0,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB2312919212921100"
+    } ]
+  }, {
+    "firstName" : "Rodney",
+    "lastName" : "George",
+    "email" : "Rodney_George@zoho.au",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1576.0,
+      "currency" : "AUD",
+      "IBAN" : "RO09POOB4346339013848470"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1559.0,
+      "currency" : "AUD",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Alfred",
+    "lastName" : "Bell",
+    "email" : "Alfred_Bell@gmail.ca",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1975.0,
+      "currency" : "CAD",
+      "IBAN" : "RO50POOB3913194831046423"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 1408.0,
+      "currency" : "CAD",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Ronnie",
+    "lastName" : "White",
+    "email" : "Ronnie_White@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 1212.0,
+      "currency" : "CHF",
+      "IBAN" : "RO89POOB4455583483378897"
+    }, {
+      "cards" : [ ],
+      "type" : "savings",
+      "balance" : 2610.0,
+      "currency" : "CHF",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 269
+}, {
+  "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
+  "timestamp" : 370
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 371
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 372
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 373
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Gabor",
+    "lastName" : "Hasler",
+    "email" : "Gabor_Hasler@hotmail.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 94308.0,
+      "currency" : "CHF",
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "1733018068262537",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2697.0,
+      "currency" : "CHF",
+      "IBAN" : "RO36POOB6500477412147025"
+    } ]
+  }, {
+    "firstName" : "John",
+    "lastName" : "Schmidt",
+    "email" : "John_Schmidt@gmx.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1851641428290185",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 8857.5,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB6209498372540635"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "1952612794872207",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 87863.8,
+      "currency" : "CHF",
+      "IBAN" : "RO46POOB9051076190383154"
+    } ]
+  }, {
+    "firstName" : "Victoria",
+    "lastName" : "Rice",
+    "email" : "Victoria_Rice@icloud.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2443.0,
+      "currency" : "CHF",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6988686155235949",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 68581.0,
+      "currency" : "CHF",
+      "IBAN" : "RO45POOB0388148432759748"
+    } ]
+  }, {
+    "firstName" : "Luke",
+    "lastName" : "Jones",
+    "email" : "Luke_Jones@outlook.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "9281102140265301",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 141461.0,
+      "currency" : "AUD",
+      "IBAN" : "RO65POOB8944016386845896"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "0084627535411906",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 54330.0,
+      "currency" : "AUD",
+      "IBAN" : "RO52POOB6271107854467609"
+    } ]
+  }, {
+    "firstName" : "Ryan",
+    "lastName" : "Waters",
+    "email" : "Ryan_Waters@gmx.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 36674.666666666664,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB2721178218599590"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "5254952026068544",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2177.5,
+      "currency" : "USD",
+      "IBAN" : "RO98POOB7190609943699593"
+    } ]
+  }, {
+    "firstName" : "David",
+    "lastName" : "Gill",
+    "email" : "David_Gill@protonmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8221841196640096",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 56462.0,
+      "currency" : "NZD",
+      "IBAN" : "RO76POOB4035116042454483"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8509650399173661",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 80034.0,
+      "currency" : "NZD",
+      "IBAN" : "RO50POOB3359236199018963"
+    } ]
+  }, {
+    "firstName" : "Arne",
+    "lastName" : "Kobelt B.A.",
+    "email" : "Arne_Kobelt_B.A.@icloud.de",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1889.0,
+      "currency" : "EUR",
+      "IBAN" : "RO37POOB7013767509830666"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2912280039644439",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2839.0,
+      "currency" : "EUR",
+      "IBAN" : "RO75POOB8279679254660818"
+    } ]
+  }, {
+    "firstName" : "Liam",
+    "lastName" : "Guthrie",
+    "email" : "Liam_Guthrie@hushmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6052309891235892",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 49754.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB4981055641668812"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4069340791718491",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 14387.0,
+      "currency" : "NZD",
+      "IBAN" : "RO37POOB8653914479106806"
+    } ]
+  }, {
+    "firstName" : "Nicolas",
+    "lastName" : "Robert-Grojean",
+    "email" : "Nicolas_Robert-Grojean@zoho.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2079.0,
+      "currency" : "CHF",
+      "IBAN" : "RO30POOB9523423715747796"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4729060187716142",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 10027.0,
+      "currency" : "CHF",
+      "IBAN" : "RO73POOB0363118755441573"
+    } ]
+  }, {
+    "firstName" : "Roberta",
+    "lastName" : "Mocanu",
+    "email" : "Roberta_Mocanu@aol.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "3892114815135845",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 4133.0,
+      "currency" : "RON",
+      "IBAN" : "RO79POOB3616857825600958"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6592968050400705",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2729.0,
+      "currency" : "RON",
+      "IBAN" : "RO40POOB2135483650246268"
+    } ]
+  }, {
+    "firstName" : "Jennifer",
+    "lastName" : "Watson",
+    "email" : "Jennifer_Watson@zoho.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 51285.5,
+      "currency" : "AUD",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2803408755782048",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3107.0,
+      "currency" : "AUD",
+      "IBAN" : "RO75POOB1098983729823992"
+    } ]
+  }, {
+    "firstName" : "Rocio",
+    "lastName" : "Saldana Concepcion",
+    "email" : "Rocio_Saldana_Concepcion@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "9224211293357459",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1646.0,
+      "currency" : "MXN",
+      "IBAN" : "RO96POOB6738272785416988"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6467982927008637",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2422.0,
+      "currency" : "MXN",
+      "IBAN" : "RO15POOB0048706387164463"
+    } ]
+  }, {
+    "firstName" : "Claude",
+    "lastName" : "Tremblay",
+    "email" : "Claude_Tremblay@hotmail.ca",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "0466992784477761",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 90945.0,
+      "currency" : "CAD",
+      "IBAN" : "RO33POOB4049920806186500"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "0692077318511511",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 20407.0,
+      "currency" : "CAD",
+      "IBAN" : "RO97POOB5006417983475785"
+    } ]
+  }, {
+    "firstName" : "Anouk",
+    "lastName" : "'s Gravensande",
+    "email" : "Anouk_'s_Gravensande@hushmail.nl",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6825942525318055",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2250.0,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB9846198978826791"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8686098479595515",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 8862.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB6760303931698665"
+    } ]
+  }, {
+    "firstName" : "Christophe",
+    "lastName" : "Chopard",
+    "email" : "Christophe_Chopard@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "5088727507344799",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 7699.0,
+      "currency" : "CHF",
+      "IBAN" : "RO98POOB8412955460158769"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4435533800578624",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 22958.0,
+      "currency" : "CHF",
+      "IBAN" : "RO47POOB5866490978033060"
+    } ]
+  }, {
+    "firstName" : "Renee",
+    "lastName" : "Carre",
+    "email" : "Renee_Carre@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1388131156990910",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 10574.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB0130532963818359"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8916302128573242",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2003.0,
+      "currency" : "EUR",
+      "IBAN" : "RO45POOB6505529013808948"
+    } ]
+  }, {
+    "firstName" : "Amadeo",
+    "lastName" : "Bacos",
+    "email" : "Amadeo_Bacos@zoho.it",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7317745095154687",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 4901.0,
+      "currency" : "EUR",
+      "IBAN" : "RO68POOB1848616931405475"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "9295697829422937",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 101399.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB3925326637526572"
+    } ]
+  }, {
+    "firstName" : "Mtro.",
+    "lastName" : "Oswaldo Rael",
+    "email" : "Mtro._Oswaldo_Rael@zoho.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "0755790623339451",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2793.0,
+      "currency" : "MXN",
+      "IBAN" : "RO10POOB4354933866366881"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8696843716078966",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2372.0,
+      "currency" : "MXN",
+      "IBAN" : "RO04POOB3492426980939341"
+    } ]
+  }, {
+    "firstName" : "Ernesto",
+    "lastName" : "Marcos Mojica Viera",
+    "email" : "Ernesto_Marcos_Mojica_Viera@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "3951521356076921",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 131293.0,
+      "currency" : "MXN",
+      "IBAN" : "RO33POOB9999273999620457"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8145060794847555",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 20439.0,
+      "currency" : "MXN",
+      "IBAN" : "RO66POOB1088683052483887"
+    } ]
+  }, {
+    "firstName" : "Justin",
+    "lastName" : "Laing",
+    "email" : "Justin_Laing@hotmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "2394479558596255",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 18291.0,
+      "currency" : "NZD",
+      "IBAN" : "RO38POOB0964823730995794"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4097439592846732",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 1853.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB5993192794373940"
+    } ]
+  }, {
+    "firstName" : "Emanuil",
+    "lastName" : "Dima",
+    "email" : "Emanuil_Dima@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8431794639822740",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 43177.0,
+      "currency" : "RON",
+      "IBAN" : "RO53POOB7122855990652257"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2107645074675430",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2766.0,
+      "currency" : "RON",
+      "IBAN" : "RO49POOB4985907300499418"
+    } ]
+  }, {
+    "firstName" : "Loic",
+    "lastName" : "Rey",
+    "email" : "Loic_Rey@protonmail.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7644059707106503",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 12069.0,
+      "currency" : "CHF",
+      "IBAN" : "RO71POOB1634969878734749"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2289183361654620",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3482.0,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB2312919212921100"
+    } ]
+  }, {
+    "firstName" : "Rodney",
+    "lastName" : "George",
+    "email" : "Rodney_George@zoho.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7746115164990298",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2495.0,
+      "currency" : "AUD",
+      "IBAN" : "RO09POOB4346339013848470"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2578053935040541",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2375.0,
+      "currency" : "AUD",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Alfred",
+    "lastName" : "Bell",
+    "email" : "Alfred_Bell@gmail.ca",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "4766425843993312",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1951.0,
+      "currency" : "CAD",
+      "IBAN" : "RO50POOB3913194831046423"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "5069598921863529",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 1730.0,
+      "currency" : "CAD",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Ronnie",
+    "lastName" : "White",
+    "email" : "Ronnie_White@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "5779026319169555",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1713.0,
+      "currency" : "CHF",
+      "IBAN" : "RO89POOB4455583483378897"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "7678041819946354",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3209.0,
+      "currency" : "CHF",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 474
+}, {
+  "command" : "report",
+  "error" : "Invalid command: report",
+  "timestamp" : 475
+}, {
+  "command" : "report",
+  "error" : "Invalid command: report",
+  "timestamp" : 476
+}, {
+  "command" : "report",
+  "error" : "Invalid command: report",
+  "timestamp" : 477
+}, {
+  "command" : "report",
+  "error" : "Invalid command: report",
+  "timestamp" : 478
+}, {
+  "command" : "report",
+  "error" : "Invalid command: report",
+  "timestamp" : 479
+}, {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 480
+}, {
+  "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
+  "timestamp" : 481
+}, {
+  "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
+  "timestamp" : 482
+}, {
+  "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
+  "timestamp" : 483
+}, {
+  "command" : "splitPayment",
+  "error" : "Invalid command: splitPayment",
+  "timestamp" : 484
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 587
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 588
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 589
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 590
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 591
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 592
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 593
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 594
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 595
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 596
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 597
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 598
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 599
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 600
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 601
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 602
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 603
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 604
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 605
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 606
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 607
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 608
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 609
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 610
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 611
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 612
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 613
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 614
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 615
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 616
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 617
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 618
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 619
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 620
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 621
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 622
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 623
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 624
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 625
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 626
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 627
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 628
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 629
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 630
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 631
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 632
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 633
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 634
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 635
+}, {
+  "command" : "setAlias",
+  "error" : "Invalid command: setAlias",
+  "timestamp" : 636
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "Gabor",
+    "lastName" : "Hasler",
+    "email" : "Gabor_Hasler@hotmail.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 95667.0,
+      "currency" : "CHF",
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "1733018068262537",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3210.0,
+      "currency" : "CHF",
+      "IBAN" : "RO36POOB6500477412147025"
+    } ]
+  }, {
+    "firstName" : "John",
+    "lastName" : "Schmidt",
+    "email" : "John_Schmidt@gmx.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1851641428290185",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 9522.5,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB6209498372540635"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "1952612794872207",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 89633.8,
+      "currency" : "CHF",
+      "IBAN" : "RO46POOB9051076190383154"
+    } ]
+  }, {
+    "firstName" : "Victoria",
+    "lastName" : "Rice",
+    "email" : "Victoria_Rice@icloud.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7901879264253296",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 3490.0,
+      "currency" : "CHF",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6988686155235949",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 67506.0,
+      "currency" : "CHF",
+      "IBAN" : "RO45POOB0388148432759748"
+    } ]
+  }, {
+    "firstName" : "Luke",
+    "lastName" : "Jones",
+    "email" : "Luke_Jones@outlook.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "9281102140265301",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 142441.0,
+      "currency" : "AUD",
+      "IBAN" : "RO65POOB8944016386845896"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "0084627535411906",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 55788.0,
+      "currency" : "AUD",
+      "IBAN" : "RO52POOB6271107854467609"
+    } ]
+  }, {
+    "firstName" : "Ryan",
+    "lastName" : "Waters",
+    "email" : "Ryan_Waters@gmx.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7004757825892043",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 38362.666666666664,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB2721178218599590"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "5254952026068544",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3031.5,
+      "currency" : "USD",
+      "IBAN" : "RO98POOB7190609943699593"
+    } ]
+  }, {
+    "firstName" : "David",
+    "lastName" : "Gill",
+    "email" : "David_Gill@protonmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8221841196640096",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 57172.0,
+      "currency" : "NZD",
+      "IBAN" : "RO76POOB4035116042454483"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8509650399173661",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 80873.0,
+      "currency" : "NZD",
+      "IBAN" : "RO50POOB3359236199018963"
+    } ]
+  }, {
+    "firstName" : "Arne",
+    "lastName" : "Kobelt B.A.",
+    "email" : "Arne_Kobelt_B.A.@icloud.de",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6796819982034243",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 49747.0,
+      "currency" : "EUR",
+      "IBAN" : "RO37POOB7013767509830666"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2912280039644439",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3511.0,
+      "currency" : "EUR",
+      "IBAN" : "RO75POOB8279679254660818"
+    } ]
+  }, {
+    "firstName" : "Liam",
+    "lastName" : "Guthrie",
+    "email" : "Liam_Guthrie@hushmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6052309891235892",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 56444.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB4981055641668812"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4069340791718491",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 15540.0,
+      "currency" : "NZD",
+      "IBAN" : "RO37POOB8653914479106806"
+    } ]
+  }, {
+    "firstName" : "Nicolas",
+    "lastName" : "Robert-Grojean",
+    "email" : "Nicolas_Robert-Grojean@zoho.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "4686471658318359",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2747.0,
+      "currency" : "CHF",
+      "IBAN" : "RO30POOB9523423715747796"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4729060187716142",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 12667.0,
+      "currency" : "CHF",
+      "IBAN" : "RO73POOB0363118755441573"
+    } ]
+  }, {
+    "firstName" : "Roberta",
+    "lastName" : "Mocanu",
+    "email" : "Roberta_Mocanu@aol.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "3892114815135845",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 10182.0,
+      "currency" : "RON",
+      "IBAN" : "RO79POOB3616857825600958"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6592968050400705",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 4002.2,
+      "currency" : "RON",
+      "IBAN" : "RO40POOB2135483650246268"
+    } ]
+  }, {
+    "firstName" : "Jennifer",
+    "lastName" : "Watson",
+    "email" : "Jennifer_Watson@zoho.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1322658752653937",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 53399.5,
+      "currency" : "AUD",
+      "IBAN" : "RO00POOB5687892910835215"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2803408755782048",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3612.0,
+      "currency" : "AUD",
+      "IBAN" : "RO75POOB1098983729823992"
+    } ]
+  }, {
+    "firstName" : "Rocio",
+    "lastName" : "Saldana Concepcion",
+    "email" : "Rocio_Saldana_Concepcion@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "9224211293357459",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 4374.0,
+      "currency" : "MXN",
+      "IBAN" : "RO96POOB6738272785416988"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "6467982927008637",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3800.0,
+      "currency" : "MXN",
+      "IBAN" : "RO15POOB0048706387164463"
+    } ]
+  }, {
+    "firstName" : "Claude",
+    "lastName" : "Tremblay",
+    "email" : "Claude_Tremblay@hotmail.ca",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "0466992784477761",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 94499.0,
+      "currency" : "CAD",
+      "IBAN" : "RO33POOB4049920806186500"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "0692077318511511",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 20949.0,
+      "currency" : "CAD",
+      "IBAN" : "RO97POOB5006417983475785"
+    } ]
+  }, {
+    "firstName" : "Anouk",
+    "lastName" : "'s Gravensande",
+    "email" : "Anouk_'s_Gravensande@hushmail.nl",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "6825942525318055",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 10672.8,
+      "currency" : "EUR",
+      "IBAN" : "RO69POOB9846198978826791"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8686098479595515",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 10200.0,
+      "currency" : "EUR",
+      "IBAN" : "RO93POOB6760303931698665"
+    } ]
+  }, {
+    "firstName" : "Christophe",
+    "lastName" : "Chopard",
+    "email" : "Christophe_Chopard@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "5088727507344799",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 8388.0,
+      "currency" : "CHF",
+      "IBAN" : "RO98POOB8412955460158769"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4435533800578624",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 24044.0,
+      "currency" : "CHF",
+      "IBAN" : "RO47POOB5866490978033060"
+    } ]
+  }, {
+    "firstName" : "Renee",
+    "lastName" : "Carre",
+    "email" : "Renee_Carre@protonmail.fr",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "1388131156990910",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 17515.0,
+      "currency" : "EUR",
+      "IBAN" : "RO32POOB0130532963818359"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8916302128573242",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2321.0,
+      "currency" : "EUR",
+      "IBAN" : "RO45POOB6505529013808948"
+    } ]
+  }, {
+    "firstName" : "Amadeo",
+    "lastName" : "Bacos",
+    "email" : "Amadeo_Bacos@zoho.it",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7317745095154687",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 6754.0,
+      "currency" : "EUR",
+      "IBAN" : "RO68POOB1848616931405475"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "9295697829422937",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 102151.0,
+      "currency" : "EUR",
+      "IBAN" : "RO01POOB3925326637526572"
+    } ]
+  }, {
+    "firstName" : "Mtro.",
+    "lastName" : "Oswaldo Rael",
+    "email" : "Mtro._Oswaldo_Rael@zoho.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "0755790623339451",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 3229.0,
+      "currency" : "MXN",
+      "IBAN" : "RO10POOB4354933866366881"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8696843716078966",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3123.0,
+      "currency" : "MXN",
+      "IBAN" : "RO04POOB3492426980939341"
+    } ]
+  }, {
+    "firstName" : "Ernesto",
+    "lastName" : "Marcos Mojica Viera",
+    "email" : "Ernesto_Marcos_Mojica_Viera@hotmail.mx",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "3951521356076921",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 132897.0,
+      "currency" : "MXN",
+      "IBAN" : "RO33POOB9999273999620457"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "8145060794847555",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 21933.0,
+      "currency" : "MXN",
+      "IBAN" : "RO66POOB1088683052483887"
+    } ]
+  }, {
+    "firstName" : "Justin",
+    "lastName" : "Laing",
+    "email" : "Justin_Laing@hotmail.nz",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "2394479558596255",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 19116.0,
+      "currency" : "NZD",
+      "IBAN" : "RO38POOB0964823730995794"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "4097439592846732",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 2948.0,
+      "currency" : "NZD",
+      "IBAN" : "RO19POOB5993192794373940"
+    } ]
+  }, {
+    "firstName" : "Emanuil",
+    "lastName" : "Dima",
+    "email" : "Emanuil_Dima@outlook.ro",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8431794639822740",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 44175.0,
+      "currency" : "RON",
+      "IBAN" : "RO53POOB7122855990652257"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2107645074675430",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 4567.0,
+      "currency" : "RON",
+      "IBAN" : "RO49POOB4985907300499418"
+    } ]
+  }, {
+    "firstName" : "Loic",
+    "lastName" : "Rey",
+    "email" : "Loic_Rey@protonmail.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7644059707106503",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 12502.0,
+      "currency" : "CHF",
+      "IBAN" : "RO71POOB1634969878734749"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2289183361654620",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 4775.0,
+      "currency" : "CHF",
+      "IBAN" : "RO69POOB2312919212921100"
+    } ]
+  }, {
+    "firstName" : "Rodney",
+    "lastName" : "George",
+    "email" : "Rodney_George@zoho.au",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "7746115164990298",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 3263.0,
+      "currency" : "AUD",
+      "IBAN" : "RO09POOB4346339013848470"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "2578053935040541",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 4042.0,
+      "currency" : "AUD",
+      "IBAN" : "RO24POOB6002156322256357"
+    } ]
+  }, {
+    "firstName" : "Alfred",
+    "lastName" : "Bell",
+    "email" : "Alfred_Bell@gmail.ca",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "4766425843993312",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2664.0,
+      "currency" : "CAD",
+      "IBAN" : "RO50POOB3913194831046423"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "5069598921863529",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 3125.0,
+      "currency" : "CAD",
+      "IBAN" : "RO66POOB5231566576817248"
+    } ]
+  }, {
+    "firstName" : "Ronnie",
+    "lastName" : "White",
+    "email" : "Ronnie_White@yahoo.ch",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "5779026319169555",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 2845.0,
+      "currency" : "CHF",
+      "IBAN" : "RO89POOB4455583483378897"
+    }, {
+      "cards" : [ {
+        "cardNumber" : "7678041819946354",
+        "status" : "active"
+      } ],
+      "type" : "savings",
+      "balance" : 4705.0,
+      "currency" : "CHF",
+      "IBAN" : "RO01POOB9893132718323396"
+    } ]
+  } ],
+  "timestamp" : 642
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 643
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 644
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 645
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 646
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 647
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 648
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 649
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 650
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 651
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 652
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 653
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 654
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 655
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 656
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 657
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 658
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 659
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 660
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 661
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 662
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 663
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 664
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 665
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 666
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 667
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 668
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 669
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 670
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 671
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 672
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 673
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 674
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 675
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 676
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 677
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 678
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 679
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 680
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 681
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 682
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 683
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 684
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 685
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 686
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 687
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 688
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 689
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 690
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 691
+}, {
+  "command" : "spendingsReport",
+  "error" : "Invalid command: spendingsReport",
+  "timestamp" : 692
+} ]

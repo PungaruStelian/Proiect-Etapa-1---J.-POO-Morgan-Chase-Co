@@ -1,0 +1,69 @@
+[ {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 3
+}, {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 6
+}, {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 10
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 11
+}, {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 19
+}, {
+  "command" : "checkCardStatus",
+  "error" : "Invalid command: checkCardStatus",
+  "timestamp" : 20
+}, {
+  "command" : "printUsers",
+  "output" : [ {
+    "firstName" : "David",
+    "lastName" : "Rogers",
+    "email" : "David_Rogers@gmail.us",
+    "accounts" : [ {
+      "cards" : [ {
+        "cardNumber" : "8207906978464446",
+        "status" : "active"
+      } ],
+      "type" : "classic",
+      "balance" : 1140.5,
+      "currency" : "USD",
+      "IBAN" : "RO58POOB7344468893732422"
+    } ]
+  }, {
+    "firstName" : "Olivia",
+    "lastName" : "Suciu",
+    "email" : "Olivia_Suciu@yahoo.ro",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 41.5,
+      "currency" : "RON",
+      "IBAN" : "RO69POOB6209498372540635"
+    } ]
+  }, {
+    "firstName" : "Carla",
+    "lastName" : "Valencia",
+    "email" : "Carla_Valencia@yahoo.us",
+    "accounts" : [ {
+      "cards" : [ ],
+      "type" : "classic",
+      "balance" : 339.5,
+      "currency" : "USD",
+      "IBAN" : "RO90POOB5450777208072365"
+    } ]
+  } ],
+  "timestamp" : 22
+}, {
+  "command" : "printTransactions",
+  "error" : "Invalid command: printTransactions",
+  "timestamp" : 23
+} ]
