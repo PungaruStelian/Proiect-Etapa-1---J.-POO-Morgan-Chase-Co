@@ -45,7 +45,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 41.5,
+      "balance" : 3.0,
       "currency" : "RON",
       "IBAN" : "RO69POOB6209498372540635"
     } ]
@@ -56,7 +56,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 339.5,
+      "balance" : 506.33333333333337,
       "currency" : "USD",
       "IBAN" : "RO90POOB5450777208072365"
     } ]

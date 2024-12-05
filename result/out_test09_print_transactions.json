@@ -60,7 +60,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 3256.0,
+      "balance" : 3283.0,
       "currency" : "USD",
       "IBAN" : "RO58POOB7344468893732422"
     } ]
@@ -88,7 +88,7 @@
     }, {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 332.0,
+      "balance" : 283.4,
       "currency" : "EUR",
       "IBAN" : "RO65POOB8944016386845896"
     } ]

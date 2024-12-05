@@ -69,7 +69,7 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 9538.9,
+      "balance" : 9416.4,
       "currency" : "EUR",
       "IBAN" : "RO58POOB7344468893732422"
     } ]
@@ -85,7 +85,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2602.5,
+      "balance" : 2861.1111111111113,
       "currency" : "USD",
       "IBAN" : "RO69POOB6209498372540635"
     } ]

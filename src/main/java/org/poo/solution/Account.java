@@ -155,9 +155,9 @@ public class Account {
     }
 
     // Method to transfer funds to another account
-    public boolean transferFunds(Account targetAccount, double amount) {
-        if (this.withdrawFunds(amount)) {
-            targetAccount.addFunds(amount);
+    public boolean transferFunds(Account targetAccount, double donorAmount, double receiverAmount) {
+        if (this.withdrawFunds(donorAmount)) {
+            targetAccount.addFunds(receiverAmount);
             return true;
         }
         return false;

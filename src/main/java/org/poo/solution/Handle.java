@@ -200,46 +200,23 @@ public class Handle {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
                 if (account.getIBAN().equals(command.getAccount())) {
-//                    if (command.getAmount() > account.getBalance() + account.getMinBalance())
-//                    {
-//                        ObjectNode outputNode = objectMapper.createObjectNode();
-//                        outputNode.put("description", "Insufficient funds");
-//                        outputNode.put("timestamp", command.getTimestamp());
-//                        result.set("output", outputNode);
-//                        result.put("timestamp", command.getTimestamp());
-//                        output.add(result);
-//                        return;
-//                    }
                     for (User receiver : object.getUsers()) {
                         for (Account receiverAccount : receiver.getAccounts()) {
                             if (receiverAccount.getIBAN().equals(command.getReceiver())) {
                                 double exhg;
-                                if(!Objects.equals(receiverAccount.getCurrency(), account.getCurrency()))
-                                {
-                                    exhg = account.getExchange(object, receiverAccount.getCurrency(), account.getCurrency(), command.getAmount());
+                                if (!Objects.equals(receiverAccount.getCurrency(), account.getCurrency())) {
+                                    exhg = account.getExchange(object, account.getCurrency(), receiverAccount.getCurrency(), command.getAmount());
                                 } else {
                                     exhg = command.getAmount();
                                 }
-                                account.transferFunds(receiverAccount, exhg);
+                                account.transferFunds(receiverAccount, command.getAmount(), exhg);
                                 return;
                             }
                         }
                     }
-//                    ObjectNode outputNode = objectMapper.createObjectNode();
-//                    outputNode.put("description", "Receiver not found");
-//                    outputNode.put("timestamp", command.getTimestamp());
-//                    result.set("output", outputNode);
-//                    result.put("timestamp", command.getTimestamp());
-//                    output.add(result);
-//                    return;
+                    return;
                 }
             }
         }
-//        ObjectNode outputNode = objectMapper.createObjectNode();
-//        outputNode.put("description", "Account not found");
-//        outputNode.put("timestamp", command.getTimestamp());
-//        result.set("output", outputNode);
-//        result.put("timestamp", command.getTimestamp());
-//        output.add(result);
     }
 }

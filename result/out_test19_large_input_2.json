@@ -22,13 +22,13 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7265.3,
+      "balance" : 7264.0,
       "currency" : "EUR",
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 55.2,
+      "balance" : 74.0,
       "currency" : "EUR",
       "IBAN" : "RO30POOB9523423715747796"
     } ]
@@ -53,7 +53,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23518.8,
+      "balance" : 23500.0,
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
@@ -118,7 +118,7 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 8300.881818181819,
+      "balance" : 8303.626262626263,
       "currency" : "USD",
       "IBAN" : "RO19POOB4981055641668812"
     } ]
@@ -341,13 +341,13 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7265.3,
+      "balance" : 7264.0,
       "currency" : "EUR",
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2087.2,
+      "balance" : 2106.0,
       "currency" : "EUR",
       "IBAN" : "RO30POOB9523423715747796"
     } ]
@@ -372,7 +372,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23518.8,
+      "balance" : 23500.0,
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
@@ -437,7 +437,7 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 8354.881818181819,
+      "balance" : 8357.626262626263,
       "currency" : "USD",
       "IBAN" : "RO19POOB4981055641668812"
     } ]
@@ -858,13 +858,13 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7265.3,
+      "balance" : 7264.0,
       "currency" : "EUR",
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2620.2,
+      "balance" : 2639.0,
       "currency" : "EUR",
       "IBAN" : "RO30POOB9523423715747796"
     } ]
@@ -892,7 +892,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23518.8,
+      "balance" : 23500.0,
       "currency" : "RON",
       "IBAN" : "RO58POOB7344468893732422"
     }, {
@@ -957,7 +957,7 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 11380.881818181819,
+      "balance" : 11383.626262626263,
       "currency" : "USD",
       "IBAN" : "RO19POOB4981055641668812"
     } ]
@@ -979,7 +979,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 743.0,
+      "balance" : 558.0,
       "currency" : "GBP",
       "IBAN" : "RO00POOB5687892910835215"
     } ]
@@ -1001,7 +1001,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 7701.0,
+      "balance" : 7476.0,
       "currency" : "INR",
       "IBAN" : "RO33POOB4049920806186500"
     } ]
@@ -1023,7 +1023,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 133.0,
+      "balance" : 28.0,
       "currency" : "MXN",
       "IBAN" : "RO98POOB8412955460158769"
     } ]
@@ -1070,7 +1070,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 454.0,
+      "balance" : 189.0,
       "currency" : "MXN",
       "IBAN" : "RO33POOB9999273999620457"
     } ]
@@ -1095,7 +1095,7 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1297.0,
+      "balance" : 1024.0,
       "currency" : "CHF",
       "IBAN" : "RO53POOB7122855990652257"
     } ]
