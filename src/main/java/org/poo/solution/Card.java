@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 // Builder
 @Data
 @NoArgsConstructor
-public class Cards {
+public class Card {
     private String cardNumber;
     @JsonIgnore
     private String cardHolder;
@@ -21,7 +21,7 @@ public class Cards {
 
     // Builder class for Cards
     @Data
-    public static class CardsBuilder {
+    public static class CardBuilder {
         private String cardNumber;
         private String cardHolder;
         private String expirationDate;
@@ -29,38 +29,38 @@ public class Cards {
         private double balance;
         private String status;
 
-        public CardsBuilder setCardNumber(String cardNumber) {
+        public CardBuilder setCardNumber(String cardNumber) {
             this.cardNumber = cardNumber;
             return this;
         }
 
-        public CardsBuilder setCardHolder(String cardHolder) {
+        public CardBuilder setCardHolder(String cardHolder) {
             this.cardHolder = cardHolder;
             return this;
         }
 
-        public CardsBuilder setExpirationDate(String expirationDate) {
+        public CardBuilder setExpirationDate(String expirationDate) {
             this.expirationDate = expirationDate;
             return this;
         }
 
-        public CardsBuilder setCvv(int cvv) {
+        public CardBuilder setCvv(int cvv) {
             this.cvv = cvv;
             return this;
         }
 
-        public CardsBuilder setBalance(double balance) {
+        public CardBuilder setBalance(double balance) {
             this.balance = balance;
             return this;
         }
 
-        public CardsBuilder setStatus(String status) {
+        public CardBuilder setStatus(String status) {
             this.status = status;
             return this;
         }
 
-        public Cards build() {
-            Cards card = new Cards();
+        public Card build() {
+            Card card = new Card();
             card.cardNumber = this.cardNumber;
             card.cardHolder = this.cardHolder;
             card.expirationDate = this.expirationDate;

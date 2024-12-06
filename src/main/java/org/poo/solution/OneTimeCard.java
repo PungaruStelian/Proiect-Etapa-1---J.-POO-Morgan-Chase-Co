@@ -7,21 +7,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 // Builder
 @Data
 @NoArgsConstructor
-public class OneTimeCard extends Cards {
-    @JsonIgnore
-    private boolean isPermanent;
+public class OneTimeCard extends Card {
     @JsonIgnore
     private boolean isUsed;
 
     @Data
-    public static class OneTimeCardBuilder extends Cards.CardsBuilder {
-        private boolean isPermanent;
+    public static class OneTimeCardBuilder extends Card.CardBuilder {
         private boolean isUsed;
-
-        public OneTimeCardBuilder setPermanent(boolean isPermanent) {
-            this.isPermanent = isPermanent;
-            return this;
-        }
 
         public OneTimeCardBuilder setUsed(boolean isUsed) {
             this.isUsed = isUsed;
@@ -55,7 +47,6 @@ public class OneTimeCard extends Cards {
             oneTimeCard.setCvv(this.getCvv());
             oneTimeCard.setBalance(this.getBalance());
             oneTimeCard.setStatus(this.getStatus());
-            oneTimeCard.setPermanent(this.isPermanent);
             oneTimeCard.setUsed(this.isUsed);
             return oneTimeCard;
         }

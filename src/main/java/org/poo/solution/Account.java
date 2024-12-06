@@ -11,7 +11,7 @@ import java.util.List;
 // Builder
 @Data
 public class Account {
-    private List<Cards> cards;
+    private List<Card> cards;
     @JsonIgnore
     private int interestRate;
     private String type;
@@ -39,7 +39,7 @@ public class Account {
 
     // Builder class for Account
     public static class AccountBuilder {
-        private List<Cards> cards = new ArrayList<>();
+        private List<Card> cards = new ArrayList<>();
         private int interestRate;
         private String type;
         private String IBAN;
@@ -52,7 +52,7 @@ public class Account {
         private String commerciants;
         private String status;
 
-        public AccountBuilder setCards(List<Cards> cards) {
+        public AccountBuilder setCards(List<Card> cards) {
             this.cards = cards;
             return this;
         }

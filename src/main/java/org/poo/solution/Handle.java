@@ -79,7 +79,7 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
-                        Cards newCard = new Cards.CardsBuilder()
+                        Card newCard = new Card.CardBuilder()
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setCardHolder(user.getFirstName() + " " + user.getLastName())
                                 .setStatus("active")
@@ -104,13 +104,12 @@ public class Handle {
     public void deleteCard(Object object, Command command) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
-                List<Cards> cards = account.getCards();
-                // Iterăm prin indici pentru a permite eliminarea elementelor din listă
+                List<Card> cards = account.getCards();
                 for (int i = 0; i < cards.size(); i++) {
-                    Cards card = cards.get(i);
-                    if (card.getCardNumber().equals(command.getCardNumber())) {
+                    Card currentCard = cards.get(i);
+                    if (currentCard.getCardNumber().equals(command.getCardNumber())) {
                         cards.remove(i);
-                        break; // Ieșim din bucla interioară după ștergere
+                        break;
                     }
                 }
             }
@@ -123,7 +122,6 @@ public class Handle {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
                         OneTimeCard newCard = new OneTimeCard.OneTimeCardBuilder()
-                                .setPermanent(false)
                                 .setUsed(false)
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setCardHolder(user.getFirstName() + " " + user.getLastName())
@@ -150,7 +148,7 @@ public class Handle {
     public void payOnline(Object object, Command command, ObjectNode result, ArrayNode output) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
-                for(Cards card : account.getCards()) {
+                for(Card card : account.getCards()) {
                     if(Objects.equals(card.getCardNumber(), command.getCardNumber())) {
                         if (!Objects.equals(command.getEmail(), user.getEmail())) {
                             ObjectNode outputNode = objectMapper.createObjectNode();
