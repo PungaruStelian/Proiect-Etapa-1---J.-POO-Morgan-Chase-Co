@@ -123,11 +123,11 @@ public class Handle {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
                         OneTimeCard newCard = new OneTimeCard.OneTimeCardBuilder()
+                                .setPermanent(false)
+                                .setUsed(false)
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setCardHolder(user.getFirstName() + " " + user.getLastName())
                                 .setStatus("active")
-                                .setPermanent(false)
-                                .setUsed(false)
                                 .build();
                         account.getCards().add(newCard);
                     }

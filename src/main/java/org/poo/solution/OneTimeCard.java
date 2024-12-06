@@ -13,45 +13,10 @@ public class OneTimeCard extends Cards {
     @JsonIgnore
     private boolean isUsed;
 
-    public static class OneTimeCardBuilder {
-        private String cardNumber;
-        private String cardHolder;
-        private String expirationDate;
-        private int cvv;
-        private double balance;
-        private String status;
+    @Data
+    public static class OneTimeCardBuilder extends Cards.CardsBuilder {
         private boolean isPermanent;
         private boolean isUsed;
-
-        public OneTimeCardBuilder setCardNumber(String cardNumber) {
-            this.cardNumber = cardNumber;
-            return this;
-        }
-
-        public OneTimeCardBuilder setCardHolder(String cardHolder) {
-            this.cardHolder = cardHolder;
-            return this;
-        }
-
-        public OneTimeCardBuilder setExpirationDate(String expirationDate) {
-            this.expirationDate = expirationDate;
-            return this;
-        }
-
-        public OneTimeCardBuilder setCvv(int cvv) {
-            this.cvv = cvv;
-            return this;
-        }
-
-        public OneTimeCardBuilder setBalance(double balance) {
-            this.balance = balance;
-            return this;
-        }
-
-        public OneTimeCardBuilder setStatus(String status) {
-            this.status = status;
-            return this;
-        }
 
         public OneTimeCardBuilder setPermanent(boolean isPermanent) {
             this.isPermanent = isPermanent;
@@ -63,14 +28,33 @@ public class OneTimeCard extends Cards {
             return this;
         }
 
+        @Override
+        public OneTimeCardBuilder setCardNumber(String cardNumber) {
+            super.setCardNumber(cardNumber);
+            return this;
+        }
+
+        @Override
+        public OneTimeCardBuilder setCardHolder(String cardHolder) {
+            super.setCardHolder(cardHolder);
+            return this;
+        }
+
+        @Override
+        public OneTimeCardBuilder setStatus(String status) {
+            super.setStatus(status);
+            return this;
+        }
+
+        @Override
         public OneTimeCard build() {
             OneTimeCard oneTimeCard = new OneTimeCard();
-            oneTimeCard.setCardNumber(this.cardNumber);
-            oneTimeCard.setCardHolder(this.cardHolder);
-            oneTimeCard.setExpirationDate(this.expirationDate);
-            oneTimeCard.setCvv(this.cvv);
-            oneTimeCard.setBalance(this.balance);
-            oneTimeCard.setStatus(this.status);
+            oneTimeCard.setCardNumber(this.getCardNumber());
+            oneTimeCard.setCardHolder(this.getCardHolder());
+            oneTimeCard.setExpirationDate(this.getExpirationDate());
+            oneTimeCard.setCvv(this.getCvv());
+            oneTimeCard.setBalance(this.getBalance());
+            oneTimeCard.setStatus(this.getStatus());
             oneTimeCard.setPermanent(this.isPermanent);
             oneTimeCard.setUsed(this.isUsed);
             return oneTimeCard;
