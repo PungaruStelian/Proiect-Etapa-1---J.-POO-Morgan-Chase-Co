@@ -14,11 +14,17 @@
   "timestamp" : 8
 }, {
   "command" : "deleteAccount",
-  "description" : "User not found",
+  "output" : {
+    "error" : "Account couldn't be deleted - see org.poo.transactions for details",
+    "timestamp" : 10
+  },
   "timestamp" : 10
 }, {
   "command" : "deleteAccount",
-  "description" : "User not found",
+  "output" : {
+    "error" : "Account couldn't be deleted - see org.poo.transactions for details",
+    "timestamp" : 15
+  },
   "timestamp" : 15
 }, {
   "command" : "printTransactions",
@@ -111,6 +117,29 @@
   "output" : [ {
     "timestamp" : 18,
     "description" : "New account created"
+  }, {
+    "timestamp" : 20,
+    "description" : "New card created",
+    "account" : "RO65POOB8944016386845896",
+    "cardHolder" : "Andre_Martin@gmail.fr",
+    "card" : "8207906978464446"
+  }, {
+    "timestamp" : 21,
+    "description" : "Insufficient funds"
+  }, {
+    "timestamp" : 23,
+    "description" : "Insufficient funds"
+  }, {
+    "timestamp" : 24,
+    "description" : "Card payment",
+    "amount" : 736.8000000000001,
+    "commerciant" : "Apple"
+  }, {
+    "timestamp" : 25,
+    "description" : "The card has been destroyed",
+    "account" : "RO65POOB8944016386845896",
+    "cardHolder" : "Andre_Martin@gmail.fr",
+    "card" : "8207906978464446"
   } ],
   "timestamp" : 27
 } ]

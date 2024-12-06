@@ -3,6 +3,25 @@
   "output" : [ {
     "timestamp" : 1,
     "description" : "New account created"
+  }, {
+    "timestamp" : 2,
+    "description" : "New card created",
+    "account" : "RO58POOB7344468893732422",
+    "cardHolder" : "David_Rogers@gmail.us",
+    "card" : "8207906978464446"
+  }, {
+    "timestamp" : 7,
+    "description" : "Card payment",
+    "amount" : 622.0,
+    "commerciant" : "Amazon"
+  }, {
+    "timestamp" : 8,
+    "description" : "Insufficient funds"
+  }, {
+    "timestamp" : 9,
+    "description" : "Card payment",
+    "amount" : 12.5,
+    "commerciant" : "KFC"
   } ],
   "timestamp" : 11
 }, {

@@ -92,7 +92,10 @@
   "timestamp" : 18
 }, {
   "command" : "deleteAccount",
-  "description" : "User not found",
+  "output" : {
+    "error" : "Account couldn't be deleted - see org.poo.transactions for details",
+    "timestamp" : 19
+  },
   "timestamp" : 19
 }, {
   "command" : "printUsers",

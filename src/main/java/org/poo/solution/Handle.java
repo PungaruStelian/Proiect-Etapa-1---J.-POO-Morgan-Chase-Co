@@ -81,7 +81,10 @@ public class Handle {
                 }
             }
         }
-        result.put("description", "User not found");
+        ObjectNode outputNode = objectMapper.createObjectNode();
+        outputNode.put("error", "Account couldn't be deleted - see org.poo.transactions for details");
+        outputNode.put("timestamp", command.getTimestamp());
+        result.set("output", outputNode);
         result.put("timestamp", command.getTimestamp());
         output.add(result);
     }
@@ -97,6 +100,13 @@ public class Handle {
                                 .setStatus("active")
                                 .build();
                         account.getCards().add(newCard);
+                        ObjectNode transaction = objectMapper.createObjectNode();
+                        transaction.put("timestamp", command.getTimestamp());
+                        transaction.put("description", "New card created");
+                        transaction.put("account", account.getIBAN());
+                        transaction.put("cardHolder", user.getEmail());
+                        transaction.put("card", newCard.getCardNumber());
+                        user.getTransactions().add(transaction);
                     }
                 }
             }
@@ -121,6 +131,13 @@ public class Handle {
                     Card currentCard = cards.get(i);
                     if (currentCard.getCardNumber().equals(command.getCardNumber())) {
                         cards.remove(i);
+                        ObjectNode transaction = objectMapper.createObjectNode();
+                        transaction.put("timestamp", command.getTimestamp());
+                        transaction.put("description", "The card has been destroyed");
+                        transaction.put("account", account.getIBAN());
+                        transaction.put("cardHolder", user.getEmail());
+                        transaction.put("card", currentCard.getCardNumber());
+                        user.getTransactions().add(transaction);
                         break;
                     }
                 }
@@ -187,7 +204,21 @@ public class Handle {
                         } else {
                             exhg = command.getAmount();
                         }
-                        account.withdrawFunds(exhg);
+                        boolean valid = account.withdrawFunds(exhg);
+                        if (!valid) {
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "Insufficient funds");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
+                        ObjectNode transaction = objectMapper.createObjectNode();
+                        transaction.put("timestamp", command.getTimestamp());
+                        transaction.put("description", "Card payment");
+                        transaction.put("amount", exhg);
+                        transaction.put("commerciant", command.getCommerciant());
+                        user.getTransactions().add(transaction);
+
                         if(card instanceof OneTimeCard) {
                             ((OneTimeCard) card).setUsed(true);
                         }
