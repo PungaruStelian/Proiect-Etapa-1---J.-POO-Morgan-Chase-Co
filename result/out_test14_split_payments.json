@@ -1,8 +1,4 @@
 [ {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 9
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Margaux",
@@ -11,8 +7,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 4782.0,
       "currency" : "EUR",
+      "balance" : 4782.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -22,8 +18,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 5845.0,
       "currency" : "EUR",
+      "balance" : 5845.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -33,8 +29,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 3359.0,
       "currency" : "RON",
+      "balance" : 3359.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -44,8 +40,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 3461.0,
       "currency" : "RON",
+      "balance" : 3461.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -66,8 +62,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 5707.0,
       "currency" : "EUR",
+      "balance" : 5707.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -77,8 +73,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 6204.0,
       "currency" : "EUR",
+      "balance" : 6204.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -88,8 +84,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 4144.0,
       "currency" : "RON",
+      "balance" : 4144.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -99,22 +95,17 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 4198.0,
       "currency" : "RON",
+      "balance" : 4198.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
   "timestamp" : 16
 }, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 17
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 18
-}, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  } ],
   "timestamp" : 19
 } ]

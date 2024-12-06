@@ -1,26 +1,52 @@
 [ {
-  "command" : "setAlias",
-  "error" : "Invalid command: setAlias",
-  "timestamp" : 6
-}, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 5,
+    "description" : "Medical checkup at Regina Maria",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "870.0 RON",
+    "transferType" : "sent"
+  } ],
   "timestamp" : 8
 }, {
   "command" : "deleteAccount",
   "description" : "User not found",
   "timestamp" : 10
 }, {
-  "command" : "setAlias",
-  "error" : "Invalid command: setAlias",
-  "timestamp" : 13
-}, {
   "command" : "deleteAccount",
   "description" : "User not found",
   "timestamp" : 15
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 5,
+    "description" : "Medical checkup at Regina Maria",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "870.0 RON",
+    "transferType" : "sent"
+  }, {
+    "timestamp" : 11,
+    "description" : "Miscellaneous cash expenses",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "86.0 RON",
+    "transferType" : "sent"
+  }, {
+    "timestamp" : 16,
+    "description" : "Electricity and gas bills",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO90POOB5450777208072365",
+    "amount" : "83.0 RON",
+    "transferType" : "sent"
+  } ],
   "timestamp" : 17
 }, {
   "command" : "printUsers",
@@ -31,8 +57,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1350.0,
       "currency" : "RON",
+      "balance" : 1350.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -42,8 +68,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 956.0,
       "currency" : "RON",
+      "balance" : 956.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -53,8 +79,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 753.0,
       "currency" : "RON",
+      "balance" : 753.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -67,8 +93,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 842.0,
       "currency" : "EUR",
+      "balance" : 842.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -82,6 +108,9 @@
   "timestamp" : 26
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 18,
+    "description" : "New account created"
+  } ],
   "timestamp" : 27
 } ]

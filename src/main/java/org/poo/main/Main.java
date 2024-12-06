@@ -85,6 +85,7 @@ public final class Main {
 
         Object object = Object.getInstance(inputData);
         Handle handle = Handle.getInstance();
+        handle.createTransaction(object);
 
         Utils.resetRandom();
 
@@ -96,7 +97,7 @@ public final class Main {
             switch (command.getCommand()) {
 
                 case "printUsers":
-                    handle.printUsers(object, result);
+                    handle.printUsers(object, command, result, output);
                     break;
 
                 case "addAccount":
@@ -135,25 +136,20 @@ public final class Main {
                     handle.sendMoney(object, command);
                     break;
 
+                case "setAlias":
+                    handle.setAlias(object, command);
+                    break;
+
+                case "printTransactions":
+                    handle.printTransactions(object, command, result, output);
+                    break;
+
                 case "breakpoint":
                     break;
 
                 default:
                     result.put("error", "Invalid command: " + command.getCommand());
                     break;
-            }
-            if(!command.getCommand().equals("addAccount")
-                    && !command.getCommand().equals("createCard")
-                    && !command.getCommand().equals("addFunds")
-                    && !command.getCommand().equals("deleteAccount")
-                    && !command.getCommand().equals("createOneTimeCard")
-                    && !command.getCommand().equals("deleteCard")
-                    && !command.getCommand().equals("setMinimumBalance")
-                    && !command.getCommand().equals("payOnline")
-                    && !command.getCommand().equals("sendMoney")
-                    && !command.getCommand().equals("breakpoint")) {
-                result.put("timestamp", command.getTimestamp());
-                output.add(result);
             }
         }
 

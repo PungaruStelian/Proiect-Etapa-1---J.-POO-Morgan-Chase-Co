@@ -10,8 +10,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1160.0,
       "currency" : "RON",
+      "balance" : 1160.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -24,8 +24,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1107.0,
       "currency" : "USD",
+      "balance" : 1107.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -38,16 +38,12 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1371.0,
       "currency" : "RON",
+      "balance" : 1371.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],
   "timestamp" : 14
-}, {
-  "command" : "changeInterestRate",
-  "error" : "Invalid command: changeInterestRate",
-  "timestamp" : 15
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -60,8 +56,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1160.0,
       "currency" : "RON",
+      "balance" : 1160.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -74,8 +70,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 678.0,
       "currency" : "USD",
+      "balance" : 678.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -88,8 +84,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1371.0,
       "currency" : "RON",
+      "balance" : 1371.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],
@@ -99,10 +95,6 @@
   "description" : "User not found",
   "timestamp" : 19
 }, {
-  "command" : "changeInterestRate",
-  "error" : "Invalid command: changeInterestRate",
-  "timestamp" : 20
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Beniamin",
@@ -114,8 +106,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1160.0,
       "currency" : "RON",
+      "balance" : 1160.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -128,8 +120,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 678.0,
       "currency" : "USD",
+      "balance" : 678.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -142,8 +134,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1371.0,
       "currency" : "RON",
+      "balance" : 1371.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],

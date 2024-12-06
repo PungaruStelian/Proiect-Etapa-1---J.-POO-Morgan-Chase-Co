@@ -9,10 +9,10 @@ import org.poo.fileio.ObjectInput;
 @NoArgsConstructor
 public class Object {
     private static Object instance = null;
-    private User[] users;
+    private Commerciant[] commerciants;
     private Exchange[] exchangeRates;
     private Command[] commands;
-    private Commerciant[] commerciants;
+    private User[] users;
 
     public static Object getInstance(ObjectInput objectInput) {
         if (instance == null) {

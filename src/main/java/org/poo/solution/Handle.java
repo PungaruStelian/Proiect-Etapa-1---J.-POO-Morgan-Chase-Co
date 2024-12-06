@@ -25,13 +25,22 @@ public class Handle {
         return instance;
     }
 
-    public void printUsers(Object object, ObjectNode result) {
+    public void createTransaction(Object object){
+        for (User user : object.getUsers()) {
+            user.setTransactions(objectMapper.createArrayNode());
+
+        }
+    }
+
+    public void printUsers(Object object, Command command, ObjectNode result, ArrayNode output) {
         ArrayNode usersArray = objectMapper.createArrayNode();
         for (User user : object.getUsers()) {
             ObjectNode userNode = objectMapper.valueToTree(user);
             usersArray.add(userNode);
         }
         result.set("output", usersArray);
+        result.put("timestamp", command.getTimestamp());
+        output.add(result);
     }
 
     public void addAccount(Object object, Command command) {
@@ -45,6 +54,10 @@ public class Handle {
                         .setStatus("active")
                         .build();
                 user.getAccounts().add(newAccount);
+                ObjectNode transaction = objectMapper.createObjectNode();
+                transaction.put("timestamp", command.getTimestamp());
+                transaction.put("description", "New account created");
+                user.getTransactions().add(transaction);
             }
         }
     }
@@ -52,7 +65,6 @@ public class Handle {
     public void deleteAccount(Object object, Command command, ObjectNode result, ArrayNode output) {
         for (User user : object.getUsers()) {
             List<Account> accounts = user.getAccounts();
-            // Iterăm prin indici pentru a permite eliminarea elementelor din listă
             for (int i = 0; i < accounts.size(); i++) {
                 Account account = accounts.get(i);
                 if (account.getIBAN().equals(command.getAccount()) && account.getBalance() == 0) {
@@ -198,7 +210,7 @@ public class Handle {
                 if (account.getIBAN().equals(command.getAccount())) {
                     for (User receiver : object.getUsers()) {
                         for (Account receiverAccount : receiver.getAccounts()) {
-                            if (receiverAccount.getIBAN().equals(command.getReceiver())) {
+                            if (receiverAccount.getIBAN().equals(command.getReceiver()) || (receiverAccount.getAlias() != null && receiverAccount.getAlias().equals(command.getAccount()))) {
                                 double exhg;
                                 if (!Objects.equals(receiverAccount.getCurrency(), account.getCurrency())) {
                                     exhg = account.getExchange(object, account.getCurrency(), receiverAccount.getCurrency(), command.getAmount());
@@ -206,12 +218,59 @@ public class Handle {
                                     exhg = command.getAmount();
                                 }
                                 account.transferFunds(receiverAccount, command.getAmount(), exhg);
+
+                                // Add the specified JSON object to the transactions
+                                ObjectNode transaction = objectMapper.createObjectNode();
+                                transaction.put("timestamp", command.getTimestamp());
+                                transaction.put("description", command.getDescription());
+                                transaction.put("senderIBAN", account.getIBAN());
+                                transaction.put("receiverIBAN", receiverAccount.getIBAN());
+                                transaction.put("amount", command.getAmount() + " " + account.getCurrency());
+                                transaction.put("transferType", "sent");
+                                user.getTransactions().add(transaction);
+                                // Add the specified JSON object to the transactions
+                                ObjectNode receiverTransaction = objectMapper.createObjectNode();
+                                receiverTransaction.put("timestamp", command.getTimestamp());
+                                receiverTransaction.put("description", command.getDescription());
+                                receiverTransaction.put("senderIBAN", account.getIBAN());
+                                receiverTransaction.put("receiverIBAN", receiverAccount.getIBAN());
+                                receiverTransaction.put("amount", command.getAmount() + " " + account.getCurrency());
+                                receiverTransaction.put("transferType", "received");
                                 return;
                             }
                         }
                     }
                     return;
                 }
+            }
+        }
+    }
+
+    public void setAlias(Object object, Command command) {
+        for (User user : object.getUsers()) {
+            for (Account account : user.getAccounts()) {
+                if (account.getIBAN().equals(command.getAccount())) {
+                    account.setAlias(command.getAlias());
+                    return;
+                }
+            }
+        }
+    }
+
+    public void printTransactions(Object object, Command command, ObjectNode result, ArrayNode output) {
+        for (User user : object.getUsers()) {
+            if (user.getEmail().equals(command.getEmail())) {
+                ArrayNode filteredTransactions = objectMapper.createArrayNode();
+                for (int i = 0; i < user.getTransactions().size(); i++) {
+                    if (user.getTransactions().get(i).get("timestamp").asInt() <= command.getTimestamp()) {
+                        filteredTransactions.add(user.getTransactions().get(i));
+                    }
+                }
+                result.put("command", "printTransactions");
+                result.set("output", filteredTransactions);
+                result.put("timestamp", command.getTimestamp());
+                output.add(result);
+                return;
             }
         }
     }

@@ -7,14 +7,14 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 838.0,
       "currency" : "RON",
+      "balance" : 838.0,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 216.0,
       "currency" : "RON",
+      "balance" : 216.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -24,14 +24,14 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 791.0,
       "currency" : "EUR",
+      "balance" : 791.0,
       "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 586.0,
       "currency" : "EUR",
+      "balance" : 586.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -48,14 +48,14 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 272.5,
       "currency" : "RON",
+      "balance" : 272.5,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 497.0,
       "currency" : "RON",
+      "balance" : 497.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -65,14 +65,14 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 791.0,
       "currency" : "EUR",
+      "balance" : 791.0,
       "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 586.0,
       "currency" : "EUR",
+      "balance" : 586.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -91,20 +91,4 @@
     "timestamp" : 24
   },
   "timestamp" : 24
-}, {
-  "command" : "report",
-  "error" : "Invalid command: report",
-  "timestamp" : 25
-}, {
-  "command" : "report",
-  "error" : "Invalid command: report",
-  "timestamp" : 26
-}, {
-  "command" : "report",
-  "error" : "Invalid command: report",
-  "timestamp" : 27
-}, {
-  "command" : "report",
-  "error" : "Invalid command: report",
-  "timestamp" : 28
 } ]

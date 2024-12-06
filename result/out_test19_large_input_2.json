@@ -1,8 +1,4 @@
 [ {
-  "command" : "changeInterestRate",
-  "error" : "Invalid command: changeInterestRate",
-  "timestamp" : 2
-}, {
   "command" : "deleteAccount",
   "description" : "User not found",
   "timestamp" : 9
@@ -22,14 +18,14 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7264.0,
       "currency" : "EUR",
+      "balance" : 7264.0,
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 74.0,
       "currency" : "EUR",
+      "balance" : 74.0,
       "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
@@ -42,8 +38,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 1613.0,
       "currency" : "NZD",
+      "balance" : 1613.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -53,8 +49,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23500.0,
       "currency" : "RON",
+      "balance" : 23500.0,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ {
@@ -62,8 +58,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 3235.0,
       "currency" : "RON",
+      "balance" : 3235.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
@@ -76,8 +72,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 851.0,
       "currency" : "CHF",
+      "balance" : 851.0,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -90,8 +86,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 924.0,
       "currency" : "CAD",
+      "balance" : 924.0,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -104,8 +100,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1190.0,
       "currency" : "RON",
+      "balance" : 1190.0,
       "IBAN" : "RO37POOB7013767509830666"
     } ]
   }, {
@@ -118,8 +114,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 8303.626262626263,
       "currency" : "USD",
+      "balance" : 8303.626262626263,
       "IBAN" : "RO19POOB4981055641668812"
     } ]
   }, {
@@ -341,14 +337,14 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7264.0,
       "currency" : "EUR",
+      "balance" : 7264.0,
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2106.0,
       "currency" : "EUR",
+      "balance" : 2106.0,
       "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
@@ -361,8 +357,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 2165.0,
       "currency" : "NZD",
+      "balance" : 2165.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -372,8 +368,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23500.0,
       "currency" : "RON",
+      "balance" : 23500.0,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ {
@@ -381,8 +377,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 6845.0,
       "currency" : "RON",
+      "balance" : 6845.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
@@ -395,8 +391,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7164.0,
       "currency" : "CHF",
+      "balance" : 7164.0,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -409,8 +405,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 1828.0,
       "currency" : "CAD",
+      "balance" : 1828.0,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -423,8 +419,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 1895.0,
       "currency" : "RON",
+      "balance" : 1895.0,
       "IBAN" : "RO37POOB7013767509830666"
     } ]
   }, {
@@ -437,8 +433,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 8357.626262626263,
       "currency" : "USD",
+      "balance" : 8357.626262626263,
       "IBAN" : "RO19POOB4981055641668812"
     } ]
   }, {
@@ -448,8 +444,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 183.0,
       "currency" : "NZD",
+      "balance" : 183.0,
       "IBAN" : "RO79POOB3616857825600958"
     } ]
   }, {
@@ -459,8 +455,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 66.0,
       "currency" : "GBP",
+      "balance" : 66.0,
       "IBAN" : "RO00POOB5687892910835215"
     } ]
   }, {
@@ -470,8 +466,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 641.0,
       "currency" : "CAD",
+      "balance" : 641.0,
       "IBAN" : "RO96POOB6738272785416988"
     } ]
   }, {
@@ -481,8 +477,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 129.0,
       "currency" : "INR",
+      "balance" : 129.0,
       "IBAN" : "RO33POOB4049920806186500"
     } ]
   }, {
@@ -492,8 +488,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 835.0,
       "currency" : "RON",
+      "balance" : 835.0,
       "IBAN" : "RO69POOB9846198978826791"
     } ]
   }, {
@@ -503,8 +499,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 53.0,
       "currency" : "MXN",
+      "balance" : 53.0,
       "IBAN" : "RO98POOB8412955460158769"
     } ]
   }, {
@@ -514,8 +510,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 130.0,
       "currency" : "INR",
+      "balance" : 130.0,
       "IBAN" : "RO32POOB0130532963818359"
     } ]
   }, {
@@ -525,8 +521,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 5728.0,
       "currency" : "CAD",
+      "balance" : 5728.0,
       "IBAN" : "RO68POOB1848616931405475"
     } ]
   }, {
@@ -536,8 +532,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 552.0,
       "currency" : "EUR",
+      "balance" : 552.0,
       "IBAN" : "RO10POOB4354933866366881"
     } ]
   }, {
@@ -547,8 +543,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 322.0,
       "currency" : "MXN",
+      "balance" : 322.0,
       "IBAN" : "RO33POOB9999273999620457"
     } ]
   }, {
@@ -558,8 +554,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 781.0,
       "currency" : "CHF",
+      "balance" : 781.0,
       "IBAN" : "RO38POOB0964823730995794"
     } ]
   }, {
@@ -569,8 +565,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 813.0,
       "currency" : "CHF",
+      "balance" : 813.0,
       "IBAN" : "RO53POOB7122855990652257"
     } ]
   }, {
@@ -580,120 +576,19 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2125.0,
       "currency" : "CHF",
+      "balance" : 2125.0,
       "IBAN" : "RO71POOB1634969878734749"
     } ]
   } ],
   "timestamp" : 92
 }, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 93
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 94
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 95
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 96
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 97
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 98
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 99
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 100
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 101
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 102
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 103
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 104
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 105
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 106
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 107
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 108
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 109
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 110
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 111
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 112
-}, {
-  "command" : "checkCardStatus",
-  "error" : "Invalid command: checkCardStatus",
-  "timestamp" : 115
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 116
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 117
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 118
-}, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 5,
+    "description" : "New account created"
+  } ],
   "timestamp" : 119
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 123
-}, {
-  "command" : "report",
-  "error" : "Invalid command: report",
-  "timestamp" : 124
 }, {
   "command" : "payOnline",
   "output" : {
@@ -836,15 +731,51 @@
   "timestamp" : 164
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 6,
+    "description" : "New account created"
+  } ],
   "timestamp" : 172
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 4,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 33,
+    "description" : "Transfer to a Commerzbank savings account",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO19POOB4981055641668812",
+    "amount" : "13.0 EUR",
+    "transferType" : "sent"
+  }, {
+    "timestamp" : 34,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 35,
+    "description" : "Booking a trip to the Bavarian Alps",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO30POOB9523423715747796",
+    "amount" : "74.0 EUR",
+    "transferType" : "sent"
+  }, {
+    "timestamp" : 37,
+    "description" : "Repayment for a car loan",
+    "senderIBAN" : "RO30POOB9523423715747796",
+    "receiverIBAN" : "RO58POOB7344468893732422",
+    "amount" : "94.0 EUR",
+    "transferType" : "sent"
+  } ],
   "timestamp" : 173
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 41,
+    "description" : "New account created"
+  } ],
   "timestamp" : 174
 }, {
   "command" : "printUsers",
@@ -858,14 +789,14 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7264.0,
       "currency" : "EUR",
+      "balance" : 7264.0,
       "IBAN" : "RO69POOB6209498372540635"
     }, {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2639.0,
       "currency" : "EUR",
+      "balance" : 2639.0,
       "IBAN" : "RO30POOB9523423715747796"
     } ]
   }, {
@@ -881,8 +812,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 2493.0,
       "currency" : "NZD",
+      "balance" : 2493.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -892,8 +823,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 23500.0,
       "currency" : "RON",
+      "balance" : 23500.0,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
       "cards" : [ {
@@ -901,8 +832,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7645.0,
       "currency" : "RON",
+      "balance" : 7645.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
@@ -915,8 +846,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 7399.0,
       "currency" : "CHF",
+      "balance" : 7399.0,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -929,8 +860,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 2576.0,
       "currency" : "CAD",
+      "balance" : 2576.0,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -943,8 +874,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 2557.0,
       "currency" : "RON",
+      "balance" : 2557.0,
       "IBAN" : "RO37POOB7013767509830666"
     } ]
   }, {
@@ -957,8 +888,8 @@
         "status" : "active"
       } ],
       "type" : "savings",
-      "balance" : 11383.626262626263,
       "currency" : "USD",
+      "balance" : 11383.626262626263,
       "IBAN" : "RO19POOB4981055641668812"
     } ]
   }, {
@@ -968,8 +899,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1006.0,
       "currency" : "NZD",
+      "balance" : 1006.0,
       "IBAN" : "RO79POOB3616857825600958"
     } ]
   }, {
@@ -979,8 +910,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 558.0,
       "currency" : "GBP",
+      "balance" : 558.0,
       "IBAN" : "RO00POOB5687892910835215"
     } ]
   }, {
@@ -990,8 +921,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1107.0,
       "currency" : "CAD",
+      "balance" : 1107.0,
       "IBAN" : "RO96POOB6738272785416988"
     } ]
   }, {
@@ -1001,8 +932,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 7476.0,
       "currency" : "INR",
+      "balance" : 7476.0,
       "IBAN" : "RO33POOB4049920806186500"
     } ]
   }, {
@@ -1012,8 +943,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1800.0,
       "currency" : "RON",
+      "balance" : 1800.0,
       "IBAN" : "RO69POOB9846198978826791"
     } ]
   }, {
@@ -1023,8 +954,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 28.0,
       "currency" : "MXN",
+      "balance" : 28.0,
       "IBAN" : "RO98POOB8412955460158769"
     } ]
   }, {
@@ -1034,8 +965,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 212.0,
       "currency" : "INR",
+      "balance" : 212.0,
       "IBAN" : "RO32POOB0130532963818359"
     } ]
   }, {
@@ -1048,8 +979,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 6581.0,
       "currency" : "CAD",
+      "balance" : 6581.0,
       "IBAN" : "RO68POOB1848616931405475"
     } ]
   }, {
@@ -1059,8 +990,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 798.0,
       "currency" : "EUR",
+      "balance" : 798.0,
       "IBAN" : "RO10POOB4354933866366881"
     } ]
   }, {
@@ -1070,8 +1001,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 189.0,
       "currency" : "MXN",
+      "balance" : 189.0,
       "IBAN" : "RO33POOB9999273999620457"
     } ]
   }, {
@@ -1084,8 +1015,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 11308.0,
       "currency" : "CHF",
+      "balance" : 11308.0,
       "IBAN" : "RO38POOB0964823730995794"
     } ]
   }, {
@@ -1095,8 +1026,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1024.0,
       "currency" : "CHF",
+      "balance" : 1024.0,
       "IBAN" : "RO53POOB7122855990652257"
     } ]
   }, {
@@ -1106,90 +1037,10 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2951.0,
       "currency" : "CHF",
+      "balance" : 2951.0,
       "IBAN" : "RO71POOB1634969878734749"
     } ]
   } ],
   "timestamp" : 175
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 176
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 177
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 178
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 179
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 180
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 181
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 182
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 183
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 184
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 185
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 186
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 187
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 188
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 189
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 190
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 191
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 192
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 193
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 194
-}, {
-  "command" : "spendingsReport",
-  "error" : "Invalid command: spendingsReport",
-  "timestamp" : 195
 } ]

@@ -7,8 +7,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "RON",
+      "balance" : 0.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
@@ -28,8 +28,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "RON",
+      "balance" : 0.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
@@ -49,8 +49,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "RON",
+      "balance" : 0.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],

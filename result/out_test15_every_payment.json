@@ -7,8 +7,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1708.0,
       "currency" : "EUR",
+      "balance" : 1708.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -23,8 +23,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 1500.0,
       "currency" : "USD",
+      "balance" : 1500.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -39,8 +39,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 615.0,
       "currency" : "USD",
+      "balance" : 615.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -69,8 +69,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 9416.4,
       "currency" : "EUR",
+      "balance" : 9416.4,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -85,8 +85,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 2861.1111111111113,
       "currency" : "USD",
+      "balance" : 2861.1111111111113,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -101,8 +101,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 615.0,
       "currency" : "USD",
+      "balance" : 615.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -113,23 +113,24 @@
   } ],
   "timestamp" : 18
 }, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 28
-}, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 29
-}, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 17,
+    "description" : "Navigo pass for metro rides",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "1225.0 EUR",
+    "transferType" : "sent"
+  } ],
   "timestamp" : 30
 }, {
-  "command" : "splitPayment",
-  "error" : "Invalid command: splitPayment",
-  "timestamp" : 33
-}, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 21,
+    "description" : "New account created"
+  } ],
   "timestamp" : 34
 } ]

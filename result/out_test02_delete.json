@@ -21,8 +21,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "EUR",
+      "balance" : 0.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -32,8 +32,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "RON",
+      "balance" : 0.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   } ],
@@ -59,8 +59,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 0.0,
       "currency" : "RON",
+      "balance" : 0.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   } ],

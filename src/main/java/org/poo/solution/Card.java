@@ -13,11 +13,11 @@ public class Card {
     private String cardHolder;
     @JsonIgnore
     private String expirationDate;
-    @JsonIgnore
-    private int cvv;
+    private String status;
     @JsonIgnore
     private double balance;
-    private String status;
+    @JsonIgnore
+    private int cvv;
 
     // Builder class for Cards
     @Data
@@ -25,9 +25,9 @@ public class Card {
         private String cardNumber;
         private String cardHolder;
         private String expirationDate;
-        private int cvv;
-        private double balance;
         private String status;
+        private double balance;
+        private int cvv;
 
         public CardBuilder setCardNumber(String cardNumber) {
             this.cardNumber = cardNumber;

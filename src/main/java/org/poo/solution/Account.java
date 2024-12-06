@@ -12,25 +12,27 @@ import java.util.List;
 @Data
 public class Account {
     private List<Card> cards;
-    @JsonIgnore
-    private int interestRate;
     private String type;
     @JsonProperty("IBAN")
     private String IBAN;
-    private double balance;
-    private String currency;
+    @JsonIgnore
+    private String alias;
     @JsonIgnore
     private String owner;
-    @JsonIgnore
-    private int id;
+    private String currency;
     @JsonIgnore
     private String description;
-    @JsonIgnore
-    private double minBalance;
     @JsonIgnore
     private String commerciants;
     @JsonIgnore
     private String status;
+    @JsonIgnore
+    private double minBalance;
+    private double balance;
+    @JsonIgnore
+    private int interestRate;
+    @JsonIgnore
+    private int id;
 
     // Constructor to initialize the cards list
     public Account() {
@@ -40,17 +42,23 @@ public class Account {
     // Builder class for Account
     public static class AccountBuilder {
         private List<Card> cards = new ArrayList<>();
-        private int interestRate;
         private String type;
         private String IBAN;
-        private double balance;
+        private String alias;
         private String currency;
         private String owner;
-        private int id;
         private String description;
-        private double minBalance;
         private String commerciants;
         private String status;
+        private int interestRate;
+        private double balance;
+        private int id;
+        private double minBalance;
+
+        public AccountBuilder setAlias(String alias) {
+            this.alias = alias;
+            return this;
+        }
 
         public AccountBuilder setCards(List<Card> cards) {
             this.cards = cards;
@@ -118,6 +126,7 @@ public class Account {
             account.interestRate = this.interestRate;
             account.type = this.type;
             account.IBAN = this.IBAN;
+            account.alias = this.alias;
             account.balance = this.balance;
             account.currency = this.currency;
             account.owner = this.owner;

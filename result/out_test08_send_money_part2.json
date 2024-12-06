@@ -10,8 +10,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 557.0,
       "currency" : "USD",
+      "balance" : 557.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -21,8 +21,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 6630.0,
       "currency" : "USD",
+      "balance" : 6630.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -32,8 +32,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 6900.0,
       "currency" : "EUR",
+      "balance" : 6900.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],
@@ -50,8 +50,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 75.0,
       "currency" : "USD",
+      "balance" : 75.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -61,8 +61,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 7011.0,
       "currency" : "USD",
+      "balance" : 7011.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -72,8 +72,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 6980.8,
       "currency" : "EUR",
+      "balance" : 6980.8,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],
@@ -90,8 +90,8 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "balance" : 1729.0,
       "currency" : "USD",
+      "balance" : 1729.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -101,8 +101,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 11836.0,
       "currency" : "USD",
+      "balance" : 11836.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -112,8 +112,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 6980.8,
       "currency" : "EUR",
+      "balance" : 6980.8,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],

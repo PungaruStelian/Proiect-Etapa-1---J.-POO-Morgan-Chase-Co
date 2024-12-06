@@ -1,16 +1,4 @@
 [ {
-  "command" : "setAlias",
-  "error" : "Invalid command: setAlias",
-  "timestamp" : 7
-}, {
-  "command" : "setAlias",
-  "error" : "Invalid command: setAlias",
-  "timestamp" : 8
-}, {
-  "command" : "setAlias",
-  "error" : "Invalid command: setAlias",
-  "timestamp" : 9
-}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Laurie",
@@ -19,8 +7,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 3500.0,
       "currency" : "USD",
+      "balance" : 3500.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -30,8 +18,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 813.0,
       "currency" : "USD",
+      "balance" : 813.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -41,15 +29,25 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 29.0,
       "currency" : "EUR",
+      "balance" : 29.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   } ],
   "timestamp" : 10
 }, {
   "command" : "printTransactions",
-  "error" : "Invalid command: printTransactions",
+  "output" : [ {
+    "timestamp" : 1,
+    "description" : "New account created"
+  }, {
+    "timestamp" : 11,
+    "description" : "Miscellaneous online expenses",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635",
+    "amount" : "109.0 USD",
+    "transferType" : "sent"
+  } ],
   "timestamp" : 14
 }, {
   "command" : "printUsers",
@@ -60,8 +58,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 3283.0,
       "currency" : "USD",
+      "balance" : 3283.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -71,8 +69,8 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 922.0,
       "currency" : "USD",
+      "balance" : 922.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -82,14 +80,14 @@
     "accounts" : [ {
       "cards" : [ ],
       "type" : "classic",
-      "balance" : 29.0,
       "currency" : "EUR",
+      "balance" : 29.0,
       "IBAN" : "RO90POOB5450777208072365"
     }, {
       "cards" : [ ],
       "type" : "savings",
-      "balance" : 283.4,
       "currency" : "EUR",
+      "balance" : 283.4,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
