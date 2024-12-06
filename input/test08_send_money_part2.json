@@ -79,9 +79,6 @@
             "timestamp": 8
         },
         {
-            "command": "breakpoint"
-        },
-        {
             "command": "sendMoney",
             "account": "RO58POOB7344468893732422",
             "receiver": "RO69POOB6209498372540635",
@@ -89,9 +86,6 @@
             "timestamp": 9,
             "email": "Patrick_Cabrera@hotmail.us",
             "description": "Netflix subscription renewal"
-        },
-        {
-            "command": "breakpoint"
         },
         {
             "command": "sendMoney",
@@ -103,9 +97,6 @@
             "description": "Weekly groceries from Walmart"
         },
         {
-            "command": "breakpoint"
-        },
-        {
             "command": "sendMoney",
             "account": "RO90POOB5450777208072365",
             "receiver": "RO58POOB7344468893732422",
@@ -113,9 +104,6 @@
             "timestamp": 11,
             "email": "Elise_Devaux@outlook.fr",
             "description": "Tickets for a French comedy show"
-        },
-        {
-            "command": "breakpoint"
         },
         {
             "command": "printUsers",

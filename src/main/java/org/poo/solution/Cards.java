@@ -18,12 +18,9 @@ public class Cards {
     @JsonIgnore
     private double balance;
     private String status;
-    @JsonIgnore
-    private boolean isPermanent;
-    @JsonIgnore
-    private boolean isUsed;
 
     // Builder class for Cards
+    @Data
     public static class CardsBuilder {
         private String cardNumber;
         private String cardHolder;
@@ -31,13 +28,6 @@ public class Cards {
         private int cvv;
         private double balance;
         private String status;
-        private boolean isPermanent;
-        private boolean isUsed;
-
-        public CardsBuilder setUsed(boolean isUsed) {
-            this.isUsed = isUsed;
-            return this;
-        }
 
         public CardsBuilder setCardNumber(String cardNumber) {
             this.cardNumber = cardNumber;
@@ -69,11 +59,6 @@ public class Cards {
             return this;
         }
 
-        public CardsBuilder setPermanent(boolean isPermanent) {
-            this.isPermanent = isPermanent;
-            return this;
-        }
-
         public Cards build() {
             Cards card = new Cards();
             card.cardNumber = this.cardNumber;
@@ -82,8 +67,6 @@ public class Cards {
             card.cvv = this.cvv;
             card.balance = this.balance;
             card.status = this.status;
-            card.isPermanent = this.isPermanent;
-            card.isUsed = this.isUsed;
             return card;
         }
     }

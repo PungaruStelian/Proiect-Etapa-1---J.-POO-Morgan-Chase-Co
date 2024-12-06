@@ -132,7 +132,7 @@ public final class Main {
                     break;
 
                 case "sendMoney":
-                    handle.sendMoney(object, command, result, output);
+                    handle.sendMoney(object, command);
                     break;
 
                 case "breakpoint":

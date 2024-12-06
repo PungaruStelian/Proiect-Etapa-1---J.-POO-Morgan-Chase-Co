@@ -83,8 +83,6 @@ public class Handle {
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setCardHolder(user.getFirstName() + " " + user.getLastName())
                                 .setStatus("active")
-                                .setPermanent(true)
-                                .setUsed(false)
                                 .build();
                         account.getCards().add(newCard);
                     }
@@ -124,7 +122,7 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
-                        Cards newCard = new Cards.CardsBuilder()
+                        OneTimeCard newCard = new OneTimeCard.OneTimeCardBuilder()
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setCardHolder(user.getFirstName() + " " + user.getLastName())
                                 .setStatus("active")
@@ -163,7 +161,7 @@ public class Handle {
                             output.add(result);
                             return;
                         }
-                        if (card.isUsed()) {
+                        if (card instanceof OneTimeCard && ((OneTimeCard) card).isUsed()) {
                             ObjectNode outputNode = objectMapper.createObjectNode();
                             outputNode.put("description", "Card already used");
                             outputNode.put("timestamp", command.getTimestamp());
@@ -180,8 +178,8 @@ public class Handle {
                             exhg = command.getAmount();
                         }
                         account.withdrawFunds(exhg);
-                        if(!card.isPermanent()) {
-                            card.setUsed(true);
+                        if(card instanceof OneTimeCard) {
+                            ((OneTimeCard) card).setUsed(true);
                         }
                         return;
                     }
@@ -196,7 +194,7 @@ public class Handle {
         output.add(result);
     }
 
-    public void sendMoney(Object object, Command command, ObjectNode result, ArrayNode output) {
+    public void sendMoney(Object object, Command command) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
                 if (account.getIBAN().equals(command.getAccount())) {
