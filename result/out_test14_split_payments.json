@@ -8,7 +8,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "EUR",
-      "balance" : 4782.0,
+      "balance" : 4464.75,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -19,7 +19,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "EUR",
-      "balance" : 5845.0,
+      "balance" : 5527.75,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -30,7 +30,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "RON",
-      "balance" : 3359.0,
+      "balance" : 2026.55,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -41,7 +41,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "RON",
-      "balance" : 3461.0,
+      "balance" : 2128.55,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -63,7 +63,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "EUR",
-      "balance" : 5707.0,
+      "balance" : 5389.75,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   }, {
@@ -74,7 +74,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "EUR",
-      "balance" : 6204.0,
+      "balance" : 5886.75,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -85,7 +85,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "RON",
-      "balance" : 4144.0,
+      "balance" : 2811.55,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -96,7 +96,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "RON",
-      "balance" : 4198.0,
+      "balance" : 2865.55,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -106,6 +106,24 @@
   "output" : [ {
     "timestamp" : 1,
     "description" : "New account created"
+  }, {
+    "timestamp" : 9,
+    "description" : "Split payment of 1269.00 EUR",
+    "amount" : 317.25,
+    "currency" : "EUR",
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO65POOB8944016386845896" ]
+  }, {
+    "timestamp" : 17,
+    "description" : "Split payment of 186.00 EUR",
+    "amount" : 46.5,
+    "currency" : "EUR",
+    "involvedAccounts" : [ "RO58POOB7344468893732422", "RO90POOB5450777208072365", "RO65POOB8944016386845896", "RO69POOB6209498372540635" ]
+  }, {
+    "timestamp" : 18,
+    "description" : "Split payment of 3197.00 EUR",
+    "amount" : 1598.5,
+    "currency" : "EUR",
+    "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB7344468893732422" ]
   } ],
   "timestamp" : 19
 } ]

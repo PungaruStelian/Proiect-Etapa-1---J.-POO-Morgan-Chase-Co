@@ -30,7 +30,7 @@ public class Account {
     private double minBalance;
     private double balance;
     @JsonIgnore
-    private int interestRate;
+    private double interestRate;
     @JsonIgnore
     private int id;
 

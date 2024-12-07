@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Locale;
 
 // Singleton
 public class Handle {
@@ -157,6 +158,13 @@ public class Handle {
                                 .setStatus("active")
                                 .build();
                         account.getCards().add(newCard);
+                        ObjectNode transaction = objectMapper.createObjectNode();
+                        transaction.put("timestamp", command.getTimestamp());
+                        transaction.put("description", "New card created");
+                        transaction.put("account", account.getIBAN());
+                        transaction.put("cardHolder", user.getEmail());
+                        transaction.put("card", newCard.getCardNumber());
+                        user.getTransactions().add(transaction);
                     }
                 }
             }
@@ -269,7 +277,14 @@ public class Handle {
                                 } else {
                                     exhg = command.getAmount();
                                 }
-                                account.transferFunds(receiverAccount, command.getAmount(), exhg);
+                                if(!account.transferFunds(receiverAccount, command.getAmount(), exhg))
+                                {
+                                    ObjectNode transaction = objectMapper.createObjectNode();
+                                    transaction.put("timestamp", command.getTimestamp());
+                                    transaction.put("description", "Insufficient funds");
+                                    user.getTransactions().add(transaction);
+                                    return;
+                                }
 
                                 // Add the specified JSON object to the transactions
                                 ObjectNode transaction = objectMapper.createObjectNode();
@@ -315,7 +330,7 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 ArrayNode filteredTransactions = objectMapper.createArrayNode();
                 for (int i = 0; i < user.getTransactions().size(); i++) {
-                    if (user.getTransactions().get(i).get("timestamp").asInt() <= command.getTimestamp()) {
+                    if (user.getTransactions().get(i).get("timestamp").asInt() < command.getTimestamp()) {
                         filteredTransactions.add(user.getTransactions().get(i));
                     }
                 }
@@ -352,5 +367,97 @@ public class Handle {
         result.set("output", outputNode);
         result.put("timestamp", command.getTimestamp());
         output.add(result);
+    }
+
+    public void splitPayment(Object object, Command command, ObjectNode result, ArrayNode output) {
+        for (User user : object.getUsers()) {
+            for (Account account : user.getAccounts()) {
+                for(String iban : command.getAccounts()) {
+                    if(account.getIBAN().equals(iban)) {
+                        double exhg;
+                        if (!Objects.equals(account.getCurrency(), command.getCurrency())) {
+                            exhg = account.getExchange(object, command.getCurrency(), account.getCurrency(), command.getAmount() / command.getAccounts().size());
+                        } else {
+                            exhg = command.getAmount() / command.getAccounts().size();
+                        }
+                        if(!account.withdrawFunds(exhg))
+                        {
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "Insufficient funds");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
+                        ObjectNode transaction = objectMapper.createObjectNode();
+                        transaction.put("timestamp", command.getTimestamp());
+                        transaction.put("description", "Split payment of " + String.format(Locale.US, "%.2f", command.getAmount()) + " " + command.getCurrency());
+                        transaction.put("amount", command.getAmount() / command.getAccounts().size());
+                        transaction.put("currency", command.getCurrency());
+                        ArrayNode involvedAccounts = objectMapper.createArrayNode();
+                        for (String involvedIban : command.getAccounts()) {
+                            involvedAccounts.add(involvedIban);
+                        }
+                        transaction.set("involvedAccounts", involvedAccounts);
+                        user.getTransactions().add(transaction);
+                    }
+                }
+            }
+        }
+    }
+
+    public void changeInterestRate(Object object, Command command) {
+        for (User user : object.getUsers()) {
+            for (Account account : user.getAccounts()) {
+                if (account.getIBAN().equals(command.getAccount())) {
+                    account.setInterestRate(command.getInterestRate());
+                    return;
+                }
+            }
+        }
+    }
+
+    public void addInterest(Object object, Command command) {
+        for (User user : object.getUsers()) {
+            for (Account account : user.getAccounts()) {
+                double interest = account.getBalance() * account.getInterestRate();
+                account.addFunds(interest);
+            }
+        }
+    }
+
+    public void report(Object object, Command command, ObjectNode result, ArrayNode output) {
+//        for (User user : object.getUsers()) {
+//            if (user.getEmail().equals(command.getEmail())) {
+//                ArrayNode filteredTransactions = objectMapper.createArrayNode();
+//                for (int i = 0; i < user.getTransactions().size(); i++) {
+//                    if (user.getTransactions().get(i).get("timestamp").asInt() < command.getEndTimestamp() && user.getTransactions().get(i).get("timestamp").asInt() > command.getStartTimestamp()) {
+//                        filteredTransactions.add(user.getTransactions().get(i));
+//                    }
+//                }
+//                result.put("command", "report");
+//                result.set("output", filteredTransactions);
+//                result.put("timestamp", command.getTimestamp());
+//                output.add(result);
+//                return;
+//            }
+//        }
+    }
+
+    public void spendingsReport(Object object, Command command, ObjectNode result, ArrayNode output) {
+//        for (User user : object.getUsers()) {
+//            if (user.getEmail().equals(command.getEmail())) {
+//                ArrayNode filteredTransactions = objectMapper.createArrayNode();
+//                for (int i = 0; i < user.getTransactions().size(); i++) {
+//                    if (user.getTransactions().get(i).get("timestamp").asInt() < command.getEndTimestamp() && user.getTransactions().get(i).get("timestamp").asInt() > command.getStartTimestamp()) {
+//                        filteredTransactions.add(user.getTransactions().get(i));
+//                    }
+//                }
+//                result.put("command", "spendingReport");
+//                result.set("output", filteredTransactions);
+//                result.put("timestamp", command.getTimestamp());
+//                output.add(result);
+//                return;
+//            }
+//        }
     }
 }

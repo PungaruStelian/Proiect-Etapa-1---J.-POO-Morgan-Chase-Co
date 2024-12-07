@@ -136,6 +136,14 @@ public final class Main {
                     handle.sendMoney(object, command);
                     break;
 
+                case "changeInterestRate":
+                    handle.changeInterestRate(object, command);
+                    break;
+
+                case "addInterest":
+                    handle.addInterest(object, command);
+                    break;
+
                 case "setAlias":
                     handle.setAlias(object, command);
                     break;
@@ -148,11 +156,24 @@ public final class Main {
                     handle.checkCardStatus(object, command, result, output);
                     break;
 
+                case "splitPayment":
+                    handle.splitPayment(object, command, result, output);
+                    break;
+
+                case "report":
+                    handle.report(object, command, result, output);
+                    break;
+
+                case "spendingsReport":
+                    handle.spendingsReport(object, command, result, output);
+                    break;
+
                 case "breakpoint":
                     break;
 
                 default:
                     result.put("error", "Invalid command: " + command.getCommand());
+                    output.add(result);
                     break;
             }
         }
