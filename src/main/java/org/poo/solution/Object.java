@@ -3,6 +3,7 @@ package org.poo.solution;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.poo.fileio.ObjectInput;
+import java.util.*;
 
 // Singleton
 @Data
@@ -50,21 +51,40 @@ public class Object {
             }
         }
     }
+
     public double getExchangeRate(String from, String to) {
+        Map<String, Map<String, Double>> graph = new HashMap<>();
         for (Exchange exchange : exchangeRates) {
-            if (exchange.getFrom().equals(from) && exchange.getTo().equals(to)) {
-                return exchange.getRate();
+            graph.putIfAbsent(exchange.getFrom(), new HashMap<>());
+            graph.putIfAbsent(exchange.getTo(), new HashMap<>());
+            graph.get(exchange.getFrom()).put(exchange.getTo(), exchange.getRate());
+            graph.get(exchange.getTo()).put(exchange.getFrom(), 1 / exchange.getRate());
+        }
+        Queue<String> queue = new LinkedList<>();
+        Queue<Double> rates = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
+        queue.add(from);
+        rates.add(1.0);
+        visited.add(from);
+        while (!queue.isEmpty()) {
+            String current = queue.poll();
+            Double currentRate = rates.poll();
+            if (currentRate == null) {
+                continue;
             }
-            if(exchange.getFrom().equals(to) && exchange.getTo().equals(from)) {
-                return 1 / exchange.getRate();
+            if (current.equals(to)) {
+                return currentRate;
+            }
+            if (graph.containsKey(current)) {
+                for (Map.Entry<String, Double> neighbor : graph.get(current).entrySet()) {
+                    if (!visited.contains(neighbor.getKey())) {
+                        queue.add(neighbor.getKey());
+                        rates.add(currentRate * neighbor.getValue());
+                        visited.add(neighbor.getKey());
+                    }
+                }
             }
         }
-        if(exchangeRates[0].getFrom().equals(from) && exchangeRates[1].getTo().equals(to)) {
-            return exchangeRates[0].getRate() * exchangeRates[1].getRate();
-        }
-        if(exchangeRates[0].getFrom().equals(to) && exchangeRates[1].getTo().equals(from)) {
-            return 1 / (exchangeRates[0].getRate() * exchangeRates[1].getRate());
-        }
-        return 0;
+        return 0.0;
     }
 }

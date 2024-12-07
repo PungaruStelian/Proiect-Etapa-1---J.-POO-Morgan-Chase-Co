@@ -267,6 +267,7 @@ public class Handle {
                                 receiverTransaction.put("receiverIBAN", receiverAccount.getIBAN());
                                 receiverTransaction.put("amount", command.getAmount() + " " + account.getCurrency());
                                 receiverTransaction.put("transferType", "received");
+                                receiver.getTransactions().add(receiverTransaction);
                                 return;
                             }
                         }

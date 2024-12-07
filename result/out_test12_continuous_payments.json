@@ -368,6 +368,27 @@
   "output" : [ {
     "timestamp" : 36,
     "description" : "New account created"
+  }, {
+    "timestamp" : 38,
+    "description" : "Monthly rent payment for a Parisian flat",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO76POOB4035116042454483",
+    "amount" : "557.0 EUR",
+    "transferType" : "received"
+  }, {
+    "timestamp" : 40,
+    "description" : "Medical checkup at Regina Maria",
+    "senderIBAN" : "RO58POOB2721178218599590",
+    "receiverIBAN" : "RO76POOB4035116042454483",
+    "amount" : "440.0 RON",
+    "transferType" : "received"
+  }, {
+    "timestamp" : 47,
+    "description" : "Miscellaneous online expenses",
+    "senderIBAN" : "RO65POOB8944016386845896",
+    "receiverIBAN" : "RO76POOB4035116042454483",
+    "amount" : "284.0 USD",
+    "transferType" : "received"
   } ],
   "timestamp" : 52
 } ]

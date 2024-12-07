@@ -100,7 +100,7 @@
       } ],
       "type" : "classic",
       "currency" : "EUR",
-      "balance" : 842.0,
+      "balance" : 495.3333333333333,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -125,15 +125,15 @@
     "card" : "8207906978464446"
   }, {
     "timestamp" : 21,
-    "description" : "Insufficient funds"
+    "description" : "Card payment",
+    "amount" : 346.6666666666667,
+    "commerciant" : "KFC"
   }, {
     "timestamp" : 23,
     "description" : "Insufficient funds"
   }, {
     "timestamp" : 24,
-    "description" : "Card payment",
-    "amount" : 736.8000000000001,
-    "commerciant" : "Apple"
+    "description" : "Insufficient funds"
   }, {
     "timestamp" : 25,
     "description" : "The card has been destroyed",

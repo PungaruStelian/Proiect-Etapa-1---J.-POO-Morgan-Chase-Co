@@ -45,7 +45,7 @@
       } ],
       "type" : "classic",
       "currency" : "NZD",
-      "balance" : 1613.0,
+      "balance" : 1597.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -79,7 +79,7 @@
       } ],
       "type" : "classic",
       "currency" : "CHF",
-      "balance" : 851.0,
+      "balance" : 534.5384615384615,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -93,7 +93,7 @@
       } ],
       "type" : "classic",
       "currency" : "CAD",
-      "balance" : 924.0,
+      "balance" : 711.6666666666666,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -195,9 +195,30 @@
   "command" : "payOnline",
   "output" : {
     "description" : "Card already used",
+    "timestamp" : 72
+  },
+  "timestamp" : 72
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card already used",
     "timestamp" : 73
   },
   "timestamp" : 73
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card already used",
+    "timestamp" : 74
+  },
+  "timestamp" : 74
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card already used",
+    "timestamp" : 75
+  },
+  "timestamp" : 75
 }, {
   "command" : "payOnline",
   "output" : {
@@ -343,7 +364,7 @@
       } ],
       "type" : "classic",
       "currency" : "NZD",
-      "balance" : 2165.0,
+      "balance" : 2149.0,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -377,7 +398,7 @@
       } ],
       "type" : "classic",
       "currency" : "CHF",
-      "balance" : 7008.0,
+      "balance" : 6847.538461538462,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -391,7 +412,7 @@
       } ],
       "type" : "classic",
       "currency" : "CAD",
-      "balance" : 1828.0,
+      "balance" : 1615.6666666666665,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -574,10 +595,9 @@
     "description" : "New account created"
   }, {
     "timestamp" : 27,
-    "description" : "Insufficient funds"
-  }, {
-    "timestamp" : 72,
-    "description" : "Insufficient funds"
+    "description" : "Card payment",
+    "amount" : 16.0,
+    "commerciant" : "Microsoft"
   }, {
     "timestamp" : 113,
     "description" : "New card created",
@@ -586,6 +606,13 @@
     "card" : "5088727507344799"
   } ],
   "timestamp" : 119
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card already used",
+    "timestamp" : 145
+  },
+  "timestamp" : 145
 }, {
   "command" : "payOnline",
   "output" : {
@@ -600,6 +627,13 @@
     "timestamp" : 147
   },
   "timestamp" : 147
+}, {
+  "command" : "payOnline",
+  "output" : {
+    "description" : "Card already used",
+    "timestamp" : 148
+  },
+  "timestamp" : 148
 }, {
   "command" : "payOnline",
   "output" : {
@@ -725,6 +759,20 @@
     "description" : "Card payment",
     "amount" : 1915.0,
     "commerciant" : "Gucci"
+  }, {
+    "timestamp" : 37,
+    "description" : "Repayment for a car loan",
+    "senderIBAN" : "RO30POOB9523423715747796",
+    "receiverIBAN" : "RO58POOB7344468893732422",
+    "amount" : "94.0 EUR",
+    "transferType" : "received"
+  }, {
+    "timestamp" : 171,
+    "description" : "Repayment for a personal loan",
+    "senderIBAN" : "RO98POOB8412955460158769",
+    "receiverIBAN" : "RO65POOB8944016386845896",
+    "amount" : "105.0 MXN",
+    "transferType" : "received"
   } ],
   "timestamp" : 172
 }, {
@@ -754,6 +802,13 @@
     "receiverIBAN" : "RO30POOB9523423715747796",
     "amount" : "74.0 EUR",
     "transferType" : "sent"
+  }, {
+    "timestamp" : 35,
+    "description" : "Booking a trip to the Bavarian Alps",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO30POOB9523423715747796",
+    "amount" : "74.0 EUR",
+    "transferType" : "received"
   }, {
     "timestamp" : 37,
     "description" : "Repayment for a car loan",
@@ -806,7 +861,7 @@
       } ],
       "type" : "classic",
       "currency" : "NZD",
-      "balance" : 2249.0,
+      "balance" : 2498.2,
       "IBAN" : "RO90POOB5450777208072365"
     } ]
   }, {
@@ -826,7 +881,7 @@
       } ],
       "type" : "classic",
       "currency" : "RON",
-      "balance" : 7645.0,
+      "balance" : 7668.625,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   }, {
@@ -840,7 +895,7 @@
       } ],
       "type" : "classic",
       "currency" : "CHF",
-      "balance" : 7243.0,
+      "balance" : 7336.913461538462,
       "IBAN" : "RO58POOB2721178218599590"
     } ]
   }, {
@@ -854,7 +909,7 @@
       } ],
       "type" : "classic",
       "currency" : "CAD",
-      "balance" : 2101.0,
+      "balance" : 2363.6666666666665,
       "IBAN" : "RO76POOB4035116042454483"
     } ]
   }, {
@@ -868,7 +923,7 @@
       } ],
       "type" : "savings",
       "currency" : "RON",
-      "balance" : 2557.0,
+      "balance" : 2571.464285714286,
       "IBAN" : "RO37POOB7013767509830666"
     } ]
   }, {
@@ -948,7 +1003,7 @@
       "cards" : [ ],
       "type" : "classic",
       "currency" : "MXN",
-      "balance" : 28.0,
+      "balance" : 4991.636363636363,
       "IBAN" : "RO98POOB8412955460158769"
     } ]
   }, {
