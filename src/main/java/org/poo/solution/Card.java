@@ -15,8 +15,6 @@ public class Card {
     private String expirationDate;
     private String status;
     @JsonIgnore
-    private double balance;
-    @JsonIgnore
     private int cvv;
 
     // Builder class for Cards
@@ -26,7 +24,6 @@ public class Card {
         private String cardHolder;
         private String expirationDate;
         private String status;
-        private double balance;
         private int cvv;
 
         public CardBuilder setCardNumber(String cardNumber) {
@@ -49,11 +46,6 @@ public class Card {
             return this;
         }
 
-        public CardBuilder setBalance(double balance) {
-            this.balance = balance;
-            return this;
-        }
-
         public CardBuilder setStatus(String status) {
             this.status = status;
             return this;
@@ -65,7 +57,6 @@ public class Card {
             card.cardHolder = this.cardHolder;
             card.expirationDate = this.expirationDate;
             card.cvv = this.cvv;
-            card.balance = this.balance;
             card.status = this.status;
             return card;
         }
@@ -76,9 +67,17 @@ public class Card {
         this.status = "active";
     }
 
+    public boolean ruFrozen() {
+        return this.status.equals("frozen");
+    }
+
     // Method to deactivate the card
-    public void deactivate() {
-        this.status = "inactive";
+    public void makeFrozen() {
+        this.status = "frozen";
+    }
+
+    public void makeWarning() {
+        this.status = "warning";
     }
 
     // Validation methods

@@ -589,6 +589,104 @@
   } ],
   "timestamp" : 92
 }, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 99
+  },
+  "timestamp" : 99
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 100
+  },
+  "timestamp" : 100
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 101
+  },
+  "timestamp" : 101
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 102
+  },
+  "timestamp" : 102
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 103
+  },
+  "timestamp" : 103
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 104
+  },
+  "timestamp" : 104
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 105
+  },
+  "timestamp" : 105
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 106
+  },
+  "timestamp" : 106
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 107
+  },
+  "timestamp" : 107
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 108
+  },
+  "timestamp" : 108
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 109
+  },
+  "timestamp" : 109
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 110
+  },
+  "timestamp" : 110
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 111
+  },
+  "timestamp" : 111
+}, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 112
+  },
+  "timestamp" : 112
+}, {
   "command" : "printTransactions",
   "output" : [ {
     "timestamp" : 5,

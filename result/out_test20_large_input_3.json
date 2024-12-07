@@ -1128,6 +1128,13 @@
   } ],
   "timestamp" : 474
 }, {
+  "command" : "checkCardStatus",
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 480
+  },
+  "timestamp" : 480
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Gabor",

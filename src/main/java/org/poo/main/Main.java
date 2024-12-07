@@ -144,6 +144,10 @@ public final class Main {
                     handle.printTransactions(object, command, result, output);
                     break;
 
+                case "checkCardStatus":
+                    handle.checkCardStatus(object, command, result, output);
+                    break;
+
                 case "breakpoint":
                     break;
 

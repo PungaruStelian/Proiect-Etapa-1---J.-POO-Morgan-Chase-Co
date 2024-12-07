@@ -197,6 +197,13 @@ public class Handle {
                             output.add(result);
                             return;
                         }
+                        if(card.ruFrozen()) {
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "The card is frozen");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
                         double exhg;
                         if(!Objects.equals(command.getCurrency(), account.getCurrency()))
                         {
@@ -204,11 +211,29 @@ public class Handle {
                         } else {
                             exhg = command.getAmount();
                         }
-                        boolean valid = account.withdrawFunds(exhg);
-                        if (!valid) {
+                        if (!account.withdrawFunds(exhg)) {
                             ObjectNode transaction = objectMapper.createObjectNode();
                             transaction.put("timestamp", command.getTimestamp());
                             transaction.put("description", "Insufficient funds");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
+                        if(card instanceof OneTimeCard) {
+                            ((OneTimeCard) card).setUsed(true);
+                        }
+                        if(account.getBalance() <= account.getMinBalance()) {
+                            card.makeFrozen();
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "You have reached the minimum amount of funds, the card will be frozen");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
+                        if(account.getBalance() <= account.getMinBalance() + 30) {
+                            card.makeWarning();
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "You have reached the minimum amount of funds + 30, you will receive a warning");
                             user.getTransactions().add(transaction);
                             return;
                         }
@@ -218,10 +243,6 @@ public class Handle {
                         transaction.put("amount", exhg);
                         transaction.put("commerciant", command.getCommerciant());
                         user.getTransactions().add(transaction);
-
-                        if(card instanceof OneTimeCard) {
-                            ((OneTimeCard) card).setUsed(true);
-                        }
                         return;
                     }
                 }
@@ -305,5 +326,31 @@ public class Handle {
                 return;
             }
         }
+    }
+
+    public void checkCardStatus(Object object, Command command, ObjectNode result, ArrayNode output) {
+        for (User user : object.getUsers()) {
+            for (Account account : user.getAccounts()) {
+                for (Card card : account.getCards()) {
+                    if (card.getCardNumber().equals(command.getCardNumber())) {
+                        if(account.getBalance() <= account.getMinBalance()) {
+                            card.makeFrozen();
+                            ObjectNode transaction = objectMapper.createObjectNode();
+                            transaction.put("timestamp", command.getTimestamp());
+                            transaction.put("description", "You have reached the minimum amount of funds, the card will be frozen");
+                            user.getTransactions().add(transaction);
+                            return;
+                        }
+                        return;
+                    }
+                }
+            }
+        }
+        ObjectNode outputNode = objectMapper.createObjectNode();
+        outputNode.put("description", "Card not found");
+        outputNode.put("timestamp", command.getTimestamp());
+        result.set("output", outputNode);
+        result.put("timestamp", command.getTimestamp());
+        output.add(result);
     }
 }

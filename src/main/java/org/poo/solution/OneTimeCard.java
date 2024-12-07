@@ -45,7 +45,6 @@ public class OneTimeCard extends Card {
             oneTimeCard.setCardHolder(this.getCardHolder());
             oneTimeCard.setExpirationDate(this.getExpirationDate());
             oneTimeCard.setCvv(this.getCvv());
-            oneTimeCard.setBalance(this.getBalance());
             oneTimeCard.setStatus(this.getStatus());
             oneTimeCard.setUsed(this.isUsed);
             return oneTimeCard;
