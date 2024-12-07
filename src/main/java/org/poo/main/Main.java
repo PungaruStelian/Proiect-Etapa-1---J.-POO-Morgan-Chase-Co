@@ -137,11 +137,11 @@ public final class Main {
                     break;
 
                 case "changeInterestRate":
-                    handle.changeInterestRate(object, command);
+                    handle.changeInterestRate(object, command, result, output);
                     break;
 
                 case "addInterest":
-                    handle.addInterest(object, command);
+                    handle.addInterest(object, command, result, output);
                     break;
 
                 case "setAlias":

@@ -108,6 +108,15 @@
   } ],
   "timestamp" : 6
 }, {
+  "command" : "report",
+  "output" : {
+    "IBAN" : "RO58POOB7344468893732422",
+    "balance" : 51504.25,
+    "currency" : "INR",
+    "transactions" : [ ]
+  },
+  "timestamp" : 26
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Sachi",
@@ -359,6 +368,32 @@
   } ],
   "timestamp" : 53
 }, {
+  "command" : "spendingsReport",
+  "output" : {
+    "IBAN" : "RO58POOB7344468893732422",
+    "balance" : 27452.583333333336,
+    "currency" : "INR",
+    "transactions" : [ {
+      "timestamp" : 43,
+      "description" : "Card payment",
+      "amount" : 83.0,
+      "commerciant" : "Adidas"
+    }, {
+      "timestamp" : 44,
+      "description" : "Card payment",
+      "amount" : 21280.0,
+      "commerciant" : "KFC"
+    } ],
+    "commerciants" : [ {
+      "commerciant" : "KFC",
+      "total" : 21280.0
+    }, {
+      "commerciant" : "Adidas",
+      "total" : 83.0
+    } ]
+  },
+  "timestamp" : 54
+}, {
   "command" : "printUsers",
   "output" : [ {
     "firstName" : "Sachi",
@@ -560,6 +595,16 @@
     } ]
   } ],
   "timestamp" : 71
+}, {
+  "command" : "spendingsReport",
+  "output" : {
+    "IBAN" : "RO53POOB7122855990652257",
+    "balance" : 0.0,
+    "currency" : "CHF",
+    "transactions" : [ ],
+    "commerciants" : [ ]
+  },
+  "timestamp" : 75
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -774,6 +819,14 @@
     } ]
   } ],
   "timestamp" : 78
+}, {
+  "command" : "changeInterestRate",
+  "description" : "This is not a savings account",
+  "timestamp" : 79
+}, {
+  "command" : "addInterest",
+  "description" : "This is not a savings account",
+  "timestamp" : 80
 }, {
   "command" : "printUsers",
   "output" : [ {
@@ -1428,6 +1481,64 @@
     } ]
   } ],
   "timestamp" : 156
+}, {
+  "command" : "report",
+  "output" : {
+    "IBAN" : "RO69POOB6209498372540635",
+    "balance" : 15981.653333333332,
+    "currency" : "NZD",
+    "transactions" : [ {
+      "timestamp" : 48,
+      "description" : "Split payment of 9003.00 RON",
+      "amount" : 900.3,
+      "currency" : "RON",
+      "involvedAccounts" : [ "RO30POOB9523423715747796", "RO90POOB5450777208072365", "RO79POOB3616857825600958", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO58POOB2721178218599590", "RO69POOB6209498372540635", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO19POOB4981055641668812" ]
+    }, {
+      "timestamp" : 52,
+      "description" : "EMI payment for a home loan",
+      "senderIBAN" : "RO58POOB7344468893732422",
+      "receiverIBAN" : "RO69POOB6209498372540635",
+      "amount" : "2183.0 INR",
+      "transferType" : "received"
+    } ]
+  },
+  "timestamp" : 166
+}, {
+  "command" : "report",
+  "output" : {
+    "IBAN" : "RO65POOB8944016386845896",
+    "balance" : 14489.279999999999,
+    "currency" : "EUR",
+    "transactions" : [ {
+      "timestamp" : 105,
+      "description" : "Purchasing clothing at FabIndia",
+      "senderIBAN" : "RO58POOB7344468893732422",
+      "receiverIBAN" : "RO65POOB8944016386845896",
+      "amount" : "1688.0 INR",
+      "transferType" : "received"
+    } ]
+  },
+  "timestamp" : 167
+}, {
+  "command" : "spendingsReport",
+  "output" : {
+    "IBAN" : "RO76POOB4035116042454483",
+    "balance" : 737.1364285714286,
+    "currency" : "EUR",
+    "transactions" : [ ],
+    "commerciants" : [ ]
+  },
+  "timestamp" : 170
+}, {
+  "command" : "spendingsReport",
+  "output" : {
+    "IBAN" : "RO19POOB4981055641668812",
+    "balance" : 520.8928571428571,
+    "currency" : "CAD",
+    "transactions" : [ ],
+    "commerciants" : [ ]
+  },
+  "timestamp" : 171
 }, {
   "command" : "printUsers",
   "output" : [ {
