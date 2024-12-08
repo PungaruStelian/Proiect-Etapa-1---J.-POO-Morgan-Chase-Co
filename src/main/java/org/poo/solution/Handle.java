@@ -225,7 +225,7 @@ public class Handle {
                             return;
                         }
                         if(card instanceof OneTimeCard) {
-                            ((OneTimeCard) card).setUsed(true);
+                            ((OneTimeCard) card).markAsUsed();
                         }
                         if(account.getBalance() <= account.getMinBalance()) {
                             card.makeFrozen();

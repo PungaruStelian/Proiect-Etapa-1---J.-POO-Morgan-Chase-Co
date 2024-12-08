@@ -3,6 +3,7 @@ package org.poo.solution;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.poo.utils.Utils;
 
 // Builder
 @Data
@@ -10,6 +11,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class OneTimeCard extends Card {
     @JsonIgnore
     private boolean isUsed;
+
+    public void markAsUsed() {
+        this.isUsed = true;
+        this.setCardNumber(Utils.generateCardNumber());
+    }
 
     @Data
     public static class OneTimeCardBuilder extends Card.CardBuilder {
