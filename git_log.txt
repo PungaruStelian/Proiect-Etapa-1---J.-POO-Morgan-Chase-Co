@@ -1,3 +1,123 @@
+commit acd2e4a1dff46e82c6d62b6cee1453af4f92b6b9
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Dec 7 23:10:14 2024 +0200
+
+    added addinterest, changeinterestrate and report commands
+
+commit 94b7ad14a9a9fdb720b953357e3da305b2726d5f
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Dec 7 22:07:43 2024 +0200
+
+    fixed splitpayment
+
+commit 3efeceeb048a7dee00db23cc477e9022f88e2c16
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Dec 7 18:10:31 2024 +0200
+
+    implemented checkCardStatus
+
+commit 87fa13353b73a3ec1279080a8f92cacab1f671c5
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Dec 7 16:57:08 2024 +0200
+
+    fixed transactions and send online
+
+commit 73b8060d0b16f4ef92031ee30ecdebc18d29ec1b
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Dec 7 01:11:40 2024 +0200
+
+    fixed the bugs from transactions partially
+
+commit 321e0ebdc0210bf5c0ad8326058ca08773b8818f
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Fri Dec 6 18:52:20 2024 +0200
+
+    implement printTransactions and setAlias
+
+commit 6b675836325c4b8d186234175f5086575f77b5cf
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Fri Dec 6 14:37:33 2024 +0200
+
+    renamed Cards in Card, and removed useless atribute isPermanent from onetimecard
+
+commit 3068a38ce125f33e20f80f10c092c6eb3dc42d5d
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Fri Dec 6 14:21:16 2024 +0200
+
+    OneTimeCardBuilder inheritance
+
+commit ad775d226f0a42c79ae60faf9b767967e5442d31
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Fri Dec 6 13:46:17 2024 +0200
+
+    OneTimeCard inheritance
+
+commit fd03e8135704e321a4afc8676fd900284334dc2e
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Thu Dec 5 19:14:19 2024 +0200
+
+    updated skels and fixed sendMoney
+
+commit d568585a4e438f81d28550c605608f1c05343bb5
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Wed Dec 4 01:41:34 2024 +0200
+
+    solved payOnline and intermediate step in solving sendMoney
+
+commit 2d088e0766caa6f53754bcfe74ab555df228ba9e
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Mon Dec 2 18:54:35 2024 +0200
+
+    intermediate step in solving payOnline
+
+commit c78bccf3981d0b2257efcca54c3edfd29a9a3d82
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Mon Dec 2 15:27:17 2024 +0200
+
+    alias tests fix and add builder design pattern
+
+commit a8f1fc704dc7047347b5cbdd8f09fcdda83b39e8
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Sat Nov 30 18:04:18 2024 +0200
+
+    handle and object are singletons now
+
+commit af67e29ab741293ce1b79d024d2ea2993b08945b
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Thu Nov 28 17:45:31 2024 +0200
+
+    refactor the command cases
+
+commit 757ee5aaa101d8be64508113181d1d7067159a7c
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Thu Nov 28 14:14:32 2024 +0200
+
+    fixed ref, onetimecard and set minimumbalance
+
+commit a5d57bfaaebba3f3ecc700447580a2380cfaa3c2
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Wed Nov 27 19:55:12 2024 +0200
+
+    updated input and ref, fixed add and delete account
+
+commit 0aa44cbf83efd2be99fd664c3c6d99ecf9f869b1
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Tue Nov 26 18:00:41 2024 +0200
+
+    solved printusers, addaccount, createcard and addfounds
+
+commit fbc01e4503e38f04c54998923c8dac1a69ebdb77
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Mon Nov 25 23:47:11 2024 +0200
+
+    first attempt for bank accounts and cards
+
+commit 83a15aada6748698308a8d5df7c0275ce141f045
+Author: PungaruStelian <stelian.pungaru@stud.acs.upb.ro>
+Date:   Mon Nov 25 16:17:54 2024 +0200
+
+    added skels
+
 commit a4d074cfa69713c6c614156acd1cd577ab3da5ce
 Author: PungaruStelian <152513863+PungaruStelian@users.noreply.github.com>
 Date:   Mon Nov 25 11:26:49 2024 +0200

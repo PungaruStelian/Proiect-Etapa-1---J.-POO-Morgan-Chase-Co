@@ -296,6 +296,9 @@
             "email": "Simion_Mazilescu@yahoo.ro"
         },
         {
+            "command": "breakpoint"
+        },
+        {
             "command": "printUsers",
             "timestamp": 38
         },

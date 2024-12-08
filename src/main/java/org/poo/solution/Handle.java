@@ -248,6 +248,7 @@ public class Handle {
                         transaction.put("description", "Card payment");
                         transaction.put("amount", exhg);
                         transaction.put("commerciant", command.getCommerciant());
+                        transaction.put("account", account.getIBAN());
                         user.getTransactions().add(transaction);
                         return;
                     }
@@ -292,6 +293,7 @@ public class Handle {
                                 transaction.put("receiverIBAN", receiverAccount.getIBAN());
                                 transaction.put("amount", command.getAmount() + " " + account.getCurrency());
                                 transaction.put("transferType", "sent");
+                                transaction.put("account", account.getIBAN());
                                 user.getTransactions().add(transaction);
                                 // Add the specified JSON object to the transactions
                                 ObjectNode receiverTransaction = objectMapper.createObjectNode();
@@ -301,6 +303,7 @@ public class Handle {
                                 receiverTransaction.put("receiverIBAN", receiverAccount.getIBAN());
                                 receiverTransaction.put("amount", command.getAmount() + " " + account.getCurrency());
                                 receiverTransaction.put("transferType", "received");
+                                receiverTransaction.put("account", receiverAccount.getIBAN());
                                 receiver.getTransactions().add(receiverTransaction);
                                 return;
                             }
@@ -328,8 +331,14 @@ public class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 ArrayNode filteredTransactions = objectMapper.createArrayNode();
                 for (int i = 0; i < user.getTransactions().size(); i++) {
-                    if (user.getTransactions().get(i).get("timestamp").asInt() < command.getTimestamp()) {
-                        filteredTransactions.add(user.getTransactions().get(i));
+                    ObjectNode transaction = (ObjectNode) user.getTransactions().get(i);
+                    if (transaction.get("timestamp").asInt() < command.getTimestamp()) {
+                        // Create a copy of the transaction
+                        ObjectNode transactionCopy = transaction.deepCopy();
+                        if(!transaction.get("description").asText().equals("New card created") && !transaction.get("description").asText().equals("The card has been destroyed")) {
+                            transactionCopy.remove("account");
+                        }
+                        filteredTransactions.add(transactionCopy);
                     }
                 }
                 result.put("command", "printTransactions");
@@ -451,9 +460,14 @@ public class Handle {
                     ArrayNode filteredTransactions = objectMapper.createArrayNode();
                     for (int i = 0; i < user.getTransactions().size(); i++) {
                         ObjectNode transaction = (ObjectNode) user.getTransactions().get(i);
+                        ObjectNode transactionCopy = transaction.deepCopy();
+                        if(!transaction.get("description").asText().equals("New card created") && !transaction.get("description").asText().equals("The card has been destroyed")) {
+                            transactionCopy.remove("account");
+                        }
+
                         int timestamp = transaction.get("timestamp").asInt();
                         if (timestamp >= command.getStartTimestamp() && timestamp <= command.getEndTimestamp()) {
-                            filteredTransactions.add(transaction);
+                            filteredTransactions.add(transactionCopy);
                         }
                     }
                     ObjectNode outputNode = objectMapper.createObjectNode();
@@ -472,31 +486,70 @@ public class Handle {
 
     public void spendingsReport(Object object, Command command, ObjectNode result, ArrayNode output) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+
+            for (int a = 0; a < user.getAccounts().size(); a++) {
+                Account account = user.getAccounts().get(a);
+
                 if (account.getIBAN().equals(command.getAccount())) {
                     ArrayNode filteredTransactions = objectMapper.createArrayNode();
-                    Map<String, Double> commerciantSpendings = new HashMap<>();
+
+                    String[] commerciants = new String[user.getTransactions().size()];
+                    double[] totals = new double[user.getTransactions().size()];
+                    int commerciantCount = 0;
 
                     for (int i = 0; i < user.getTransactions().size(); i++) {
                         ObjectNode transaction = (ObjectNode) user.getTransactions().get(i);
                         int timestamp = transaction.get("timestamp").asInt();
-                        if (timestamp >= command.getStartTimestamp() && timestamp <= command.getEndTimestamp() &&
-                                transaction.has("commerciant")) {
-                            filteredTransactions.add(transaction);
-                            String commerciant = transaction.get("commerciant").asText();
+
+                        if (timestamp >= command.getStartTimestamp() &&
+                                timestamp <= command.getEndTimestamp() &&
+                                transaction.has("commerciant")
+                                && transaction.get("account").asText().equals(command.getAccount())) {
+
+                            ObjectNode transactionCopy = transaction.deepCopy();
+                            transactionCopy.remove("account");
+                            filteredTransactions.add(transactionCopy);
+
+                            String currentCommerciant = transaction.get("commerciant").asText();
                             double amount = transaction.get("amount").asDouble();
-                            commerciantSpendings.put(commerciant, commerciantSpendings.getOrDefault(commerciant, 0.0) + amount);
+
+                            int existingIndex = -1;
+                            for (int j = 0; j < commerciantCount; j++) {
+                                if (commerciants[j].equals(currentCommerciant)) {
+                                    existingIndex = j;
+                                    break;
+                                }
+                            }
+
+                            if (existingIndex != -1) {
+                                totals[existingIndex] += amount;
+                            } else {
+                                commerciants[commerciantCount] = currentCommerciant;
+                                totals[commerciantCount] = amount;
+                                commerciantCount++;
+                            }
                         }
                     }
 
-                    List<Map.Entry<String, Double>> sortedCommerciants = new ArrayList<>(commerciantSpendings.entrySet());
-                    sortedCommerciants.sort((e1, e2) -> Double.compare(e2.getValue(), e1.getValue()));
+                    for (int i = 0; i < commerciantCount - 1; i++) {
+                        for (int j = 0; j < commerciantCount - i - 1; j++) {
+                            if (totals[j] < totals[j + 1]) {
+                                String tempCommerciant = commerciants[j];
+                                commerciants[j] = commerciants[j + 1];
+                                commerciants[j + 1] = tempCommerciant;
+
+                                double tempTotal = totals[j];
+                                totals[j] = totals[j + 1];
+                                totals[j + 1] = tempTotal;
+                            }
+                        }
+                    }
 
                     ArrayNode commerciantsArray = objectMapper.createArrayNode();
-                    for (Map.Entry<String, Double> entry : sortedCommerciants) {
+                    for (int i = 0; i < commerciantCount; i++) {
                         ObjectNode commerciantNode = objectMapper.createObjectNode();
-                        commerciantNode.put("commerciant", entry.getKey());
-                        commerciantNode.put("total", entry.getValue());
+                        commerciantNode.put("commerciant", commerciants[i]);
+                        commerciantNode.put("total", totals[i]);
                         commerciantsArray.add(commerciantNode);
                     }
 
@@ -506,6 +559,7 @@ public class Handle {
                     outputNode.put("currency", account.getCurrency());
                     outputNode.set("transactions", filteredTransactions);
                     outputNode.set("commerciants", commerciantsArray);
+
                     result.set("output", outputNode);
                     result.put("timestamp", command.getTimestamp());
                     output.add(result);
