@@ -8,22 +8,15 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 import java.util.List;
 
-// Builder
 @Data
 public class Account {
     private List<Card> cards;
     private String type;
     @JsonProperty("IBAN")
-    private String IBAN;
+    private String iban;
     @JsonIgnore
     private String alias;
-    @JsonIgnore
-    private String owner;
     private String currency;
-    @JsonIgnore
-    private String description;
-    @JsonIgnore
-    private String commerciants;
     @JsonIgnore
     private String status;
     @JsonIgnore
@@ -31,131 +24,117 @@ public class Account {
     private double balance;
     @JsonIgnore
     private double interestRate;
-    @JsonIgnore
-    private int id;
 
-    // Constructor to initialize the cards list
+    /**
+     * Constructor for Account
+     */
     public Account() {
         this.cards = new ArrayList<>();
     }
 
-    // Builder class for Account
+    /**
+     * Builder class for Accounts
+     */
     public static class AccountBuilder {
-        private List<Card> cards = new ArrayList<>();
         private String type;
-        private String IBAN;
-        private String alias;
+        private String iban;
         private String currency;
-        private String owner;
-        private String description;
-        private String commerciants;
         private String status;
-        private int interestRate;
         private double balance;
-        private int id;
-        private double minBalance;
 
-        public AccountBuilder setAlias(String alias) {
-            this.alias = alias;
+        /**
+         * Method to set the type for the account
+         * @param otherType The type to set
+         * @return The AccountBuilder object
+         */
+        public AccountBuilder setType(final String otherType) {
+            type = otherType;
             return this;
         }
 
-        public AccountBuilder setCards(List<Card> cards) {
-            this.cards = cards;
+        /**
+         * Method to set the iban for the account
+         * @param otherIban The iban to set
+         * @return The AccountBuilder object
+         */
+        public AccountBuilder setIBAN(final String otherIban) {
+            this.iban = otherIban;
             return this;
         }
 
-        public AccountBuilder setInterestRate(int interestRate) {
-            this.interestRate = interestRate;
+        /**
+         * Method to set the balance for the account
+         * @param otherBalance The balance to set
+         * @return The AccountBuilder object
+         */
+        public AccountBuilder setBalance(final double otherBalance) {
+            this.balance = otherBalance;
             return this;
         }
 
-        public AccountBuilder setType(String type) {
-            this.type = type;
+        /**
+         * Method to set the currency for the account
+         * @param otherCurrency The currency to set
+         * @return The AccountBuilder object
+         */
+        public AccountBuilder setCurrency(final String otherCurrency) {
+            this.currency = otherCurrency;
             return this;
         }
 
-        public AccountBuilder setIBAN(String IBAN) {
-            this.IBAN = IBAN;
+        /**
+         * Method to set the status for the account
+         * @param otherStatus The status to set
+         * @return The AccountBuilder object
+         */
+        public AccountBuilder setStatus(final String otherStatus) {
+            this.status = otherStatus;
             return this;
         }
 
-        public AccountBuilder setBalance(double balance) {
-            this.balance = balance;
-            return this;
-        }
-
-        public AccountBuilder setCurrency(String currency) {
-            this.currency = currency;
-            return this;
-        }
-
-        public AccountBuilder setOwner(String owner) {
-            this.owner = owner;
-            return this;
-        }
-
-        public AccountBuilder setId(int id) {
-            this.id = id;
-            return this;
-        }
-
-        public AccountBuilder setDescription(String description) {
-            this.description = description;
-            return this;
-        }
-
-        public AccountBuilder setMinBalance(double minBalance) {
-            this.minBalance = minBalance;
-            return this;
-        }
-
-        public AccountBuilder setCommerciants(String commerciants) {
-            this.commerciants = commerciants;
-            return this;
-        }
-
-        public AccountBuilder setStatus(String status) {
-            this.status = status;
-            return this;
-        }
-
+        /**
+         * Method to build the account
+         * @return The Account object
+         */
         public Account build() {
             Account account = new Account();
-            account.cards = this.cards;
-            account.interestRate = this.interestRate;
             account.type = this.type;
-            account.IBAN = this.IBAN;
-            account.alias = this.alias;
+            account.iban = this.iban;
             account.balance = this.balance;
             account.currency = this.currency;
-            account.owner = this.owner;
-            account.id = this.id;
-            account.description = this.description;
-            account.minBalance = this.minBalance;
-            account.commerciants = this.commerciants;
             account.status = this.status;
             return account;
         }
     }
 
-    public void activate() {
-        this.status = "active";
-    }
-
-    // Method to add funds to the account
-    public void addFunds(double amount) {
+    /**
+     * Method to add funds to the account
+     * @param amount The amount to add
+     */
+    public void addFunds(final double amount) {
         if (amount > 0) {
             this.balance += amount;
         }
     }
-    public double getExchange(Object object, String from, String to, double amount) {
+
+    /**
+     * Method to get the exchange rate between two currencies
+     * @param object The object containing the exchange rates
+     * @param from The currency to convert from
+     * @param to The currency to convert to
+     * @return The exchange rate
+     */
+    public double getExchange(final Object object, final String from, final String to,
+                              final double amount) {
         double rate = object.getExchangeRate(from, to);
         return amount * rate;
     }
 
-    // Method to withdraw funds from the account
-    public boolean withdrawFunds(double amount) {
+    /**
+     * Method to check if the account is frozen
+     * @return true if the account is frozen, false otherwise
+     */
+    public boolean withdrawFunds(final double amount) {
         if (amount > 0 && this.balance >= amount) {
             this.balance -= amount;
             return true;
@@ -163,8 +142,15 @@ public class Account {
         return false;
     }
 
-    // Method to transfer funds to another account
-    public boolean transferFunds(Account targetAccount, double donorAmount, double receiverAmount) {
+    /**
+     * Method to transfer funds from one account to another
+     * @param targetAccount The account to transfer the funds to
+     * @param donorAmount The amount to withdraw from the current account
+     * @param receiverAmount The amount to add to the target account
+     * @return true if the transfer was successful, false otherwise
+     */
+    public boolean transferFunds(final Account targetAccount, final double donorAmount,
+                                 final double receiverAmount) {
         if (this.withdrawFunds(donorAmount)) {
             targetAccount.addFunds(receiverAmount);
             return true;

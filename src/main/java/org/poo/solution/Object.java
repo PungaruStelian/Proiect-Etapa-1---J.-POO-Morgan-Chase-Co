@@ -3,26 +3,38 @@ package org.poo.solution;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.poo.fileio.ObjectInput;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 // Singleton
 @Data
 @NoArgsConstructor
-public class Object {
+public final class Object {
     private static Object instance = null;
     private Commerciant[] commerciants;
     private Exchange[] exchangeRates;
     private Command[] commands;
     private User[] users;
 
-    public static Object getInstance(ObjectInput objectInput) {
+    /**
+     * Get the instance of Object
+     * @param objectInput The ObjectInput object
+     * @return The instance of Object
+     */
+    public static Object getInstance(final ObjectInput objectInput) {
         if (instance == null) {
             return new Object(objectInput);
         }
         return instance;
     }
 
-    private Object(ObjectInput objectInput) {
+    /**
+     * Constructor for Object
+     * @param objectInput The ObjectInput object
+     */
+    private Object(final ObjectInput objectInput) {
         if (objectInput.getUsers() != null) {
             this.users = new User[objectInput.getUsers().length];
             for (int i = 0; i < objectInput.getUsers().length; i++) {
@@ -52,39 +64,67 @@ public class Object {
         }
     }
 
-    public double getExchangeRate(String from, String to) {
-        Map<String, Map<String, Double>> graph = new HashMap<>();
+    /**
+     * Get the exchange rate between two currencies
+     * @param from The currency to convert from
+     * @param to The currency to convert to
+     * @return The exchange rate
+     */
+    public double getExchangeRate(final String from, final String to) {
+        // Use lists instead of arrays for dynamic resizing
+        List<String> visitedCurrencies = new ArrayList<>();
+        List<String> fromCurrencies = new ArrayList<>();
+        List<String> toCurrencies = new ArrayList<>();
+        List<Double> rates = new ArrayList<>();
+
+        // Populate exchange rates
         for (Exchange exchange : exchangeRates) {
-            graph.putIfAbsent(exchange.getFrom(), new HashMap<>());
-            graph.putIfAbsent(exchange.getTo(), new HashMap<>());
-            graph.get(exchange.getFrom()).put(exchange.getTo(), exchange.getRate());
-            graph.get(exchange.getTo()).put(exchange.getFrom(), 1 / exchange.getRate());
+            fromCurrencies.add(exchange.getFrom());
+            toCurrencies.add(exchange.getTo());
+            rates.add(exchange.getRate());
+
+            // Add the inverse rate
+            fromCurrencies.add(exchange.getTo());
+            toCurrencies.add(exchange.getFrom());
+            rates.add(1 / exchange.getRate());
         }
-        Queue<String> queue = new LinkedList<>();
-        Queue<Double> rates = new LinkedList<>();
-        Set<String> visited = new HashSet<>();
-        queue.add(from);
-        rates.add(1.0);
-        visited.add(from);
-        while (!queue.isEmpty()) {
-            String current = queue.poll();
-            Double currentRate = rates.poll();
+
+        // Use a queue for BFS
+        Queue<String> currentPath = new LinkedList<>();
+        Queue<Double> currentRates = new LinkedList<>();
+
+        // Initialize the first step
+        currentPath.add(from);
+        currentRates.add(1.0);
+        visitedCurrencies.add(from);
+
+        while (!currentPath.isEmpty()) {
+            String current = currentPath.poll();
+            Double currentRate = currentRates.poll();
+
+            // Check if currentRate is null
             if (currentRate == null) {
                 continue;
             }
+
+            // Check if we have reached the destination
             if (current.equals(to)) {
                 return currentRate;
             }
-            if (graph.containsKey(current)) {
-                for (Map.Entry<String, Double> neighbor : graph.get(current).entrySet()) {
-                    if (!visited.contains(neighbor.getKey())) {
-                        queue.add(neighbor.getKey());
-                        rates.add(currentRate * neighbor.getValue());
-                        visited.add(neighbor.getKey());
+
+            // Check neighbors
+            for (int i = 0; i < fromCurrencies.size(); i++) {
+                if (fromCurrencies.get(i).equals(current)) {
+                    String neighbor = toCurrencies.get(i);
+                    if (!visitedCurrencies.contains(neighbor)) {
+                        currentPath.add(neighbor);
+                        currentRates.add(currentRate * rates.get(i));
+                        visitedCurrencies.add(neighbor);
                     }
                 }
             }
         }
+
         return 0.0;
     }
 }

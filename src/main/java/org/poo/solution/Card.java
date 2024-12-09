@@ -2,94 +2,74 @@ package org.poo.solution;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
-// Builder
 @Data
 @NoArgsConstructor
 public class Card {
     private String cardNumber;
-    @JsonIgnore
-    private String cardHolder;
-    @JsonIgnore
-    private String expirationDate;
     private String status;
-    @JsonIgnore
-    private int cvv;
 
-    // Builder class for Cards
+    /**
+     * Builder class for Cards
+     */
     @Data
     public static class CardBuilder {
         private String cardNumber;
-        private String cardHolder;
         private String expirationDate;
         private String status;
         private int cvv;
 
-        public CardBuilder setCardNumber(String cardNumber) {
-            this.cardNumber = cardNumber;
+        /**
+         * Method to set the card number
+         * @param otherCardNumber The card number to set
+         * @return The CardBuilder object
+         */
+        public CardBuilder setCardNumber(final String otherCardNumber) {
+            this.cardNumber = otherCardNumber;
             return this;
         }
 
-        public CardBuilder setCardHolder(String cardHolder) {
-            this.cardHolder = cardHolder;
+        /**
+         * Method to set status
+         * @param otherStatus The status to set
+         * @return The CardBuilder object
+         */
+        public CardBuilder setStatus(final String otherStatus) {
+            this.status = otherStatus;
             return this;
         }
 
-        public CardBuilder setExpirationDate(String expirationDate) {
-            this.expirationDate = expirationDate;
-            return this;
-        }
-
-        public CardBuilder setCvv(int cvv) {
-            this.cvv = cvv;
-            return this;
-        }
-
-        public CardBuilder setStatus(String status) {
-            this.status = status;
-            return this;
-        }
-
+        /**
+         * Method to build the Card object
+         * @return The Card object
+         */
         public Card build() {
             Card card = new Card();
             card.cardNumber = this.cardNumber;
-            card.cardHolder = this.cardHolder;
-            card.expirationDate = this.expirationDate;
-            card.cvv = this.cvv;
             card.status = this.status;
             return card;
         }
     }
 
-    // Method to activate the card
-    public void activate() {
-        this.status = "active";
-    }
-
+    /**
+     * Method to check if the card is frozen
+     * @return true if the card is frozen, false otherwise
+     */
     public boolean ruFrozen() {
         return this.status.equals("frozen");
     }
 
-    // Method to deactivate the card
+    /**
+     * Method to set the card as frozen
+     */
     public void makeFrozen() {
         this.status = "frozen";
     }
 
+    /**
+     * Method to set the card as warning
+     */
     public void makeWarning() {
         this.status = "warning";
-    }
-
-    // Validation methods
-    private boolean isValidCardNumber(String cardNumber) {
-        return cardNumber != null && cardNumber.matches("\\d{16}");
-    }
-
-    private boolean isValidExpirationDate(String expirationDate) {
-        return expirationDate != null && expirationDate.matches("(0[1-9]|1[0-2])/\\d{2}");
-    }
-
-    private boolean isValidCvv(int cvv) {
-        return cvv >= 100 && cvv <= 999;
     }
 }

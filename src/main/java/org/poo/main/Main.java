@@ -9,7 +9,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.checker.Checker;
 import org.poo.checker.CheckerConstants;
 import org.poo.fileio.ObjectInput;
-import org.poo.solution.*;
+import org.poo.solution.Command;
+import org.poo.solution.Handle;
 import org.poo.solution.Object;
 import org.poo.utils.Utils;
 
@@ -157,7 +158,7 @@ public final class Main {
                     break;
 
                 case "splitPayment":
-                    handle.splitPayment(object, command, result, output);
+                    handle.splitPayment(object, command);
                     break;
 
                 case "report":

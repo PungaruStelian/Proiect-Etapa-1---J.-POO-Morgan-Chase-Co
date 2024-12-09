@@ -13,7 +13,11 @@ public class Commerciant {
     private String description;
     private List<String> commerciants;
 
-    public Commerciant(CommerciantInput commerciantInput) {
+    /**
+     * Constructor for Commerciant
+     * @param commerciantInput The CommerciantInput object
+     */
+    public Commerciant(final CommerciantInput commerciantInput) {
         this.id = commerciantInput.getId();
         this.description = commerciantInput.getDescription();
         this.commerciants = commerciantInput.getCommerciants();

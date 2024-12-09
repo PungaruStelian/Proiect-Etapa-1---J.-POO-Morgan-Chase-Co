@@ -28,7 +28,11 @@ public class Command {
     private int endTimestamp;
     private double interestRate;
 
-    public Command(CommandInput commandInput) {
+    /**
+     * Constructor for Command
+     * @param commandInput The CommandInput object
+     */
+    public Command(final CommandInput commandInput) {
         this.command = commandInput.getCommand();
         this.email = commandInput.getEmail();
         this.account = commandInput.getAccount();

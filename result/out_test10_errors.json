@@ -6,10 +6,10 @@
   }, {
     "timestamp" : 5,
     "description" : "Medical checkup at Regina Maria",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "870.0 RON",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   } ],
   "timestamp" : 8
 }, {
@@ -34,24 +34,24 @@
   }, {
     "timestamp" : 5,
     "description" : "Medical checkup at Regina Maria",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "870.0 RON",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 11,
     "description" : "Miscellaneous cash expenses",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "86.0 RON",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 16,
     "description" : "Electricity and gas bills",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO90POOB5450777208072365",
     "amount" : "83.0 RON",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO90POOB5450777208072365"
   } ],
   "timestamp" : 17
 }, {
@@ -126,8 +126,8 @@
   }, {
     "timestamp" : 21,
     "description" : "Card payment",
-    "amount" : 346.6666666666667,
-    "commerciant" : "KFC"
+    "commerciant" : "KFC",
+    "amount" : 346.6666666666667
   }, {
     "timestamp" : 23,
     "description" : "Insufficient funds"

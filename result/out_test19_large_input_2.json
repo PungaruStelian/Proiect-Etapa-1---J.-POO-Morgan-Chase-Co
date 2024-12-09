@@ -742,8 +742,20 @@
   }, {
     "timestamp" : 27,
     "description" : "Card payment",
-    "amount" : 16.0,
-    "commerciant" : "Microsoft"
+    "commerciant" : "Microsoft",
+    "amount" : 16.0
+  }, {
+    "timestamp" : 27,
+    "description" : "The card has been destroyed",
+    "account" : "RO90POOB5450777208072365",
+    "cardHolder" : "Leanne_Scott-Davies@yandex.nz",
+    "card" : "7901879264253296"
+  }, {
+    "timestamp" : 27,
+    "description" : "New card created",
+    "account" : "RO90POOB5450777208072365",
+    "cardHolder" : "Leanne_Scott-Davies@yandex.nz",
+    "card" : "7317745095154687"
   }, {
     "timestamp" : 113,
     "description" : "New card created",
@@ -949,6 +961,9 @@
     "timestamp" : 1,
     "description" : "New account created"
   }, {
+    "timestamp" : 2,
+    "description" : "Interest rate of the account changed to 0.81"
+  }, {
     "timestamp" : 6,
     "description" : "New account created"
   }, {
@@ -960,8 +975,20 @@
   }, {
     "timestamp" : 28,
     "description" : "Card payment",
-    "amount" : 1915.0,
-    "commerciant" : "Gucci"
+    "commerciant" : "Gucci",
+    "amount" : 1915.0
+  }, {
+    "timestamp" : 28,
+    "description" : "The card has been destroyed",
+    "account" : "RO65POOB8944016386845896",
+    "cardHolder" : "Georgel_Nistor@yandex.ro",
+    "card" : "7004757825892043"
+  }, {
+    "timestamp" : 28,
+    "description" : "New card created",
+    "account" : "RO65POOB8944016386845896",
+    "cardHolder" : "Georgel_Nistor@yandex.ro",
+    "card" : "3951521356076921"
   }, {
     "timestamp" : 116,
     "description" : "Split payment of 5500.00 CAD",
@@ -989,10 +1016,10 @@
   }, {
     "timestamp" : 171,
     "description" : "Repayment for a personal loan",
-    "senderIBAN" : "RO98POOB8412955460158769",
-    "receiverIBAN" : "RO65POOB8944016386845896",
     "amount" : "105.0 MXN",
-    "transferType" : "received"
+    "transferType" : "received",
+    "senderIBAN" : "RO98POOB8412955460158769",
+    "receiverIBAN" : "RO65POOB8944016386845896"
   } ],
   "timestamp" : 172
 }, {
@@ -1009,32 +1036,44 @@
   }, {
     "timestamp" : 26,
     "description" : "Card payment",
-    "amount" : 49.0,
-    "commerciant" : "HP"
+    "commerciant" : "HP",
+    "amount" : 49.0
+  }, {
+    "timestamp" : 26,
+    "description" : "The card has been destroyed",
+    "account" : "RO69POOB6209498372540635",
+    "cardHolder" : "Selma_Birnbaum@icloud.de",
+    "card" : "8207906978464446"
+  }, {
+    "timestamp" : 26,
+    "description" : "New card created",
+    "account" : "RO69POOB6209498372540635",
+    "cardHolder" : "Selma_Birnbaum@icloud.de",
+    "card" : "5088727507344799"
   }, {
     "timestamp" : 33,
     "description" : "Transfer to a Commerzbank savings account",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO19POOB4981055641668812",
     "amount" : "13.0 EUR",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO19POOB4981055641668812"
   }, {
     "timestamp" : 34,
     "description" : "New account created"
   }, {
     "timestamp" : 35,
     "description" : "Booking a trip to the Bavarian Alps",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO30POOB9523423715747796",
     "amount" : "74.0 EUR",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO30POOB9523423715747796"
   }, {
     "timestamp" : 35,
     "description" : "Booking a trip to the Bavarian Alps",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO30POOB9523423715747796",
     "amount" : "74.0 EUR",
-    "transferType" : "received"
+    "transferType" : "received",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO30POOB9523423715747796"
   }, {
     "timestamp" : 37,
     "description" : "Insufficient funds"
@@ -1356,8 +1395,8 @@
     "transactions" : [ {
       "timestamp" : 28,
       "description" : "Card payment",
-      "amount" : 1915.0,
-      "commerciant" : "Gucci"
+      "commerciant" : "Gucci",
+      "amount" : 1915.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Gucci",

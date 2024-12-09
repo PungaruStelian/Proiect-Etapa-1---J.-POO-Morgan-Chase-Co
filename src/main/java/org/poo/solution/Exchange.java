@@ -12,7 +12,11 @@ public class Exchange {
     private double rate;
     private int timestamp;
 
-    public Exchange(ExchangeInput exchangeInput) {
+    /**
+     * Constructor for Exchange
+     * @param exchangeInput The ExchangeInput object
+     */
+    public Exchange(final ExchangeInput exchangeInput) {
         this.from = exchangeInput.getFrom();
         this.to = exchangeInput.getTo();
         this.rate = exchangeInput.getRate();

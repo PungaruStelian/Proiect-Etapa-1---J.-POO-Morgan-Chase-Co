@@ -149,23 +149,23 @@
     "transactions" : [ {
       "timestamp" : 11,
       "description" : "Card payment",
-      "amount" : 16.0,
-      "commerciant" : "eMAG"
+      "commerciant" : "eMAG",
+      "amount" : 16.0
     }, {
       "timestamp" : 12,
       "description" : "Card payment",
-      "amount" : 1218.0,
-      "commerciant" : "Zara Home"
+      "commerciant" : "Zara Home",
+      "amount" : 1218.0
     }, {
       "timestamp" : 18,
       "description" : "Card payment",
-      "amount" : 1457.4,
-      "commerciant" : "Debt Collector"
+      "commerciant" : "Debt Collector",
+      "amount" : 1457.4
     }, {
       "timestamp" : 26,
       "description" : "Card payment",
-      "amount" : 1264.2,
-      "commerciant" : "H&M"
+      "commerciant" : "H&M",
+      "amount" : 1264.2
     } ],
     "commerciants" : [ {
       "commerciant" : "Debt Collector",
@@ -201,8 +201,8 @@
     "transactions" : [ {
       "timestamp" : 27,
       "description" : "Card payment",
-      "amount" : 426.0,
-      "commerciant" : "Amazon"
+      "commerciant" : "Amazon",
+      "amount" : 426.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Amazon",
@@ -219,8 +219,8 @@
     "transactions" : [ {
       "timestamp" : 28,
       "description" : "Card payment",
-      "amount" : 285.0,
-      "commerciant" : "Zara"
+      "commerciant" : "Zara",
+      "amount" : 285.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Zara",

@@ -7,13 +7,14 @@ public final class Utils {
         // Checkstyle error free constructor
     }
 
+    public static final int ONE_HUNDRED = 100;
+
     private static final int IBAN_SEED = 1;
     private static final int CARD_SEED = 2;
     private static final int DIGIT_BOUND = 10;
     private static final int DIGIT_GENERATION = 16;
     private static final String RO_STR = "RO";
     private static final String POO_STR = "POOB";
-
     private static Random ibanRandom = new Random(IBAN_SEED);
     private static Random cardRandom = new Random(CARD_SEED);
 

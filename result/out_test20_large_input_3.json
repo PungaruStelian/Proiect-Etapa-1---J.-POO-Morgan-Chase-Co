@@ -438,38 +438,38 @@
   }, {
     "timestamp" : 251,
     "description" : "Electricity and water bills",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "1726.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 252,
     "description" : "Transfer to a savings account at UBS",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO75POOB8279679254660818",
     "amount" : "1740.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO75POOB8279679254660818"
   }, {
     "timestamp" : 253,
     "description" : "ZVV pass for public transport",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO66POOB5231566576817248",
     "amount" : "474.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO66POOB5231566576817248"
   }, {
     "timestamp" : 254,
     "description" : "Weekly shopping from Coop",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "717.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 255,
     "description" : "Repayment for a mortgage",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO49POOB4985907300499418",
     "amount" : "368.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO49POOB4985907300499418"
   }, {
     "timestamp" : 370,
     "description" : "Split payment of 68481.00 EUR",
@@ -495,52 +495,52 @@
   }, {
     "timestamp" : 251,
     "description" : "Electricity and water bills",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "1726.0 CHF",
-    "transferType" : "received"
+    "transferType" : "received",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 254,
     "description" : "Weekly shopping from Coop",
-    "senderIBAN" : "RO58POOB7344468893732422",
-    "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "717.0 CHF",
-    "transferType" : "received"
+    "transferType" : "received",
+    "senderIBAN" : "RO58POOB7344468893732422",
+    "receiverIBAN" : "RO69POOB6209498372540635"
   }, {
     "timestamp" : 256,
     "description" : "Medical checkup at a private clinic",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO19POOB4981055641668812",
     "amount" : "474.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO19POOB4981055641668812"
   }, {
     "timestamp" : 257,
     "description" : "Tickets for a Swiss football match",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO98POOB7190609943699593",
     "amount" : "155.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO98POOB7190609943699593"
   }, {
     "timestamp" : 258,
     "description" : "Repayment for a mortgage",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO45POOB6505529013808948",
     "amount" : "572.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO45POOB6505529013808948"
   }, {
     "timestamp" : 259,
     "description" : "Tickets for a Swiss football match",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO19POOB5993192794373940",
     "amount" : "748.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO19POOB5993192794373940"
   }, {
     "timestamp" : 260,
     "description" : "Renewal of a Swisscom subscription",
-    "senderIBAN" : "RO69POOB6209498372540635",
-    "receiverIBAN" : "RO98POOB8412955460158769",
     "amount" : "90.0 CHF",
-    "transferType" : "sent"
+    "transferType" : "sent",
+    "senderIBAN" : "RO69POOB6209498372540635",
+    "receiverIBAN" : "RO98POOB8412955460158769"
   }, {
     "timestamp" : 370,
     "description" : "Split payment of 68481.00 EUR",
@@ -1162,52 +1162,52 @@
     "transactions" : [ {
       "timestamp" : 251,
       "description" : "Electricity and water bills",
-      "senderIBAN" : "RO58POOB7344468893732422",
-      "receiverIBAN" : "RO69POOB6209498372540635",
       "amount" : "1726.0 CHF",
-      "transferType" : "received"
+      "transferType" : "received",
+      "senderIBAN" : "RO58POOB7344468893732422",
+      "receiverIBAN" : "RO69POOB6209498372540635"
     }, {
       "timestamp" : 254,
       "description" : "Weekly shopping from Coop",
-      "senderIBAN" : "RO58POOB7344468893732422",
-      "receiverIBAN" : "RO69POOB6209498372540635",
       "amount" : "717.0 CHF",
-      "transferType" : "received"
+      "transferType" : "received",
+      "senderIBAN" : "RO58POOB7344468893732422",
+      "receiverIBAN" : "RO69POOB6209498372540635"
     }, {
       "timestamp" : 256,
       "description" : "Medical checkup at a private clinic",
-      "senderIBAN" : "RO69POOB6209498372540635",
-      "receiverIBAN" : "RO19POOB4981055641668812",
       "amount" : "474.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO69POOB6209498372540635",
+      "receiverIBAN" : "RO19POOB4981055641668812"
     }, {
       "timestamp" : 257,
       "description" : "Tickets for a Swiss football match",
-      "senderIBAN" : "RO69POOB6209498372540635",
-      "receiverIBAN" : "RO98POOB7190609943699593",
       "amount" : "155.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO69POOB6209498372540635",
+      "receiverIBAN" : "RO98POOB7190609943699593"
     }, {
       "timestamp" : 258,
       "description" : "Repayment for a mortgage",
-      "senderIBAN" : "RO69POOB6209498372540635",
-      "receiverIBAN" : "RO45POOB6505529013808948",
       "amount" : "572.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO69POOB6209498372540635",
+      "receiverIBAN" : "RO45POOB6505529013808948"
     }, {
       "timestamp" : 259,
       "description" : "Tickets for a Swiss football match",
-      "senderIBAN" : "RO69POOB6209498372540635",
-      "receiverIBAN" : "RO19POOB5993192794373940",
       "amount" : "748.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO69POOB6209498372540635",
+      "receiverIBAN" : "RO19POOB5993192794373940"
     }, {
       "timestamp" : 260,
       "description" : "Renewal of a Swisscom subscription",
-      "senderIBAN" : "RO69POOB6209498372540635",
-      "receiverIBAN" : "RO98POOB8412955460158769",
       "amount" : "90.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO69POOB6209498372540635",
+      "receiverIBAN" : "RO98POOB8412955460158769"
     } ]
   },
   "timestamp" : 476
@@ -1220,10 +1220,10 @@
     "transactions" : [ {
       "timestamp" : 261,
       "description" : "Booking a holiday in the Swiss Alps",
-      "senderIBAN" : "RO90POOB5450777208072365",
-      "receiverIBAN" : "RO01POOB3925326637526572",
       "amount" : "909.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO90POOB5450777208072365",
+      "receiverIBAN" : "RO01POOB3925326637526572"
     }, {
       "timestamp" : 262,
       "description" : "Insufficient funds"
@@ -1233,10 +1233,10 @@
     }, {
       "timestamp" : 264,
       "description" : "Buying clothes at Manor",
-      "senderIBAN" : "RO90POOB5450777208072365",
-      "receiverIBAN" : "RO79POOB3616857825600958",
       "amount" : "407.0 CHF",
-      "transferType" : "sent"
+      "transferType" : "sent",
+      "senderIBAN" : "RO90POOB5450777208072365",
+      "receiverIBAN" : "RO79POOB3616857825600958"
     }, {
       "timestamp" : 265,
       "description" : "Insufficient funds"
@@ -1880,8 +1880,8 @@
     "transactions" : [ {
       "timestamp" : 424,
       "description" : "Card payment",
-      "amount" : 18.205000000000002,
-      "commerciant" : "Chipotle"
+      "commerciant" : "Chipotle",
+      "amount" : 18.205000000000002
     } ],
     "commerciants" : [ {
       "commerciant" : "Chipotle",
@@ -1898,8 +1898,8 @@
     "transactions" : [ {
       "timestamp" : 425,
       "description" : "Card payment",
-      "amount" : 6.050000000000001,
-      "commerciant" : "H&M"
+      "commerciant" : "H&M",
+      "amount" : 6.050000000000001
     } ],
     "commerciants" : [ {
       "commerciant" : "H&M",
@@ -1926,8 +1926,8 @@
     "transactions" : [ {
       "timestamp" : 427,
       "description" : "Card payment",
-      "amount" : 335.0,
-      "commerciant" : "Chipotle"
+      "commerciant" : "Chipotle",
+      "amount" : 335.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Chipotle",
@@ -1944,8 +1944,8 @@
     "transactions" : [ {
       "timestamp" : 428,
       "description" : "Card payment",
-      "amount" : 25.333333333333332,
-      "commerciant" : "HP"
+      "commerciant" : "HP",
+      "amount" : 25.333333333333332
     } ],
     "commerciants" : [ {
       "commerciant" : "HP",
@@ -2002,8 +2002,8 @@
     "transactions" : [ {
       "timestamp" : 433,
       "description" : "Card payment",
-      "amount" : 390.0,
-      "commerciant" : "Zara"
+      "commerciant" : "Zara",
+      "amount" : 390.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Zara",
@@ -2020,8 +2020,8 @@
     "transactions" : [ {
       "timestamp" : 434,
       "description" : "Card payment",
-      "amount" : 121.5,
-      "commerciant" : "Dunkin'"
+      "commerciant" : "Dunkin'",
+      "amount" : 121.5
     } ],
     "commerciants" : [ {
       "commerciant" : "Dunkin'",
@@ -2058,8 +2058,8 @@
     "transactions" : [ {
       "timestamp" : 437,
       "description" : "Card payment",
-      "amount" : 228.375,
-      "commerciant" : "Pizza Hut"
+      "commerciant" : "Pizza Hut",
+      "amount" : 228.375
     } ],
     "commerciants" : [ {
       "commerciant" : "Pizza Hut",
@@ -2076,8 +2076,8 @@
     "transactions" : [ {
       "timestamp" : 438,
       "description" : "Card payment",
-      "amount" : 456.0,
-      "commerciant" : "Calvin Klein"
+      "commerciant" : "Calvin Klein",
+      "amount" : 456.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Calvin Klein",
@@ -2134,8 +2134,8 @@
     "transactions" : [ {
       "timestamp" : 443,
       "description" : "Card payment",
-      "amount" : 112.0,
-      "commerciant" : "Burger King"
+      "commerciant" : "Burger King",
+      "amount" : 112.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Burger King",
@@ -2152,8 +2152,8 @@
     "transactions" : [ {
       "timestamp" : 444,
       "description" : "Card payment",
-      "amount" : 1341.5625,
-      "commerciant" : "Wendy's"
+      "commerciant" : "Wendy's",
+      "amount" : 1341.5625
     } ],
     "commerciants" : [ {
       "commerciant" : "Wendy's",
@@ -2190,8 +2190,8 @@
     "transactions" : [ {
       "timestamp" : 447,
       "description" : "Card payment",
-      "amount" : 382.0,
-      "commerciant" : "Subway"
+      "commerciant" : "Subway",
+      "amount" : 382.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Subway",
@@ -2208,8 +2208,8 @@
     "transactions" : [ {
       "timestamp" : 448,
       "description" : "Card payment",
-      "amount" : 103.8888888888889,
-      "commerciant" : "Nvidia"
+      "commerciant" : "Nvidia",
+      "amount" : 103.8888888888889
     } ],
     "commerciants" : [ {
       "commerciant" : "Nvidia",
@@ -2226,8 +2226,8 @@
     "transactions" : [ {
       "timestamp" : 449,
       "description" : "Card payment",
-      "amount" : 25.960000000000004,
-      "commerciant" : "Nike"
+      "commerciant" : "Nike",
+      "amount" : 25.960000000000004
     } ],
     "commerciants" : [ {
       "commerciant" : "Nike",
@@ -2244,8 +2244,8 @@
     "transactions" : [ {
       "timestamp" : 450,
       "description" : "Card payment",
-      "amount" : 299.20000000000005,
-      "commerciant" : "Gucci"
+      "commerciant" : "Gucci",
+      "amount" : 299.20000000000005
     } ],
     "commerciants" : [ {
       "commerciant" : "Gucci",
@@ -2262,8 +2262,8 @@
     "transactions" : [ {
       "timestamp" : 451,
       "description" : "Card payment",
-      "amount" : 30.642857142857142,
-      "commerciant" : "Adidas"
+      "commerciant" : "Adidas",
+      "amount" : 30.642857142857142
     } ],
     "commerciants" : [ {
       "commerciant" : "Adidas",
@@ -2280,8 +2280,8 @@
     "transactions" : [ {
       "timestamp" : 452,
       "description" : "Card payment",
-      "amount" : 177.1875,
-      "commerciant" : "Google"
+      "commerciant" : "Google",
+      "amount" : 177.1875
     } ],
     "commerciants" : [ {
       "commerciant" : "Google",
@@ -2318,8 +2318,8 @@
     "transactions" : [ {
       "timestamp" : 455,
       "description" : "Card payment",
-      "amount" : 471.375,
-      "commerciant" : "Zara"
+      "commerciant" : "Zara",
+      "amount" : 471.375
     } ],
     "commerciants" : [ {
       "commerciant" : "Zara",
@@ -2346,8 +2346,8 @@
     "transactions" : [ {
       "timestamp" : 457,
       "description" : "Card payment",
-      "amount" : 144.0,
-      "commerciant" : "Calvin Klein"
+      "commerciant" : "Calvin Klein",
+      "amount" : 144.0
     } ],
     "commerciants" : [ {
       "commerciant" : "Calvin Klein",
@@ -2454,8 +2454,8 @@
     "transactions" : [ {
       "timestamp" : 467,
       "description" : "Card payment",
-      "amount" : 111.42857142857142,
-      "commerciant" : "KFC"
+      "commerciant" : "KFC",
+      "amount" : 111.42857142857142
     } ],
     "commerciants" : [ {
       "commerciant" : "KFC",
@@ -2472,8 +2472,8 @@
     "transactions" : [ {
       "timestamp" : 468,
       "description" : "Card payment",
-      "amount" : 449.45454545454544,
-      "commerciant" : "Subway"
+      "commerciant" : "Subway",
+      "amount" : 449.45454545454544
     } ],
     "commerciants" : [ {
       "commerciant" : "Subway",
@@ -2500,8 +2500,8 @@
     "transactions" : [ {
       "timestamp" : 470,
       "description" : "Card payment",
-      "amount" : 2.4985714285714287,
-      "commerciant" : "Huawei"
+      "commerciant" : "Huawei",
+      "amount" : 2.4985714285714287
     } ],
     "commerciants" : [ {
       "commerciant" : "Huawei",

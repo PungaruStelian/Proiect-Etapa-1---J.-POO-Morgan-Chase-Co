@@ -18,7 +18,11 @@ public class User {
     private String email;
     private List<Account> accounts;
 
-    public User(UserInput userInput) {
+    /**
+     * Constructor for User
+     * @param userInput The UserInput object
+     */
+    public User(final UserInput userInput) {
         this.firstName = userInput.getFirstName();
         this.lastName = userInput.getLastName();
         this.email = userInput.getEmail();
