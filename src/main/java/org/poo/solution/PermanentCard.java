@@ -1,19 +1,19 @@
 package org.poo.solution;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
-public class Card {
-    private String cardNumber;
-    private String status;
+public class PermanentCard extends AbstractCard {
 
     /**
      * Builder class for Cards
      */
     @Data
-    public static class CardBuilder {
+    public static class PermanentCardBuilder {
         private String cardNumber;
         private String expirationDate;
         private String status;
@@ -24,7 +24,7 @@ public class Card {
          * @param otherCardNumber The card number to set
          * @return The CardBuilder object
          */
-        public CardBuilder setCardNumber(final String otherCardNumber) {
+        public PermanentCardBuilder setCardNumber(final String otherCardNumber) {
             this.cardNumber = otherCardNumber;
             return this;
         }
@@ -34,7 +34,7 @@ public class Card {
          * @param otherStatus The status to set
          * @return The CardBuilder object
          */
-        public CardBuilder setStatus(final String otherStatus) {
+        public PermanentCardBuilder setStatus(final String otherStatus) {
             this.status = otherStatus;
             return this;
         }
@@ -43,10 +43,10 @@ public class Card {
          * Method to build the Card object
          * @return The Card object
          */
-        public Card build() {
-            Card card = new Card();
-            card.cardNumber = this.cardNumber;
-            card.status = this.status;
+        public PermanentCard build() {
+            PermanentCard card = new PermanentCard();
+            card.setCardNumber(this.cardNumber);
+            card.setStatus(this.status);
             return card;
         }
     }
@@ -55,21 +55,24 @@ public class Card {
      * Method to check if the card is frozen
      * @return true if the card is frozen, false otherwise
      */
+    @Override
     public boolean ruFrozen() {
-        return this.status.equals("frozen");
+        return this.getStatus().equals("frozen");
     }
 
     /**
      * Method to set the card as frozen
      */
+    @Override
     public void makeFrozen() {
-        this.status = "frozen";
+        this.setStatus("frozen");
     }
 
     /**
      * Method to set the card as warning
      */
+    @Override
     public void makeWarning() {
-        this.status = "warning";
+        this.setStatus("warning");
     }
 }

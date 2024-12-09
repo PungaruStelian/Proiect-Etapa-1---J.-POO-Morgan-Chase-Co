@@ -7,7 +7,8 @@ public final class Utils {
         // Checkstyle error free constructor
     }
 
-    public static final int ONE_HUNDRED = 100;
+    public static final int WARNING_AMOUNT = 30;
+    public static final int MAXIMUM_PERCENTAGE = 100;
 
     private static final int IBAN_SEED = 1;
     private static final int CARD_SEED = 2;

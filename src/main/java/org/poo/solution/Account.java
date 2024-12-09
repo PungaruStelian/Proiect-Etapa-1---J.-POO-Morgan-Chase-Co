@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 public class Account {
-    private List<Card> cards;
+    private List<AbstractCard> cards;
     private String type;
     @JsonProperty("IBAN")
     private String iban;

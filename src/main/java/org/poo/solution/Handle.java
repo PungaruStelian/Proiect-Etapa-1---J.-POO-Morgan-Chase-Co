@@ -148,7 +148,7 @@ public final class Handle {
      * Method to create a transaction
      * @param object The Object object
      */
-    public void createTransaction(final Object object){
+    public void createTransaction(final Object object) {
         for (User user : object.getUsers()) {
             user.setTransactions(objectMapper.createArrayNode());
 
@@ -235,7 +235,7 @@ public final class Handle {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIban().equals(command.getAccount())) {
-                        Card newCard = new Card.CardBuilder()
+                        PermanentCard newCard = new PermanentCard.PermanentCardBuilder()
                                 .setCardNumber(Utils.generateCardNumber())
                                 .setStatus("active")
                                 .build();
@@ -272,9 +272,9 @@ public final class Handle {
     public void deleteCard(final Object object, final Command command) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
-                List<Card> cards = account.getCards();
+                List<AbstractCard> cards = account.getCards();
                 for (int i = 0; i < cards.size(); i++) {
-                    Card currentCard = cards.get(i);
+                    AbstractCard currentCard = cards.get(i);
                     if (currentCard.getCardNumber().equals(command.getCardNumber())) {
                         cards.remove(i);
                         addTransaction(user, command, "The card has been destroyed",
@@ -340,7 +340,7 @@ public final class Handle {
                           final ArrayNode output) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
-                for (Card card : account.getCards()) {
+                for (AbstractCard card : account.getCards()) {
                     if (Objects.equals(card.getCardNumber(), command.getCardNumber())) {
                         if (!Objects.equals(command.getEmail(), user.getEmail())) {
                             ObjectNode outputNode = objectMapper.createObjectNode();
@@ -377,18 +377,19 @@ public final class Handle {
                         }
                         if (account.getBalance() <= account.getMinBalance()) {
                             card.makeFrozen();
-                            addTransaction(user, command,"You have reached the minimum amount " +
-                                    "of funds, the card will be frozen", null, null, null,
-                                    null, 0, null, null, null,
-                                    null, null);
+                            addTransaction(user, command,"You have reached the minimum amount "
+                                            + "of funds, the card will be frozen", null, null,
+                                    null, null, 0, null, null,
+                                    null, null, null);
                             return;
                         }
-                        if (account.getBalance() <= account.getMinBalance() + 30) {
+                        if (account.getBalance() <= account.getMinBalance()
+                                + Utils.WARNING_AMOUNT) {
                             card.makeWarning();
-                            addTransaction(user, command, "You have reached the minimum amount" +
-                                            " of funds + 30, you will receive a warning", null,
-                                    null, null, null, 0, null, null,
-                                    null, null,null);
+                            addTransaction(user, command, "You have reached the minimum amount"
+                                            + " of funds + 30, you will receive a warning", null,
+                                    null, null, null, 0, null,
+                                    null, null, null,null);
                             return;
                         }
                         addTransaction(user, command, "Card payment", account.getIban(), null,
@@ -403,6 +404,7 @@ public final class Handle {
                             addTransaction(user, command, "New card created", account.getIban(),
                                     user.getEmail(), card.getCardNumber(), null, 0, null,
                                     null, null, null, null);
+                            return;
                         }
                         return;
                     }
@@ -525,14 +527,14 @@ public final class Handle {
                                 final ObjectNode result, final ArrayNode output) {
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
-                for (Card card : account.getCards()) {
+                for (AbstractCard card : account.getCards()) {
                     if (card.getCardNumber().equals(command.getCardNumber())) {
                         if (account.getBalance() <= account.getMinBalance()) {
                             card.makeFrozen();
-                            addTransaction(user, command, "You have reached the minimum amount " +
-                                    "of funds, the card will be frozen", null, null, null,
-                                    null, 0, null, null, null,
-                                    null, null);
+                            addTransaction(user, command, "You have reached the minimum amount "
+                                            + "of funds, the card will be frozen", null, null,
+                                    null, null, 0, null, null,
+                                    null, null, null);
                             return;
                         }
                         return;
@@ -626,7 +628,7 @@ public final class Handle {
                         handleNonSavingsAccount(objectMapper, result, output, command);
                     }
                     double interest = account.getBalance() * account.getInterestRate()
-                            / Utils.ONE_HUNDRED;
+                            / Utils.MAXIMUM_PERCENTAGE;
                     account.addFunds(interest);
                     addTransaction(user, command, "Interest added", null, null, null,
                             null, interest, null, null, null, null,
@@ -654,8 +656,8 @@ public final class Handle {
                         ObjectNode transaction = (ObjectNode) user.getTransactions().get(i);
                         ObjectNode transactionCopy = transaction.deepCopy();
                         if (!transaction.get("description").asText().equals("New card created")
-                                && !transaction.get("description").asText().equals("The card " +
-                                "has been destroyed")) {
+                                && !transaction.get("description").asText().equals("The card "
+                                + "has been destroyed")) {
                             transactionCopy.remove("account");
                         }
 
