@@ -576,9 +576,10 @@ public final class Handle {
      */
     public void splitPayment(final Object object, final Command command) {
         List<String> poorIbans = new ArrayList<>();
-        for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
-                for (String iban : command.getAccounts()) {
+        for (String iban : command.getAccounts())
+        {
+            for (User user : object.getUsers()) {
+                for (Account account : user.getAccounts()) {
                     if (account.getIban().equals(iban)) {
                         double exhg;
                         if (!Objects.equals(account.getCurrency(), command.getCurrency())) {
@@ -637,7 +638,7 @@ public final class Handle {
                                             + " " + command.getCurrency(), null, null, null,
                                     null, command.getAmount() / command.getAccounts().size(),
                                     command.getCurrency(), null, null, null,
-                                    involvedAccounts, "Account " + poorIbans.getFirst()
+                                    involvedAccounts, "Account " + poorIbans.getLast()
                                             + " has insufficient funds for a split payment.");
                         }
                     }
@@ -755,6 +756,12 @@ public final class Handle {
             for (int a = 0; a < user.getAccounts().size(); a++) {
                 Account account = user.getAccounts().get(a);
                 if (account.getIban().equals(command.getAccount())) {
+                    if(Objects.equals(account.getType(), "savings")) {
+                        ObjectNode outputNode = objectMapper.createObjectNode();
+                        outputNode.put("error", "This kind of report is not supported for a saving account");
+                        addOutput(result, output, command, null, outputNode);
+                        return;
+                    }
                     ArrayNode filteredTransactions = objectMapper.createArrayNode();
                     String[] commerciants = new String[user.getTransactions().size()];
                     double[] totals = new double[user.getTransactions().size()];

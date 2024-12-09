@@ -3,5 +3,9 @@ Starting audit...
 [ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:299:46: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:404: Line is longer than 100 characters (found 108). [LineLength]
 [ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:420:41: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:599:9: '{' at column 9 should be on the previous line. [LeftCurly]
+[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:778:21: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:778:21: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:780: Line is longer than 100 characters (found 109). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 8 errors.
