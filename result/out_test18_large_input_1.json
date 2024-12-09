@@ -392,11 +392,11 @@
       "amount" : 21280.0
     } ],
     "commerciants" : [ {
-      "commerciant" : "KFC",
-      "total" : 21280.0
-    }, {
       "commerciant" : "Adidas",
       "total" : 83.0
+    }, {
+      "commerciant" : "KFC",
+      "total" : 21280.0
     } ]
   },
   "timestamp" : 54
@@ -1083,7 +1083,7 @@
   }, {
     "timestamp" : 24,
     "description" : "Deposit to a Kiwibank savings account",
-    "amount" : "843.0 NZD",
+    "amount" : "843.0 INR",
     "transferType" : "received",
     "senderIBAN" : "RO69POOB6209498372540635",
     "receiverIBAN" : "RO58POOB7344468893732422"
@@ -1150,7 +1150,7 @@
   }, {
     "timestamp" : 70,
     "description" : "Purchasing outdoor gear from Kathmandu",
-    "amount" : "1918.0 NZD",
+    "amount" : "1918.0 INR",
     "transferType" : "received",
     "senderIBAN" : "RO69POOB6209498372540635",
     "receiverIBAN" : "RO58POOB7344468893732422"
@@ -1516,7 +1516,7 @@
     }, {
       "timestamp" : 52,
       "description" : "EMI payment for a home loan",
-      "amount" : "2183.0 INR",
+      "amount" : "2183.0 NZD",
       "transferType" : "received",
       "senderIBAN" : "RO58POOB7344468893732422",
       "receiverIBAN" : "RO69POOB6209498372540635"
@@ -1532,7 +1532,7 @@
     "transactions" : [ {
       "timestamp" : 105,
       "description" : "Purchasing clothing at FabIndia",
-      "amount" : "1688.0 INR",
+      "amount" : "1688.0 EUR",
       "transferType" : "received",
       "senderIBAN" : "RO58POOB7344468893732422",
       "receiverIBAN" : "RO65POOB8944016386845896"
@@ -2144,7 +2144,7 @@
   }, {
     "timestamp" : 24,
     "description" : "Deposit to a Kiwibank savings account",
-    "amount" : "843.0 NZD",
+    "amount" : "843.0 INR",
     "transferType" : "received",
     "senderIBAN" : "RO69POOB6209498372540635",
     "receiverIBAN" : "RO58POOB7344468893732422"
@@ -2211,7 +2211,7 @@
   }, {
     "timestamp" : 70,
     "description" : "Purchasing outdoor gear from Kathmandu",
-    "amount" : "1918.0 NZD",
+    "amount" : "1918.0 INR",
     "transferType" : "received",
     "senderIBAN" : "RO69POOB6209498372540635",
     "receiverIBAN" : "RO58POOB7344468893732422"

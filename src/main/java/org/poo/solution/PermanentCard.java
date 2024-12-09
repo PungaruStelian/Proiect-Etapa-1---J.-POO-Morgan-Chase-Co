@@ -15,9 +15,7 @@ public class PermanentCard extends AbstractCard implements CardStatus {
     @Data
     public static class PermanentCardBuilder {
         private String cardNumber;
-        private String expirationDate;
         private String status;
-        private int cvv;
 
         /**
          * Method to set the card number

@@ -461,8 +461,9 @@ public final class Handle {
                                 // Add the specified JSON object to the transactions
                                 addTransaction(receiver, command, command.getDescription(),
                                         receiverAccount.getIban(), null, null, null,
-                                        command.getAmount(), account.getCurrency(), "received",
-                                        account.getIban(), receiverAccount.getIban(), null);
+                                        command.getAmount(), receiverAccount.getCurrency(),
+                                        "received", account.getIban(),
+                                        receiverAccount.getIban(), null);
                                 return;
                             }
                         }
@@ -737,7 +738,7 @@ public final class Handle {
                     }
                     for (int i = 0; i < commerciantCount - 1; i++) {
                         for (int j = 0; j < commerciantCount - i - 1; j++) {
-                            if (totals[j] < totals[j + 1]) {
+                            if (commerciants[j].compareTo(commerciants[j + 1]) > 0) {
                                 String tempCommerciant = commerciants[j];
                                 commerciants[j] = commerciants[j + 1];
                                 commerciants[j + 1] = tempCommerciant;

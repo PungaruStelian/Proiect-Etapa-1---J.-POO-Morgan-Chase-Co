@@ -1016,7 +1016,7 @@
   }, {
     "timestamp" : 171,
     "description" : "Repayment for a personal loan",
-    "amount" : "105.0 MXN",
+    "amount" : "105.0 RON",
     "transferType" : "received",
     "senderIBAN" : "RO98POOB8412955460158769",
     "receiverIBAN" : "RO65POOB8944016386845896"
