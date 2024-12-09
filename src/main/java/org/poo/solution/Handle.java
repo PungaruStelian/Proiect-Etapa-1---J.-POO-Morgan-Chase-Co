@@ -356,7 +356,7 @@ public final class Handle {
                             addOutput(result, output, command, null, outputNode);
                             return;
                         }
-                        if (card.ruFrozen()) {
+                        if (card instanceof PermanentCard && ((PermanentCard) card).ruFrozen()) {
                             addTransaction(user, command, "The card is frozen", null, null,
                                     null, null, 0, null, null, null,
                                     null, null);
@@ -376,7 +376,9 @@ public final class Handle {
                             return;
                         }
                         if (account.getBalance() <= account.getMinBalance()) {
-                            card.makeFrozen();
+                            if (card instanceof PermanentCard) {
+                                ((PermanentCard) card).makeFrozen();
+                            }
                             addTransaction(user, command,"You have reached the minimum amount "
                                             + "of funds, the card will be frozen", null, null,
                                     null, null, 0, null, null,
@@ -385,7 +387,9 @@ public final class Handle {
                         }
                         if (account.getBalance() <= account.getMinBalance()
                                 + Utils.WARNING_AMOUNT) {
-                            card.makeWarning();
+                            if (card instanceof PermanentCard) {
+                                ((PermanentCard) card).makeWarning();
+                            }
                             addTransaction(user, command, "You have reached the minimum amount"
                                             + " of funds + 30, you will receive a warning", null,
                                     null, null, null, 0, null,
@@ -530,7 +534,9 @@ public final class Handle {
                 for (AbstractCard card : account.getCards()) {
                     if (card.getCardNumber().equals(command.getCardNumber())) {
                         if (account.getBalance() <= account.getMinBalance()) {
-                            card.makeFrozen();
+                            if (card instanceof PermanentCard) {
+                                ((PermanentCard) card).makeFrozen();
+                            }
                             addTransaction(user, command, "You have reached the minimum amount "
                                             + "of funds, the card will be frozen", null, null,
                                     null, null, 0, null, null,

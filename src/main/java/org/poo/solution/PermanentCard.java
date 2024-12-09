@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
-public class PermanentCard extends AbstractCard {
+public class PermanentCard extends AbstractCard implements CardStatus {
 
     /**
      * Builder class for Cards
