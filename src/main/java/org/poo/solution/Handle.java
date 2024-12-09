@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -71,10 +72,14 @@ public final class Handle {
                                 final String commerciant, final double amount,
                                 final String currency , final String transferType,
                                 final String senderIBAN, final String receiverIBAN,
-                                final ArrayNode involvedAccounts) {
+                                final ArrayNode involvedAccounts, final String error) {
         ObjectNode transaction = objectMapper.createObjectNode();
         transaction.put("timestamp", command.getTimestamp());
         transaction.put("description", description);
+
+        if (error != null) {
+            transaction.put("error", error);
+        }
 
         if (account != null) {
             transaction.put("account", account);
@@ -190,7 +195,8 @@ public final class Handle {
                 user.getAccounts().add(newAccount);
                 addTransaction(user, command, "New account created",
                         newAccount.getIban(), null, null, null,
-                        0, null, null, null, null, null);
+                        0, null, null, null,
+                        null, null, null);
             }
         }
     }
@@ -208,21 +214,31 @@ public final class Handle {
             List<Account> accounts = user.getAccounts();
             for (int i = 0; i < accounts.size(); i++) {
                 Account account = accounts.get(i);
-                if (account.getIban().equals(command.getAccount()) && account.getBalance() == 0) {
-                    accounts.remove(i);
-                    ObjectNode outputNode = objectMapper.createObjectNode();
-                    outputNode.put("success", "Account deleted");
-                    outputNode.put("timestamp", command.getTimestamp());
-                    addOutput(result, output, command, null, outputNode);
+                if (account.getIban().equals(command.getAccount())) {
+                    if (account.getBalance() > 0) {
+                        ObjectNode outputNode = objectMapper.createObjectNode();
+                        outputNode.put("description",
+                                "Account couldn't be deleted - there are funds remaining");
+                        outputNode.put("timestamp", command.getTimestamp());
+                        user.getTransactions().add(outputNode);
+
+                        ObjectNode outputs = objectMapper.createObjectNode();
+                        outputs.put("error",
+                                "Account couldn't be deleted - see "
+                                        + "org.poo.transactions for details");
+                        outputs.put("timestamp", command.getTimestamp());
+                        addOutput(result, output, command, null, outputs);
+                    } else {
+                        accounts.remove(i);
+                        ObjectNode outputNode = objectMapper.createObjectNode();
+                        outputNode.put("success", "Account deleted");
+                        outputNode.put("timestamp", command.getTimestamp());
+                        addOutput(result, output, command, null, outputNode);
+                    }
                     return;
                 }
             }
         }
-        ObjectNode outputNode = objectMapper.createObjectNode();
-        outputNode.put("error",
-                "Account couldn't be deleted - see org.poo.transactions for details");
-        outputNode.put("timestamp", command.getTimestamp());
-        addOutput(result, output, command, null, outputNode);
     }
 
     /**
@@ -242,7 +258,8 @@ public final class Handle {
                         account.getCards().add(newCard);
                         addTransaction(user, command, "New card created", account.getIban(),
                                 user.getEmail(), newCard.getCardNumber(), null, 0,
-                                null, null, null, null, null);
+                                null, null, null, null,
+                                null, null);
                     }
                 }
             }
@@ -280,7 +297,7 @@ public final class Handle {
                         addTransaction(user, command, "The card has been destroyed",
                                 account.getIban(), user.getEmail(), currentCard.getCardNumber(),
                                 null, 0, null,null, null,
-                                null, null);
+                                null, null, null);
                         break;
                     }
                 }
@@ -306,7 +323,8 @@ public final class Handle {
                         account.getCards().add(newCard);
                         addTransaction(user, command, "New card created", account.getIban(),
                                 user.getEmail(), newCard.getCardNumber(), null, 0,
-                                null, null, null, null, null);
+                                null, null, null, null,
+                                null, null);
                     }
                 }
             }
@@ -359,7 +377,7 @@ public final class Handle {
                         if (card instanceof PermanentCard && ((PermanentCard) card).ruFrozen()) {
                             addTransaction(user, command, "The card is frozen", null, null,
                                     null, null, 0, null, null, null,
-                                    null, null);
+                                    null, null, null);
                             return;
                         }
                         double exhg;
@@ -372,42 +390,38 @@ public final class Handle {
                         if (!account.withdrawFunds(exhg)) {
                             addTransaction(user, command, "Insufficient funds", null, null,
                                     null, null, 0, null, null, null,
-                                    null, null);
+                                    null, null, null);
                             return;
                         }
                         if (account.getBalance() <= account.getMinBalance()) {
                             if (card instanceof PermanentCard) {
                                 ((PermanentCard) card).makeFrozen();
                             }
-                            addTransaction(user, command,"You have reached the minimum amount "
+                            addTransaction(user, command, "You have reached the minimum amount "
                                             + "of funds, the card will be frozen", null, null,
                                     null, null, 0, null, null,
-                                    null, null, null);
-                            return;
-                        }
-                        if (account.getBalance() <= account.getMinBalance()
-                                + Utils.WARNING_AMOUNT) {
+                                    null, null, null, null);
+                        } else if (account.getBalance() <= account.getMinBalance() + Utils.WARNING_AMOUNT) {
                             if (card instanceof PermanentCard) {
                                 ((PermanentCard) card).makeWarning();
                             }
                             addTransaction(user, command, "You have reached the minimum amount"
                                             + " of funds + 30, you will receive a warning", null,
                                     null, null, null, 0, null,
-                                    null, null, null,null);
-                            return;
+                                    null, null, null, null, null);
                         }
                         addTransaction(user, command, "Card payment", account.getIban(), null,
                                 null, command.getCommerciant(), exhg, null, null, null,
-                                null, null);
+                                null, null, null);
                         if (card instanceof OneTimeCard) {
                             addTransaction(user, command, "The card has been destroyed",
                                     account.getIban(), user.getEmail(), card.getCardNumber(),
                                     null, 0, null, null, null,
-                                    null,null);
+                                    null,null, null);
                             ((OneTimeCard) card).markAsUsed();
                             addTransaction(user, command, "New card created", account.getIban(),
                                     user.getEmail(), card.getCardNumber(), null, 0, null,
-                                    null, null, null, null);
+                                    null, null, null, null, null);
                             return;
                         }
                         return;
@@ -448,7 +462,7 @@ public final class Handle {
                                         command.getAmount(), exhg)) {
                                     addTransaction(user, command, "Insufficient funds", null,
                                             null, null, null, 0, null,
-                                            null, null, null, null);
+                                            null, null, null, null, null);
                                     return;
                                 }
 
@@ -456,14 +470,14 @@ public final class Handle {
                                 addTransaction(user, command, command.getDescription(),
                                         account.getIban(), null, null, null, command.getAmount(),
                                         account.getCurrency(), "sent", account.getIban(),
-                                        receiverAccount.getIban(), null);
+                                        receiverAccount.getIban(), null, null);
 
                                 // Add the specified JSON object to the transactions
                                 addTransaction(receiver, command, command.getDescription(),
                                         receiverAccount.getIban(), null, null, null,
-                                        command.getAmount(), receiverAccount.getCurrency(),
+                                        exhg, receiverAccount.getCurrency(),
                                         "received", account.getIban(),
-                                        receiverAccount.getIban(), null);
+                                        receiverAccount.getIban(), null, null);
                                 return;
                             }
                         }
@@ -541,7 +555,7 @@ public final class Handle {
                             addTransaction(user, command, "You have reached the minimum amount "
                                             + "of funds, the card will be frozen", null, null,
                                     null, null, 0, null, null,
-                                    null, null, null);
+                                    null, null, null, null);
                             return;
                         }
                         return;
@@ -561,6 +575,7 @@ public final class Handle {
      * @param command The Command object
      */
     public void splitPayment(final Object object, final Command command) {
+        List<String> poorIbans = new ArrayList<>();
         for (User user : object.getUsers()) {
             for (Account account : user.getAccounts()) {
                 for (String iban : command.getAccounts()) {
@@ -573,21 +588,58 @@ public final class Handle {
                         } else {
                             exhg = command.getAmount() / command.getAccounts().size();
                         }
-                        if (!account.withdrawFunds(exhg)) {
-                            addTransaction(user, command, "Insufficient funds", null, null,
-                                    null, null, 0, null, null,
-                                    null, null, null);
-                            return;
+                        if (account.getBalance() < exhg) {
+                            poorIbans.add(account.getIban());
                         }
-                        ArrayNode involvedAccounts = objectMapper.createArrayNode();
-                        for (String involvedIban : command.getAccounts()) {
-                            involvedAccounts.add(involvedIban);
+                    }
+                }
+            }
+        }
+        if (poorIbans.isEmpty()) {
+            for (User user : object.getUsers()) {
+                for (Account account : user.getAccounts()) {
+                    for (String iban : command.getAccounts()) {
+                        if (account.getIban().equals(iban)) {
+                            double exhg;
+                            if (!Objects.equals(account.getCurrency(), command.getCurrency())) {
+                                exhg = account.getExchange(object, command.getCurrency(),
+                                        account.getCurrency(), command.getAmount()
+                                                / command.getAccounts().size());
+                            } else {
+                                exhg = command.getAmount() / command.getAccounts().size();
+                            }
+                            account.withdrawFunds(exhg);
+                            ArrayNode involvedAccounts = objectMapper.createArrayNode();
+                            for (String involvedIban : command.getAccounts()) {
+                                involvedAccounts.add(involvedIban);
+                            }
+                            addTransaction(user, command, "Split payment of "
+                                            + String.format(Locale.US, "%.2f", command.getAmount())
+                                            + " " + command.getCurrency(), null, null, null,
+                                    null, command.getAmount() / command.getAccounts().size(),
+                                    command.getCurrency(), null, null, null,
+                                    involvedAccounts, null);
                         }
-                        addTransaction(user, command, "Split payment of "
-                                + String.format(Locale.US, "%.2f", command.getAmount()) + " "
-                                + command.getCurrency(), null, null, null, null,
-                                command.getAmount() / command.getAccounts().size(),
-                                command.getCurrency(), null, null, null, involvedAccounts);
+                    }
+                }
+            }
+        } else {
+            for (User user : object.getUsers()) {
+                for (Account account : user.getAccounts()) {
+                    for (String iban : command.getAccounts()) {
+                        if (account.getIban().equals(iban)) {
+                            ArrayNode involvedAccounts = objectMapper.createArrayNode();
+                            for (String involvedIban : command.getAccounts()) {
+                                involvedAccounts.add(involvedIban);
+                            }
+                            addTransaction(user, command, "Split payment of "
+                                            + String.format(Locale.US, "%.2f", command.getAmount())
+                                            + " " + command.getCurrency(), null, null, null,
+                                    null, command.getAmount() / command.getAccounts().size(),
+                                    command.getCurrency(), null, null, null,
+                                    involvedAccounts, "Account " + poorIbans.getFirst()
+                                            + " has insufficient funds for a split payment.");
+                        }
                     }
                 }
             }
@@ -612,7 +664,7 @@ public final class Handle {
                     account.setInterestRate(command.getInterestRate());
                     addTransaction(user, command, "Interest rate of the account changed to "
                             + command.getInterestRate(), null, null, null, null,
-                            0, null, null, null, null, null);
+                            0, null, null, null, null, null, null);
                     return;
                 }
             }
@@ -639,7 +691,7 @@ public final class Handle {
                     account.addFunds(interest);
                     addTransaction(user, command, "Interest added", null, null, null,
                             null, interest, null, null, null, null,
-                            null);
+                            null, null);
                     return;
                 }
             }

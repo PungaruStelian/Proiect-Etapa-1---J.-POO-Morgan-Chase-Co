@@ -135,7 +135,7 @@ public class Account {
      * @return true if the account is frozen, false otherwise
      */
     public boolean withdrawFunds(final double amount) {
-        if (amount > 0 && this.balance >= amount) {
+        if (this.balance >= amount) {
             this.balance -= amount;
             return true;
         }
