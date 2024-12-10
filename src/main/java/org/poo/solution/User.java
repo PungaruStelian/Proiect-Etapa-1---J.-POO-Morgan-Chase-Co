@@ -35,11 +35,11 @@ public class User {
 
     /**
      * Method to eliminate duplicate transactions
-     * @param transactions The transactions to check
+     * @param theTransactions The transactions to check
      */
-    public void removeDuplicateTransactions(ArrayNode transactions) {
+    public void removeDuplicateTransactions(final ArrayNode theTransactions) {
         HashSet<String> uniqueTransactions = new HashSet<>();
-        Iterator<JsonNode> iterator = transactions.iterator();
+        Iterator<JsonNode> iterator = theTransactions.iterator();
         while (iterator.hasNext()) {
             JsonNode node = iterator.next();
             if (node instanceof ObjectNode transaction) {
@@ -54,16 +54,18 @@ public class User {
 
     /**
      * Method to remove transactions by IBAN
-     * @param transactions The transactions to check
-     * @param iban The IBAN to remove
+     * @param theTransactions The transactions to check
+     * @param theIban The IBAN to remove
      */
-    public void removeTransactionsByIBAN(ArrayNode transactions, String iban) {
-        Iterator<JsonNode> iterator = transactions.iterator();
+    public void removeTransactionsByIBAN(final ArrayNode theTransactions, final String theIban) {
+        Iterator<JsonNode> iterator = theTransactions.iterator();
         while (iterator.hasNext()) {
             JsonNode node = iterator.next();
             if (node instanceof ObjectNode transaction) {
                 JsonNode ibanNode = transaction.get("account");
-                if (ibanNode != null && !ibanNode.asText().equals(iban)) {
+                if (ibanNode != null && !ibanNode.asText().equals(theIban)
+                        && !transaction.get("description").asText().
+                        equals("New account created")) {
                     iterator.remove();
                 }
             }

@@ -1,16 +1,6 @@
 Starting audit...
 [ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:73:55: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:299:46: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:404: Line is longer than 100 characters (found 108). [LineLength]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:420:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:580:9: '{' at column 9 should be on the previous line. [LeftCurly]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:762:21: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:762:21: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:764: Line is longer than 100 characters (found 109). [LineLength]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\User.java:40:45: Parameter transactions should be final. [FinalParameters]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\User.java:40:55: 'transactions' hides a field. [HiddenField]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\User.java:60:42: Parameter transactions should be final. [FinalParameters]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\User.java:60:52: 'transactions' hides a field. [HiddenField]
-[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\User.java:60:66: Parameter iban should be final. [FinalParameters]
+[ERROR] C:\Users\punga\Desktop\FACULTATE\POO (OOP)\Teme\Proiect-Etapa-1---J.-POO-Morgan-Chase-Co\.\src\main\java\org\poo\solution\Handle.java:421:41: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 3 errors.

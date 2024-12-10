@@ -401,7 +401,8 @@ public final class Handle {
                                             + "of funds, the card will be frozen", null, null,
                                     null, null, 0, null, null,
                                     null, null, null, null);
-                        } else if (account.getBalance() <= account.getMinBalance() + Utils.WARNING_AMOUNT) {
+                        } else if (account.getBalance() <= account.getMinBalance()
+                                + Utils.WARNING_AMOUNT) {
                             if (card instanceof PermanentCard) {
                                 ((PermanentCard) card).makeWarning();
                             }
@@ -576,8 +577,7 @@ public final class Handle {
      */
     public void splitPayment(final Object object, final Command command) {
         List<String> poorIbans = new ArrayList<>();
-        for (String iban : command.getAccounts())
-        {
+        for (String iban : command.getAccounts()) {
             for (User user : object.getUsers()) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIban().equals(iban)) {
@@ -759,9 +759,10 @@ public final class Handle {
             for (int a = 0; a < user.getAccounts().size(); a++) {
                 Account account = user.getAccounts().get(a);
                 if (account.getIban().equals(command.getAccount())) {
-                    if(Objects.equals(account.getType(), "savings")) {
+                    if (Objects.equals(account.getType(), "savings")) {
                         ObjectNode outputNode = objectMapper.createObjectNode();
-                        outputNode.put("error", "This kind of report is not supported for a saving account");
+                        outputNode.put("error",
+                                "This kind of report is not supported for a saving account");
                         addOutput(result, output, command, null, outputNode);
                         return;
                     }
