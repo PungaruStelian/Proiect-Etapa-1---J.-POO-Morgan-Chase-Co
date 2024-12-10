@@ -709,8 +709,10 @@ public final class Handle {
     public void report(final Object object, final Command command, final ObjectNode result,
                        final ArrayNode output) {
         for (User user : object.getUsers()) {
+            user.removeDuplicateTransactions(user.getTransactions());
             for (Account account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
+                    user.removeTransactionsByIBAN(user.getTransactions(), account.getIban());
                     ArrayNode filteredTransactions = objectMapper.createArrayNode();
                     for (int i = 0; i < user.getTransactions().size(); i++) {
                         ObjectNode transaction = (ObjectNode) user.getTransactions().get(i);
@@ -753,6 +755,7 @@ public final class Handle {
     public void spendingsReport(final Object object, final Command command,
                                 final ObjectNode result, final ArrayNode output) {
         for (User user : object.getUsers()) {
+            user.removeDuplicateTransactions(user.getTransactions());
             for (int a = 0; a < user.getAccounts().size(); a++) {
                 Account account = user.getAccounts().get(a);
                 if (account.getIban().equals(command.getAccount())) {

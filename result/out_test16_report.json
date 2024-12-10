@@ -122,10 +122,7 @@
     "IBAN" : "RO69POOB6209498372540635",
     "balance" : 902.5,
     "currency" : "RON",
-    "transactions" : [ {
-      "timestamp" : 2,
-      "description" : "New account created"
-    } ]
+    "transactions" : [ ]
   },
   "timestamp" : 26
 }, {
