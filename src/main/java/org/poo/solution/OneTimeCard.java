@@ -17,9 +17,43 @@ public class OneTimeCard extends AbstractCard {
      * Method to mark the card as used
      * It sets the isUsed attribute to true and generates a new card number
      */
+    @Override
     public void markAsUsed() {
         this.isUsed = true;
         this.setCardNumber(Utils.generateCardNumber());
+    }
+
+    @Override
+    public boolean ruFrozen() {
+        return false;
+    }
+
+    @Override
+    public void makeFrozen() {
+        // Do nothing
+    }
+
+    @Override
+    public void makeWarning() {
+        // Do nothing
+    }
+
+    @Override
+    public boolean ruUsed() {
+        return this.isUsed;
+    }
+
+    @Override
+    public void handleCardDestruction(final User user, final Command command,
+                                      final Account account, final Handle handle) {
+        handle.addTransaction(user, command, "The card has been destroyed",
+                account.getIban(), user.getEmail(), this.getCardNumber(),
+                null, 0, null, null, null,
+                null, null, null);
+        this.markAsUsed();
+        handle.addTransaction(user, command, "New card created", account.getIban(),
+                user.getEmail(), this.getCardNumber(), null, 0, null,
+                null, null, null, null, null);
     }
 
     /**

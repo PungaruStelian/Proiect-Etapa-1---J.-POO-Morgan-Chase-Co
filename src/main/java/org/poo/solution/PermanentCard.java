@@ -7,7 +7,42 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
-public class PermanentCard extends AbstractCard implements CardStatus {
+public class PermanentCard extends AbstractCard {
+
+    /**
+     * Method to check if the card is frozen
+     * @return true if the card is frozen, false otherwise
+     */
+    @Override
+    public boolean ruFrozen() {
+        return this.getStatus().equals("frozen");
+    }
+
+    /**
+     * Method to set the card as frozen
+     */
+    @Override
+    public void makeFrozen() {
+        this.setStatus("frozen");
+    }
+
+    /**
+     * Method to set the card as warning
+     */
+    @Override
+    public void makeWarning() {
+        this.setStatus("warning");
+    }
+
+    @Override
+    public boolean ruUsed() {
+        return false;
+    }
+
+    @Override
+    public void markAsUsed() {
+        // Do nothing
+    }
 
     /**
      * Builder class for Cards
@@ -47,30 +82,5 @@ public class PermanentCard extends AbstractCard implements CardStatus {
             card.setStatus(this.status);
             return card;
         }
-    }
-
-    /**
-     * Method to check if the card is frozen
-     * @return true if the card is frozen, false otherwise
-     */
-    @Override
-    public boolean ruFrozen() {
-        return this.getStatus().equals("frozen");
-    }
-
-    /**
-     * Method to set the card as frozen
-     */
-    @Override
-    public void makeFrozen() {
-        this.setStatus("frozen");
-    }
-
-    /**
-     * Method to set the card as warning
-     */
-    @Override
-    public void makeWarning() {
-        this.setStatus("warning");
     }
 }
