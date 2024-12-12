@@ -45,7 +45,7 @@ public abstract class AbstractCard {
      * @param handle The handle object
      */
     public void handleCardDestruction(final ObjectMapper objectMapper, final User user,
-                                      final Command command, final Account account,
+                                      final Command command, final AccountType account,
                                       final Handle handle) {
         // Default implementation does nothing
     }

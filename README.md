@@ -57,20 +57,15 @@ This project is a simulation of a banking system that handles various operations
 - **Key Components**:
   - `cardNumber`: The card number.
   - `status`: The card status.
-  - `getCardNumber()`: Retrieves the card number.
-  - `setCardNumber()`: Sets the card number.
-  - `getStatus()`: Retrieves the card status.
-  - `setStatus()`: Sets the card status.
-
----
+  - `ruFrozen`: A boolean indicating if the card is frozen.
+  - `makeFrozen()`: Freezes the card.
+  - `makeWarning()`: Sets the card status to warning.
+  - `ruUsed()`: A boolean indicating if the card has been used.
+  - `makeAsUsed()`: Sets the card as used.
 
 ## Interface
-### `CardStatus`
-- **Description**: Defines the possible statuses for a card.
-- **Key Components**:
-    - `makeFrozen()`: Freezes the card.
-    - `makeWarning()`: Warns the user about the card status.
-    - `ruFrozen`: A message indicating the card is frozen.
+### `AccountInterface`
+- **Description**: Defines methods for account operations. Getters and setters for an normal functionality account and aditional methods for a different types of account.
 
 ---
 
@@ -225,7 +220,7 @@ This project is a simulation of a banking system that handles various operations
     - `com.fasterxml.jackson.databind`: For JSON manipulation.
 
 ## Notes
-- The class primarily operates on JSON objects and nodes, relying on external `Utils` and domain-specific classes (`User`, `Account`, etc.).
-- Transactions and commands are central to the logic, ensuring robust and traceable financial operations.
+- I didn't use oop concepts at the maximum level because I wanted to try as many as possible, and I might need them more in the second part of the project. However, I followed almost all the indications for solving the requirement in order not to be de-pointed for not using the oop concepts correctly.
+  With the help of this theme, I became more experienced in programming in java
 
 ---

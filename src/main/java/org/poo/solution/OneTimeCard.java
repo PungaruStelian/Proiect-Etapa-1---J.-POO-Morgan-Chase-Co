@@ -24,29 +24,51 @@ public class OneTimeCard extends AbstractCard {
         this.setCardNumber(Utils.generateCardNumber());
     }
 
+    /**
+     * Method to check if the card is frozen
+     * @return false
+     */
     @Override
     public boolean ruFrozen() {
         return false;
     }
 
+    /**
+     * Method to set the card as frozen
+     */
     @Override
     public void makeFrozen() {
         // Do nothing
     }
 
+    /**
+     * Method to set the card as warning
+     */
     @Override
     public void makeWarning() {
         // Do nothing
     }
 
+    /**
+     * Method to check if the card is used
+     * @return The value of the isUsed attribute
+     */
     @Override
     public boolean ruUsed() {
         return this.isUsed;
     }
 
+    /**
+     * Method to handle the destruction of the card
+     * @param objectMapper The ObjectMapper object
+     * @param user The user that owns the card
+     * @param command The command that triggered the destruction
+     * @param account The account that owns the card
+     * @param handle The handle object
+     */
     @Override
     public void handleCardDestruction(final ObjectMapper objectMapper, final User user,
-                                      final Command command, final Account account,
+                                      final Command command, final AccountType account,
                                       final Handle handle) {
         Utils.addTransaction(objectMapper, user, command, "The card has been destroyed",
                 account.getIban(), user.getEmail(), this.getCardNumber(),

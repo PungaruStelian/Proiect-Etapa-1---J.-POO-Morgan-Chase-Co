@@ -34,6 +34,10 @@ public class PermanentCard extends AbstractCard {
         this.setStatus("warning");
     }
 
+    /**
+     * Method to check if the card is used
+     * @return false
+     */
     @Override
     public boolean ruUsed() {
         return false;

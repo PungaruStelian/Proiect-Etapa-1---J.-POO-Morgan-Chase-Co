@@ -20,7 +20,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private List<Account> accounts;
+    private List<AccountType> accounts;
 
     /**
      * Constructor for User

@@ -70,13 +70,20 @@ public final class Handle {
     public void addAccount(final Object object, final Command command) {
         for (User user : object.getUsers()) {
             if (user.getEmail().equals(command.getEmail())) {
-                Account newAccount = new Account.AccountBuilder()
-                        .setIBAN(Utils.generateIBAN())
-                        .setBalance(0.0)
-                        .setCurrency(command.getCurrency())
-                        .setType(command.getAccountType())
-                        .setStatus("active")
-                        .build();
+                AccountType newAccount;
+                if ("classic".equalsIgnoreCase(command.getAccountType())) {
+                    newAccount = new ClassicAccount.ClassicAccountBuilder()
+                            .setIban(Utils.generateIBAN())
+                            .setCurrency(command.getCurrency())
+                            .setBalance(0.0)
+                            .build();
+                } else {
+                    newAccount = new SavingsAccount.SavingsAccountBuilder()
+                            .setIban(Utils.generateIBAN())
+                            .setCurrency(command.getCurrency())
+                            .setBalance(0.0)
+                            .build();
+                }
                 user.getAccounts().add(newAccount);
                 Utils.addTransactionForNewAccount(objectMapper, user,
                         command, newAccount.getIban());
@@ -94,9 +101,9 @@ public final class Handle {
     public void deleteAccount(final Object object, final Command command, final ObjectNode result,
                               final ArrayNode output) {
         for (User user : object.getUsers()) {
-            List<Account> accounts = user.getAccounts();
+            List<AccountType> accounts = user.getAccounts();
             for (int i = 0; i < accounts.size(); i++) {
-                Account account = accounts.get(i);
+                AccountType account = accounts.get(i);
                 if (account.getIban().equals(command.getAccount())) {
                     if (account.getBalance() > 0) {
                         ObjectNode outputNode = objectMapper.createObjectNode();
@@ -132,7 +139,7 @@ public final class Handle {
     public void createCard(final Object object, final Command command) {
         for (User user : object.getUsers()) {
             if (user.getEmail().equals(command.getEmail())) {
-                for (Account account : user.getAccounts()) {
+                for (AccountType account : user.getAccounts()) {
                     if (account.getIban().equals(command.getAccount())) {
                         PermanentCard newCard = new PermanentCard.PermanentCardBuilder()
                                 .setCardNumber(Utils.generateCardNumber())
@@ -154,7 +161,7 @@ public final class Handle {
      */
     public void addFunds(final Object object, final Command command) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     account.addFunds(command.getAmount());
                 }
@@ -169,7 +176,7 @@ public final class Handle {
      */
     public void deleteCard(final Object object, final Command command) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 List<AbstractCard> cards = account.getCards();
                 for (int i = 0; i < cards.size(); i++) {
                     AbstractCard currentCard = cards.get(i);
@@ -192,7 +199,7 @@ public final class Handle {
     public void createOneTimeCard(final Object object, final Command command) {
         for (User user : object.getUsers()) {
             if (user.getEmail().equals(command.getEmail())) {
-                for (Account account : user.getAccounts()) {
+                for (AccountType account : user.getAccounts()) {
                     if (account.getIban().equals(command.getAccount())) {
                         OneTimeCard newCard = new OneTimeCard.OneTimeCardBuilder()
                                 .setUsed(false)
@@ -215,7 +222,7 @@ public final class Handle {
      */
     public void setMinimumBalance(final Object object, final Command command) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     account.setMinBalance(command.getMinBalance());
                     break;
@@ -234,7 +241,7 @@ public final class Handle {
     public void payOnline(final Object object, final Command command, final ObjectNode result,
                           final ArrayNode output) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 for (AbstractCard card : account.getCards()) {
                     if (Objects.equals(card.getCardNumber(), command.getCardNumber())) {
                         if (!Objects.equals(command.getEmail(), user.getEmail())) {
@@ -300,10 +307,10 @@ public final class Handle {
      */
     public void sendMoney(final Object object, final Command command) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     for (User receiver : object.getUsers()) {
-                        for (Account receiverAccount : receiver.getAccounts()) {
+                        for (AccountType receiverAccount : receiver.getAccounts()) {
                             if (receiverAccount.getIban().equals(command.getReceiver())
                                     || (receiverAccount.getAlias() != null
                                     && receiverAccount.getAlias()
@@ -349,7 +356,7 @@ public final class Handle {
      */
     public void setAlias(final Object object, final Command command) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     account.setAlias(command.getAlias());
                     return;
@@ -399,7 +406,7 @@ public final class Handle {
     public void checkCardStatus(final Object object, final Command command,
                                 final ObjectNode result, final ArrayNode output) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 for (AbstractCard card : account.getCards()) {
                     if (card.getCardNumber().equals(command.getCardNumber())) {
                         if (account.getBalance() <= account.getMinBalance()) {
@@ -429,7 +436,7 @@ public final class Handle {
         List<String> poorIbans = new ArrayList<>();
         for (String iban : command.getAccounts()) {
             for (User user : object.getUsers()) {
-                for (Account account : user.getAccounts()) {
+                for (AccountType account : user.getAccounts()) {
                     if (account.getIban().equals(iban)) {
                         double exhg;
                         if (!Objects.equals(account.getCurrency(), command.getCurrency())) {
@@ -448,7 +455,7 @@ public final class Handle {
         }
         if (poorIbans.isEmpty()) {
             for (User user : object.getUsers()) {
-                for (Account account : user.getAccounts()) {
+                for (AccountType account : user.getAccounts()) {
                     for (String iban : command.getAccounts()) {
                         if (account.getIban().equals(iban)) {
                             double exhg;
@@ -472,7 +479,7 @@ public final class Handle {
             }
         } else {
             for (User user : object.getUsers()) {
-                for (Account account : user.getAccounts()) {
+                for (AccountType account : user.getAccounts()) {
                     for (String iban : command.getAccounts()) {
                         if (account.getIban().equals(iban)) {
                             ArrayNode involvedAccounts = objectMapper.createArrayNode();
@@ -500,7 +507,7 @@ public final class Handle {
     public void changeInterestRate(final Object object, final Command command,
                                    final ObjectNode result, final ArrayNode output) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     if (!Objects.equals(account.getType(), "savings")) {
                         account.setOutputNonSavingsAccount(objectMapper, result, output, command);
@@ -523,7 +530,7 @@ public final class Handle {
     public void addInterest(final Object object, final Command command, final ObjectNode result,
                             final ArrayNode output) {
         for (User user : object.getUsers()) {
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     if (!Objects.equals(account.getType(), "savings")) {
                         account.setOutputNonSavingsAccount(objectMapper, result, output, command);
@@ -549,7 +556,7 @@ public final class Handle {
                        final ArrayNode output) {
         for (User user : object.getUsers()) {
             user.removeDuplicateTransactions(user.getTransactions());
-            for (Account account : user.getAccounts()) {
+            for (AccountType account : user.getAccounts()) {
                 if (account.getIban().equals(command.getAccount())) {
                     user.removeTransactionsByIBAN(user.getTransactions(), account.getIban());
                     ArrayNode filteredTransactions = objectMapper.createArrayNode();
@@ -596,7 +603,7 @@ public final class Handle {
         for (User user : object.getUsers()) {
             user.removeDuplicateTransactions(user.getTransactions());
             for (int a = 0; a < user.getAccounts().size(); a++) {
-                Account account = user.getAccounts().get(a);
+                AccountType account = user.getAccounts().get(a);
                 if (account.getIban().equals(command.getAccount())) {
                     if (Objects.equals(account.getType(), "savings")) {
                         ObjectNode outputNode = objectMapper.createObjectNode();

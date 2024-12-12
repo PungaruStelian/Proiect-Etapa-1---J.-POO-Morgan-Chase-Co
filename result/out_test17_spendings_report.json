@@ -5,16 +5,16 @@
     "lastName" : "Mazilescu",
     "email" : "Simion_Mazilescu@yahoo.ro",
     "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
       "currency" : "RON",
       "balance" : 6720.0,
-      "IBAN" : "RO58POOB7344468893732422"
-    }, {
       "cards" : [ ],
       "type" : "classic",
+      "IBAN" : "RO58POOB7344468893732422"
+    }, {
       "currency" : "RON",
       "balance" : 1840.0,
+      "cards" : [ ],
+      "type" : "classic",
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -22,16 +22,16 @@
     "lastName" : "Graham",
     "email" : "Anthony_Graham@yahoo.us",
     "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
       "currency" : "USD",
       "balance" : 1826.0,
-      "IBAN" : "RO90POOB5450777208072365"
-    }, {
       "cards" : [ ],
       "type" : "classic",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
       "currency" : "USD",
       "balance" : 15240.0,
+      "cards" : [ ],
+      "type" : "classic",
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -43,19 +43,19 @@
     "lastName" : "Mazilescu",
     "email" : "Simion_Mazilescu@yahoo.ro",
     "accounts" : [ {
+      "currency" : "RON",
+      "balance" : 4959.0,
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "RON",
-      "balance" : 4959.0,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
-      "cards" : [ ],
-      "type" : "classic",
       "currency" : "RON",
       "balance" : 2367.0,
+      "cards" : [ ],
+      "type" : "classic",
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -63,16 +63,16 @@
     "lastName" : "Graham",
     "email" : "Anthony_Graham@yahoo.us",
     "accounts" : [ {
-      "cards" : [ ],
-      "type" : "classic",
       "currency" : "USD",
       "balance" : 1826.0,
-      "IBAN" : "RO90POOB5450777208072365"
-    }, {
       "cards" : [ ],
       "type" : "classic",
+      "IBAN" : "RO90POOB5450777208072365"
+    }, {
       "currency" : "USD",
       "balance" : 15240.0,
+      "cards" : [ ],
+      "type" : "classic",
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],
@@ -91,6 +91,8 @@
     "lastName" : "Mazilescu",
     "email" : "Simion_Mazilescu@yahoo.ro",
     "accounts" : [ {
+      "currency" : "RON",
+      "balance" : 20413.4,
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
@@ -99,17 +101,15 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "RON",
-      "balance" : 20413.4,
       "IBAN" : "RO58POOB7344468893732422"
     }, {
+      "currency" : "RON",
+      "balance" : 9061.0,
       "cards" : [ {
         "cardNumber" : "1322658752653937",
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "RON",
-      "balance" : 9061.0,
       "IBAN" : "RO69POOB6209498372540635"
     } ]
   }, {
@@ -117,6 +117,8 @@
     "lastName" : "Graham",
     "email" : "Anthony_Graham@yahoo.us",
     "accounts" : [ {
+      "currency" : "USD",
+      "balance" : 1148.2142857142858,
       "cards" : [ {
         "cardNumber" : "7901879264253296",
         "status" : "active"
@@ -125,17 +127,15 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "USD",
-      "balance" : 1148.2142857142858,
       "IBAN" : "RO90POOB5450777208072365"
     }, {
+      "currency" : "USD",
+      "balance" : 13324.0,
       "cards" : [ {
         "cardNumber" : "7004757825892043",
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "USD",
-      "balance" : 13324.0,
       "IBAN" : "RO65POOB8944016386845896"
     } ]
   } ],

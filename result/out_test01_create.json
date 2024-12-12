@@ -14,13 +14,13 @@
     "lastName" : "Wood",
     "email" : "Joshua_Wood@gmail.us",
     "accounts" : [ {
+      "currency" : "USD",
+      "balance" : 0.0,
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "USD",
-      "balance" : 0.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
@@ -32,13 +32,13 @@
     "lastName" : "Wood",
     "email" : "Joshua_Wood@gmail.us",
     "accounts" : [ {
+      "currency" : "USD",
+      "balance" : 271.0,
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "USD",
-      "balance" : 271.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
@@ -50,6 +50,8 @@
     "lastName" : "Wood",
     "email" : "Joshua_Wood@gmail.us",
     "accounts" : [ {
+      "currency" : "USD",
+      "balance" : 788.0,
       "cards" : [ {
         "cardNumber" : "8207906978464446",
         "status" : "active"
@@ -58,8 +60,6 @@
         "status" : "active"
       } ],
       "type" : "classic",
-      "currency" : "USD",
-      "balance" : 788.0,
       "IBAN" : "RO58POOB7344468893732422"
     } ]
   } ],
