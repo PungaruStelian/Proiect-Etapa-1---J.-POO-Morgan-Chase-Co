@@ -1,5 +1,6 @@
 package org.poo.solution;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -43,8 +44,9 @@ public abstract class AbstractCard {
      * @param account The account that owns the card
      * @param handle The handle object
      */
-    public void handleCardDestruction(final User user, final Command command,
-                                      final Account account, final Handle handle) {
+    public void handleCardDestruction(final ObjectMapper objectMapper, final User user,
+                                      final Command command, final Account account,
+                                      final Handle handle) {
         // Default implementation does nothing
     }
 }

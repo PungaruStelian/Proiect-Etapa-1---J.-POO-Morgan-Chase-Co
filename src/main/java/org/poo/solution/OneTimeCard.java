@@ -1,5 +1,6 @@
 package org.poo.solution;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -44,14 +45,15 @@ public class OneTimeCard extends AbstractCard {
     }
 
     @Override
-    public void handleCardDestruction(final User user, final Command command,
-                                      final Account account, final Handle handle) {
-        handle.addTransaction(user, command, "The card has been destroyed",
+    public void handleCardDestruction(final ObjectMapper objectMapper, final User user,
+                                      final Command command, final Account account,
+                                      final Handle handle) {
+        Utils.addTransaction(objectMapper, user, command, "The card has been destroyed",
                 account.getIban(), user.getEmail(), this.getCardNumber(),
                 null, 0, null, null, null,
                 null, null, null);
         this.markAsUsed();
-        handle.addTransaction(user, command, "New card created", account.getIban(),
+        Utils.addTransaction(objectMapper, user, command, "New card created", account.getIban(),
                 user.getEmail(), this.getCardNumber(), null, 0, null,
                 null, null, null, null, null);
     }

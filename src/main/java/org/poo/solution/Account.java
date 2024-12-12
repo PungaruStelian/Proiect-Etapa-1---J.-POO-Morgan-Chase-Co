@@ -1,9 +1,13 @@
 package org.poo.solution;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Data;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.poo.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -156,5 +160,21 @@ public class Account {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Method to handle non-savings accounts
+     * @param otherObjectMapper The ObjectMapper object
+     * @param result The ObjectNode object
+     * @param output The ArrayNode object
+     * @param command The Command object
+     */
+    public void setOutputNonSavingsAccount(final ObjectMapper otherObjectMapper,
+                                         final ObjectNode result, final ArrayNode output,
+                                         final Command command) {
+        ObjectNode outputNode = otherObjectMapper.createObjectNode();
+        outputNode.put("description", "This is not a savings account");
+        outputNode.put("timestamp", command.getTimestamp());
+        Utils.addOutput(result, output, command, null, outputNode);
     }
 }
